@@ -2,11 +2,12 @@ import { poppins } from "@/utils/font";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import MobileNav from "./mobile-nav";
 
 const Header = () => {
   return (
     <header
-      className={`${poppins.className}  mx-auto px-10 py-1 flex justify-between items-center font-medium`}
+      className={`${poppins.className}  mx-auto px-3 lg:px-10 py-1 flex justify-between items-center font-medium`}
     >
       <Link href={"/"}>
         <Image
@@ -14,11 +15,13 @@ const Header = () => {
           alt="logo"
           width={500}
           height={500}
-          className="w-80"
+          className="lg:w-80 w-60 "
         />
       </Link>
 
-      <ul className="flex justify-between items-center gap-5 text-primary ">
+      <MobileNav />
+
+      <ul className=" hidden lg:flex justify-between items-center gap-5 text-primary ">
         <Link href={"/"}>
           <li className="hover:text-secondary">Home</li>
         </Link>
