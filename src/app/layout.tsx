@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
-import { latto } from "@/utils/font";
+import { latto, poppins } from "@/utils/font";
 import TopHeader from "@/components/top-header";
 import Marque from "@/components/marque";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,6 +23,12 @@ export default function RootLayout({
         <Header />
         <Marque />
         {children}
+        <Footer />
+        <div className="p-5">
+          <p className={`${poppins.className} text-center font-medium`}>
+            © 2024 Beersheba School | All Rights Reserved
+          </p>
+        </div>
       </body>
     </html>
   );

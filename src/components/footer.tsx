@@ -1,0 +1,102 @@
+import { poppins } from "@/utils/font";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="grid gap-5 lg:px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 lg:py-16 border-b">
+      <div className="flex justify-center items-center">
+        <Link href={"/"}>
+          <Image
+            src="/assets/image/logo.jpg"
+            alt="logo"
+            width={400}
+            height={400}
+            className="w-full"
+          />
+        </Link>
+      </div>
+      <div className="px-5">
+        <p className={`${poppins.className} text-xl font-semibold pb-5`}>
+          Links
+        </p>
+        <ul className="flex flex-col gap-2 font-medium">
+          <Link href={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link href={"/about"}>
+            <li>About</li>
+          </Link>
+          <Link href={"/list-of-facilities"}>
+            <li>List of Facilities</li>
+          </Link>
+          <Link href={"/facilities"}>
+            <li>Facilities</li>
+          </Link>
+          <Link href={"/rules-and-regulations"}>
+            <li>Rules and Regulations</li>
+          </Link>
+        </ul>
+      </div>
+      <div className="px-5">
+        <p className={`${poppins.className} text-xl font-semibold pb-5`}>
+          Quick Links
+        </p>
+        <ul className="flex flex-col gap-2 font-medium">
+          <Link href={"/photo-gallery"}>
+            <li>Photo Gallery</li>
+          </Link>
+          <Link href={"/online-payment"}>
+            <li>Online Payment</li>
+          </Link>
+          <Link href={"/download-brocher"}>
+            <li>Download Brocher</li>
+          </Link>
+          <Link href={"/messages"}>
+            <li>Messages</li>
+          </Link>
+          <Link href={"/connections"}>
+            <li>Connections</li>
+          </Link>
+        </ul>
+      </div>
+      <div className="px-5">
+        <p className={`${poppins.className} text-xl font-semibold pb-5`}>
+          Contact Us
+        </p>
+        <ul className="flex flex-col gap-2 font-medium">
+          <li className="flex gap-5">
+            <Image
+              src={"/assets/image/locaation.svg"}
+              alt="location"
+              width={40}
+              height={40}
+            />
+            <p>Civil Lines, Nainital Road, Haldwani Nainital (Uttarakhand)</p>
+          </li>
+          <li className="flex gap-5">
+            <Image
+              src={"/assets/image/dark-call.svg"}
+              alt="location"
+              width={40}
+              height={40}
+            />
+            <p>05946-223030, 05946-222256, +91 9634374446</p>
+          </li>
+          <li className="flex gap-5">
+            <Image
+              src={"/assets/image/dark-email.svg"}
+              alt="location"
+              width={30}
+              height={30}
+            />
+            <p>beershebaschool_hld@rediffmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
