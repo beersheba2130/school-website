@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { latto } from "@/utils/font";
 import TopHeader from "@/components/top-header";
+import Marque from "@/components/marque";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${latto.className} bg-white`}>
         <TopHeader />
         <Header />
+        <Marque />
         {children}
       </body>
     </html>
