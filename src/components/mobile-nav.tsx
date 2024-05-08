@@ -1,33 +1,63 @@
 import React from "react";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
+import Link from "next/link";
 
 const MobileNav = () => {
   return (
     <div className="lg:hidden">
       <Sheet>
-        <SheetTrigger asChild>open</SheetTrigger>
+        <SheetTrigger asChild>
+          <Button size={"icon"}>
+            <Menu size={24} />
+          </Button>
+        </SheetTrigger>
         <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Edit profile</SheetTitle>
-            <SheetDescription>
-              Make changes to your profile here. Click save when you're done.
-            </SheetDescription>
-          </SheetHeader>
-          <div className="grid gap-4 py-4"></div>
-          <SheetFooter>
-            <SheetClose asChild>
-              <p>kj</p>
-            </SheetClose>
-          </SheetFooter>
+          <nav>
+            <ul className="pt-10">
+              <Link href={"/"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Home
+                </li>
+              </Link>
+              <Link href={"/about"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  About
+                </li>
+              </Link>
+              <Link href={"/message"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Message
+                </li>
+              </Link>
+              <Link href={"/academic"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Academic
+                </li>
+              </Link>
+              <Link href={"/facility"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Facility
+                </li>
+              </Link>
+              <Link href={"/gallery"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Gallary
+                </li>
+              </Link>
+              <Link href={"/contact-us"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Conatct us
+                </li>
+              </Link>
+              <Link href={"/disclosure"}>
+                <li className="hover:text-secondary py-2 text-base font-medium">
+                  Disclosure
+                </li>
+              </Link>
+            </ul>
+          </nav>
         </SheetContent>
       </Sheet>
     </div>
