@@ -1,10 +1,13 @@
-import Header from "@/components/header";
-import Image from "next/image";
+import Banner from "@/components/banner";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>Pushpaje</p>
+    <main className="">
+      <Banner
+        source="/assets/image/aboutImage.jpg"
+        title="About School"
+        description="Beersheba - Haldwani"
+      />
     </main>
   );
 }
