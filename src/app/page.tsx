@@ -1,4 +1,5 @@
 import About from "@/components/about/about";
+import OurDesc from "@/components/about/our-desc";
 import Banner from "@/components/banner";
 import Video from "@/components/video";
 
@@ -11,6 +12,7 @@ export default function Home() {
         description="Beersheba - Haldwani"
       />
       <About />
+      <OurDesc />
       <Video source="/assets/videos/video.mp4" />
     </main>
   );
