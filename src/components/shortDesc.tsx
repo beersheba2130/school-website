@@ -8,7 +8,7 @@ type ShortDescProps = {
 const ShortDesc = ({ description }: ShortDescProps) => {
   return (
     <p
-      className={`${poppins.className} font-medium text-left text-lg md:text-xl text-yellow-400`}
+      className={`${poppins.className} pt-3 font-medium text-left text-lg md:text-xl text-yellow-400`}
     >
       {" "}
       {description}
