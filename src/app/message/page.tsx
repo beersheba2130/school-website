@@ -14,7 +14,7 @@ const page = () => {
       />
       <FounderMessage />
       <Branches />
-      <Video />
+      <Video source="/assets/videos/video.mp4" />
     </>
   );
 };
