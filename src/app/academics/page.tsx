@@ -1,4 +1,6 @@
+import AccountDetails from "@/components/academics/account-details";
 import Sessions from "@/components/academics/sessions";
+import TransferCertificate from "@/components/academics/transfer-certificate";
 import Uniform from "@/components/academics/uniform";
 import Banner from "@/components/banner";
 import React from "react";
@@ -13,6 +15,8 @@ const page = () => {
       />
       <Sessions />
       <Uniform />
+      <TransferCertificate />
+      <AccountDetails />
     </>
   );
 };
