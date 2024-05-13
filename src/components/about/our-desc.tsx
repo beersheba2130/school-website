@@ -26,7 +26,7 @@ const OurDesc = () => {
         Bhatt.unwavering efforts of the late
       </p>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto ">
         <table className="w-full my-10 text-[#3B2565] border-collapse">
           <tr>
             <td className="border-2 border-[#3B2565] py-3 px-5">

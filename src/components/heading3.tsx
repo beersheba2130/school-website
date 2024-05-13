@@ -13,7 +13,7 @@ const Heading3 = ({ title }: Props) => {
       >
         {title}
       </h1>
-      <div className="absolute top-0 border-2 w-8 border-[#DB2F2F]"></div>
+      <div className="absolute -top-1 border-2 w-8 border-[#DB2F2F]"></div>
     </div>
   );
 };
