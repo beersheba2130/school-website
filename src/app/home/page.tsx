@@ -1,18 +1,23 @@
-import About from "@/components/home/about";
-import MissionAndValues from "@/components/home/mission-values";
-import Video from "@/components/home/video";
-import Why from "@/components/home/why";
-import React from "react";
+import About from "@/components/about/about";
+import OurDesc from "@/components/about/our-desc";
+import AdmissionEnquiry from "@/components/admission-enquiry";
+import Banner from "@/components/banner";
+import Branches from "@/components/branches";
+import Video from "@/components/video";
 
-const page = () => {
+export default function Home() {
   return (
-    <>
+    <main className="">
+      <Banner
+        source="/assets/image/aboutImage.jpg"
+        title="About School"
+        description="Beersheba - Haldwani"
+      />
       <About />
-      <MissionAndValues />
-      <Video />
-      <Why />
-    </>
+      <OurDesc />
+      <Branches />
+      <Video source="/assets/videos/video.mp4" />
+      <AdmissionEnquiry />
+    </main>
   );
-};
-
-export default page;
+}
