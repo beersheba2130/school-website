@@ -6,13 +6,6 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className=" container relative mx-auto grid grid-cols-1  lg:grid-cols-2 gap-4 py-10 px-5 md:px-10">
-      {/* <Image
-        src={"/assets/image/decoration.jpg"}
-        alt="decoration bg"
-        width={600}
-        height={500}
-        className="absolute h-72 w-24 object-cover"
-      /> */}
       <div className="md:px-10">
         <p
           className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
@@ -26,7 +19,7 @@ const About = () => {
           Beersheba School, located in Haldwani, was established on July 4,
           1977, in the heart of the city with an initial enrollment of only 60
           children. This co-educational English Medium school was founded by the
-          late Shri. and Smt. N.N.D. Bhatt. The school's origin, existence, and
+          late Shri. and Smt. N.N.D. Bhatt. The origin of school existence, and
           development can be attributed to the unwavering efforts of the late
           Mr. N.N.D. Bhatt. His dedication and inspiration left a lasting impact
           on numerous individuals. May his vision and the great work he
@@ -36,10 +29,10 @@ const About = () => {
           Beersheba School, located in Haldwani, was established on July 4,
           1977, in the heart of the city with an initial enrollment of only 60
           children. This co-educational English Medium school was founded by the
-          late Shri. and Smt. N.N.D. Bhatt. The school's origin, existence, and
-          development can be attributed to the unwavering efforts of the late
-          Mr. N.N.D. Bhatt. His dedication and inspiration left a lasting impact
-          on numerous individuals. May his vision and the great work he
+          late Shri. and Smt. N.N.D. Bhatt. The school&apos;s origin, existence,
+          and development can be attributed to the unwavering efforts of the
+          late Mr. N.N.D. Bhatt. His dedication and inspiration left a lasting
+          impact on numerous individuals. May his vision and the great work he
           initiated continue to be blessed.
         </p>
       </div>
