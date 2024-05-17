@@ -95,12 +95,12 @@ const ToppersResult = () => {
             Toppers Class XII
           </h3>
           <p className="py-5">
-            Beersheba School's Early Years program provides a caring and safe
+            Beersheba School&apos;s Early Years program provides a caring and
+            safe environment that meets the specific needs of young learners.
+            This program focuses on developing fundamental literacy. Beersheba
+            School&apos;s Early Years program provides a caring and safe
             environment that meets the specific needs of young learners. This
-            program focuses on developing fundamental literacy. Beersheba
-            School's Early Years program provides a caring and safe environment
-            that meets the specific needs of young learners. This program
-            focuses on developing fundamental literacy.
+            program focuses on developing fundamental literacy.
           </p>
         </div>
       </div>
@@ -184,12 +184,12 @@ const ToppersResult = () => {
             Toppers Class XII
           </h3>
           <p className="py-5">
-            Beersheba School's Early Years program provides a caring and safe
+            Beersheba School&apos;s Early Years program provides a caring and
+            safe environment that meets the specific needs of young learners.
+            This program focuses on developing fundamental literacy. Beersheba
+            School&apos;s Early Years program provides a caring and safe
             environment that meets the specific needs of young learners. This
-            program focuses on developing fundamental literacy. Beersheba
-            School's Early Years program provides a caring and safe environment
-            that meets the specific needs of young learners. This program
-            focuses on developing fundamental literacy.
+            program focuses on developing fundamental literacy.
           </p>
         </div>
       </div>
