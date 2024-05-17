@@ -20,25 +20,74 @@ const Nav = () => {
         </li>
       </Link>
       <Link href={"/about"}>
-        <li className="hover:text-secondary">About</li>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/about" ? "underline underline-offset-4" : ""
+          )}
+        >
+          About
+        </li>
       </Link>
       <Link href={"/message"}>
-        <li className="hover:text-secondary">Message</li>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/message" ? "underline underline-offset-4" : ""
+          )}
+        >
+          Message
+        </li>
       </Link>
-      <Link href={"/academic"}>
-        <li className="hover:text-secondary">Academic</li>
+      <Link href={"/academics"}>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/academics" ? "underline underline-offset-4" : ""
+          )}
+        >
+          Academic
+        </li>
       </Link>
       <Link href={"/facility"}>
-        <li className="hover:text-secondary">Facility</li>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/facility" ? "underline underline-offset-4" : ""
+          )}
+        >
+          Facility
+        </li>
       </Link>
       <Link href={"/gallery"}>
-        <li className="hover:text-secondary">Gallary</li>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/gallery" ? "underline underline-offset-4" : ""
+          )}
+        >
+          Gallary
+        </li>
       </Link>
       <Link href={"/contact-us"}>
-        <li className="hover:text-secondary">Conatct us</li>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/contact-us" ? "underline underline-offset-4" : ""
+          )}
+        >
+          Conatct us
+        </li>
       </Link>
       <Link href={"/disclosure"}>
-        <li className="hover:text-secondary">Disclosure</li>
+        <li
+          className={cn(
+            "hover:text-secondary",
+            path === "/disclosure" ? "underline underline-offset-4" : ""
+          )}
+        >
+          Disclosure
+        </li>
       </Link>
     </ul>
   );
