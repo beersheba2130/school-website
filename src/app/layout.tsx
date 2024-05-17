@@ -5,6 +5,7 @@ import { latto, poppins } from "@/utils/font";
 import TopHeader from "@/components/top-header";
 import Marque from "@/components/marque";
 import Footer from "@/components/footer";
+import "swiper/css";
 
 export const metadata: Metadata = {
   title: "BeerSheba School",

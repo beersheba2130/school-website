@@ -1,4 +1,9 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/custome-tabs";
 
 import React from "react";
 import Heading3 from "../heading3";

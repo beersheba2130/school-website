@@ -4,7 +4,7 @@ import VideoCard from "./video-card";
 
 const Video = () => {
   return (
-    <section className="container relative pb-60 bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 ">
+    <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 ">
       <div>
         <Heading2
           title="Leading School in City
@@ -16,7 +16,7 @@ Since 1977"
           program focuses on developing fundamental literacy.
         </p>
       </div>
-      <div className="bg-red-600 flex items-center justify-center">
+      <div className=" flex items-center justify-center">
         <video
           src="/assets/videos/3258365-hd_1920_1080_30fps.mp4"
           controls
