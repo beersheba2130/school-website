@@ -11,7 +11,7 @@ const Academics = () => {
     <section className="container p-5 lg:p-10">
       <Heading3 title="Academics" />
 
-      <div className="p-5">
+      <div className="py-5 lg:p-5">
         <Tabs defaultValue="early-years">
           <TabsList className="">
             <TabsTrigger value="early-years">EARLY YEARS</TabsTrigger>
@@ -22,8 +22,8 @@ const Academics = () => {
           </TabsList>
 
           <TabsContent value="early-years">
-            <div className=" p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-5 relative flex justify-center items-center">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+              <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
                   alt="About Image"
@@ -58,8 +58,8 @@ const Academics = () => {
             </div>
           </TabsContent>
           <TabsContent value="elementry-school">
-            <div className=" p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-5 relative flex justify-center items-center">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+              <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
                   alt="About Image"
@@ -94,8 +94,8 @@ const Academics = () => {
             </div>
           </TabsContent>
           <TabsContent value="middle-school">
-            <div className=" p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-5 relative flex justify-center items-center">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+              <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
                   alt="About Image"
@@ -130,8 +130,8 @@ const Academics = () => {
             </div>
           </TabsContent>
           <TabsContent value="high-school">
-            <div className=" p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-5 relative flex justify-center items-center">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+              <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
                   alt="About Image"
@@ -166,8 +166,8 @@ const Academics = () => {
             </div>
           </TabsContent>
           <TabsContent value="examination">
-            <div className=" p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-5 relative flex justify-center items-center">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+              <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
                   alt="About Image"
