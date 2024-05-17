@@ -46,11 +46,11 @@ const Academics = () => {
                   4, 1977, in the heart of the city with an initial enrollment
                   of only 60 children. This co-educational English Medium school
                   was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school's origin, existence, and development can be attributed
-                  to the unwavering efforts of the late Mr. N.N.D. Bhatt. His
-                  dedication and inspiration left a lasting impact on numerous
-                  individuals. May his vision and the great work he initiated
-                  continue to be blessed.
+                  school&apos;s origin, existence, and development can be
+                  attributed to the unwavering efforts of the late Mr. N.N.D.
+                  Bhatt. His dedication and inspiration left a lasting impact on
+                  numerous individuals. May his vision and the great work he
+                  initiated continue to be blessed.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -82,11 +82,11 @@ const Academics = () => {
                   4, 1977, in the heart of the city with an initial enrollment
                   of only 60 children. This co-educational English Medium school
                   was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school's origin, existence, and development can be attributed
-                  to the unwavering efforts of the late Mr. N.N.D. Bhatt. His
-                  dedication and inspiration left a lasting impact on numerous
-                  individuals. May his vision and the great work he initiated
-                  continue to be blessed.
+                  school&apos;s origin, existence, and development can be
+                  attributed to the unwavering efforts of the late Mr. N.N.D.
+                  Bhatt. His dedication and inspiration left a lasting impact on
+                  numerous individuals. May his vision and the great work he
+                  initiated continue to be blessed.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -118,11 +118,11 @@ const Academics = () => {
                   4, 1977, in the heart of the city with an initial enrollment
                   of only 60 children. This co-educational English Medium school
                   was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school's origin, existence, and development can be attributed
-                  to the unwavering efforts of the late Mr. N.N.D. Bhatt. His
-                  dedication and inspiration left a lasting impact on numerous
-                  individuals. May his vision and the great work he initiated
-                  continue to be blessed.
+                  school&apos;s origin, existence, and development can be
+                  attributed to the unwavering efforts of the late Mr. N.N.D.
+                  Bhatt. His dedication and inspiration left a lasting impact on
+                  numerous individuals. May his vision and the great work he
+                  initiated continue to be blessed.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -154,11 +154,11 @@ const Academics = () => {
                   4, 1977, in the heart of the city with an initial enrollment
                   of only 60 children. This co-educational English Medium school
                   was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school's origin, existence, and development can be attributed
-                  to the unwavering efforts of the late Mr. N.N.D. Bhatt. His
-                  dedication and inspiration left a lasting impact on numerous
-                  individuals. May his vision and the great work he initiated
-                  continue to be blessed.
+                  school&apos;s origin, existence, and development can be
+                  attributed to the unwavering efforts of the late Mr. N.N.D.
+                  Bhatt. His dedication and inspiration left a lasting impact on
+                  numerous individuals. May his vision and the great work he
+                  initiated continue to be blessed.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -190,11 +190,11 @@ const Academics = () => {
                   4, 1977, in the heart of the city with an initial enrollment
                   of only 60 children. This co-educational English Medium school
                   was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school's origin, existence, and development can be attributed
-                  to the unwavering efforts of the late Mr. N.N.D. Bhatt. His
-                  dedication and inspiration left a lasting impact on numerous
-                  individuals. May his vision and the great work he initiated
-                  continue to be blessed.
+                  school&apos;s origin, existence, and development can be
+                  attributed to the unwavering efforts of the late Mr. N.N.D.
+                  Bhatt. His dedication and inspiration left a lasting impact on
+                  numerous individuals. May his vision and the great work he
+                  initiated continue to be blessed.
                 </p>
 
                 <Button className="mt-5">Read More</Button>

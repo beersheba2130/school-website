@@ -12,18 +12,18 @@ const OurDesc = () => {
         Beersheba School, located in Haldwani, was established on July 4, 1977,
         in the heart of the city with an initial enrollment of only 60 children.
         This co-educational English Medium school was founded by the late Shri.
-        and Smt. N.N.D. Bhatt. The school's origin, existence, and development
-        can be attributed to the unwavering efforts of the late Mr. N.N.D.
-        Bhatt.unwavering efforts of the late
+        and Smt. N.N.D. Bhatt. The school&apos;s origin, existence, and
+        development can be attributed to the unwavering efforts of the late Mr.
+        N.N.D. Bhatt.unwavering efforts of the late
       </p>
       <IconCard />
       <p className=" text-gray-600 mt-3 md:mt-5">
         Beersheba School, located in Haldwani, was established on July 4, 1977,
         in the heart of the city with an initial enrollment of only 60 children.
         This co-educational English Medium school was founded by the late Shri.
-        and Smt. N.N.D. Bhatt. The school's origin, existence, and development
-        can be attributed to the unwavering efforts of the late Mr. N.N.D.
-        Bhatt.unwavering efforts of the late
+        and Smt. N.N.D. Bhatt. The school&apos;ws origin, existence, and
+        development can be attributed to the unwavering efforts of the late Mr.
+        N.N.D. Bhatt.unwavering efforts of the late
       </p>
 
       <div className="max-w-4xl mx-auto ">

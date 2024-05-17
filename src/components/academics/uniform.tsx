@@ -38,13 +38,13 @@ const Uniform = () => {
               </td>
               <td className="border-2 border-[#3B2565] py-3 px-5">
                 Classes I to XII - White Shirt (Short sleeves), Blue Black Pants
-                and shorts for boys below 5'height (upto Class VIII), Plain
+                and shorts for boys below 5&apos;height (upto Class VIII), Plain
                 Black Shoes and Blue Black Socks with School colour stripes,
                 School tie and belt, Blue Dastar for Sikh Boys.
               </td>
               <td className="border-2 border-[#3B2565] py-3 px-5">
                 Classes I to XII - White Shirt (Short sleeves), Blue Black Pants
-                and shorts for boys below 5'height (upto Class VIII), Plain
+                and shorts for boys below 5&apos;height (upto Class VIII), Plain
                 Black Shoes and Blue Black Socks with School colour stripes,
                 School tie and belt, Blue Dastar for Sikh Boys.
               </td>

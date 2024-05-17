@@ -11,7 +11,7 @@ const Video = () => {
 Since 1977"
         />
         <p className="text-gray-600 my-5">
-          Beersheba School's Early Years program provides a caring and safe
+          Beersheba School&apos;s Early Years program provides a caring and safe
           environment that meets the specific needs of young learners. This
           program focuses on developing fundamental literacy.
         </p>
