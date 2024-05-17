@@ -31,9 +31,9 @@ const MobileNav = () => {
                   Message
                 </li>
               </Link>
-              <Link href={"/academic"}>
+              <Link href={"/academics"}>
                 <li className="hover:text-secondary py-2 text-base font-medium">
-                  Academic
+                  Academics
                 </li>
               </Link>
               <Link href={"/facility"}>
