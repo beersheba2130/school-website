@@ -13,7 +13,7 @@ const VideoCard = ({ source, title, desc }: VideoCardProps) => {
     <div className="w-44 shadow-xl lg:w-52 p-5 bg-white flex flex-col items-center gap-5 ">
       <Image src={source} width={80} height={80} alt="logo" />
       <h5
-        className={`${poppins.className} text-xl font-bold text-balance underline underline-offset-8 decoration-[#E74040]`}
+        className={`${poppins.className} text-lg lg:text-xl font-bold text-balance underline underline-offset-8 decoration-[#E74040]`}
       >
         {title}
       </h5>

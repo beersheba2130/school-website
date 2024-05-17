@@ -19,7 +19,7 @@ const ToppersResult = () => {
         <div className="p-5">
           <Carousel>
             <CarouselContent>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <div className="rounded-md w-40 bg-gray-300">
                   <div className=" grid grid-cols-3">
                     <div className="bg-[#FFDDDD] text-[#3B2565] col-span-2 text-lg italic text-center">
@@ -40,7 +40,7 @@ const ToppersResult = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <div className="rounded-md w-40 bg-gray-300">
                   <div className=" grid grid-cols-3">
                     <div className="bg-[#FFDDDD] text-[#3B2565] col-span-2 text-lg italic text-center">
@@ -61,7 +61,7 @@ const ToppersResult = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <div className="rounded-md w-40 bg-gray-300">
                   <div className=" grid grid-cols-3">
                     <div className="bg-[#FFDDDD] text-[#3B2565] col-span-2 text-lg italic text-center">
@@ -82,7 +82,7 @@ const ToppersResult = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <p>Pushpaje</p>
               </CarouselItem>
             </CarouselContent>
@@ -108,7 +108,7 @@ const ToppersResult = () => {
         <div className="p-5 order-2">
           <Carousel>
             <CarouselContent>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <div className="rounded-md w-40 bg-gray-300">
                   <div className=" grid grid-cols-3">
                     <div className="bg-[#FFDDDD] text-[#3B2565] col-span-2 text-lg italic text-center">
@@ -129,7 +129,7 @@ const ToppersResult = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <div className="rounded-md w-40 bg-gray-300">
                   <div className=" grid grid-cols-3">
                     <div className="bg-[#FFDDDD] text-[#3B2565] col-span-2 text-lg italic text-center">
@@ -150,7 +150,7 @@ const ToppersResult = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <div className="rounded-md w-40 bg-gray-300">
                   <div className=" grid grid-cols-3">
                     <div className="bg-[#FFDDDD] text-[#3B2565] col-span-2 text-lg italic text-center">
@@ -171,7 +171,7 @@ const ToppersResult = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="basis-1/3">
+              <CarouselItem className="basis-1/2 lg:basis-1/3">
                 <p>Pushpaje</p>
               </CarouselItem>
             </CarouselContent>

@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const Why = () => {
   return (
-    <section className="p-10 pt-52">
+    <section className="p-10 pt-64 lg:pt-48">
       <Heading3 title="Why Beersheba School" />
 
-      <div className="grid grid-cols-3 pt-12 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 pt-12 gap-5">
         <div className="bg-[#DED4F2] rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">

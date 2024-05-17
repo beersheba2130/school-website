@@ -4,7 +4,7 @@ import VideoCard from "./video-card";
 
 const Video = () => {
   return (
-    <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-48">
+    <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-96 lg:pb-48">
       <div>
         <Heading2
           title="Leading School in City
@@ -24,14 +24,14 @@ Since 1977"
           width={500}
         />
       </div>
-      <div className="absolute -bottom-24 flex justify-evenly items-center w-full flex-wrap">
+      <div className="absolute lg:-bottom-24 -bottom-52 flex justify-evenly items-center w-full flex-wrap gap-2">
         <VideoCard
           title="Campus"
           desc="The gradual accumulation of information about"
           source="/assets/image/icon cool-icon-l19.svg"
         />
         <VideoCard
-          title="Expert Teacher"
+          title=" Teacher"
           desc="The gradual accumulation of information about"
           source="/assets/image/icon cool-icon-l22.svg"
         />
