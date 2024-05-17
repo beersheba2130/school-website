@@ -4,7 +4,7 @@ import VideoCard from "./video-card";
 
 const Video = () => {
   return (
-    <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 ">
+    <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-48">
       <div>
         <Heading2
           title="Leading School in City
