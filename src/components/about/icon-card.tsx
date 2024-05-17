@@ -7,7 +7,7 @@ const IconCard = () => {
       <div className="bg-white shadow-lg flex-col p-5 rounded-xl flex justify-center items-center">
         <BookMarked size={60} className="text-[#3B2565]" />
         <p className="text-lg font-semibold mt-3 md:mt-5">{2000}</p>
-        <p>Alumni's</p>
+        <p>Alumni&apos;s</p>
       </div>
       <div className="bg-[#3B2565] shadow-lg flex-col p-5 rounded-xl flex justify-center items-center">
         <BookMarked size={60} className="text-white" />
