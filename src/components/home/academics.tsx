@@ -36,7 +36,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  About
+                  Early Years
                 </p>
 
                 <Heading2 title="Beersheba School" />
@@ -72,7 +72,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  About
+                  Elementry School
                 </p>
 
                 <Heading2 title="Beersheba School" />
@@ -108,7 +108,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  About
+                  Middle School
                 </p>
 
                 <Heading2 title="Beersheba School" />
@@ -144,7 +144,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  About
+                  High School
                 </p>
 
                 <Heading2 title="Beersheba School" />
@@ -180,7 +180,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  About
+                  Examination
                 </p>
 
                 <Heading2 title="Beersheba School" />

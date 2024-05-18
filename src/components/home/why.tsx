@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Why = () => {
   return (
-    <section className="p-10 pt-64 lg:pt-48">
+    <section className="p-5 lg:p-10 pt-64 lg:pt-48">
       <Heading3 title="Why Beersheba School" />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 pt-12 gap-5">
