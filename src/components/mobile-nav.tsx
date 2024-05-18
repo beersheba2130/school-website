@@ -23,56 +23,56 @@ const MobileNav = () => {
             <ul className="pt-10">
               <SheetClose asChild>
                 <Link href={"/"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[] py-2 text-base font-medium">
                     Home
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/about"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[] py-2 text-base font-medium">
                     About
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/message"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
                     Message
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/academics"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
                     Academics
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/facility"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
                     Facility
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/gallery"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
                     Gallary
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/contact-us"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
                     Conatct us
                   </li>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/disclosure"}>
-                  <li className="hover:text-secondary py-2 text-base font-medium">
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
                     Disclosure
                   </li>
                 </Link>
