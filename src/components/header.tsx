@@ -14,8 +14,8 @@ const Header = () => {
         <Image
           src={"/assets/image/logo.jpg"}
           alt="logo"
-          width={500}
-          height={500}
+          width={400}
+          height={100}
           className="lg:w-80 w-60 "
         />
       </Link>

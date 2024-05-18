@@ -21,8 +21,8 @@ const Academics = () => {
             <TabsTrigger value="examination">EXAMINATION</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="early-years">
-            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+          <TabsContent value="early-years" className="my-7">
+            <div className=" lg:p-10 gap-7 grid grid-cols-1 lg:grid-cols-2">
               <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
@@ -57,8 +57,8 @@ const Academics = () => {
               </div>
             </div>
           </TabsContent>
-          <TabsContent value="elementry-school">
-            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+          <TabsContent value="elementry-school" className="my-7">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
@@ -93,8 +93,8 @@ const Academics = () => {
               </div>
             </div>
           </TabsContent>
-          <TabsContent value="middle-school">
-            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+          <TabsContent value="middle-school" className="my-7">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
@@ -129,8 +129,8 @@ const Academics = () => {
               </div>
             </div>
           </TabsContent>
-          <TabsContent value="high-school">
-            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+          <TabsContent value="high-school" className="my-7">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}
@@ -165,8 +165,8 @@ const Academics = () => {
               </div>
             </div>
           </TabsContent>
-          <TabsContent value="examination">
-            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+          <TabsContent value="examination" className="my-7">
+            <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
                   src={"/assets/image/college2.jpg"}

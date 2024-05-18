@@ -7,10 +7,10 @@ import { CircleCheckBig } from "lucide-react";
 const MissionAndValues = () => {
   return (
     <section className="container p-2 lg:p-10">
-      <Heading3 title="Mission, Vision & Our Values" />
+      <Heading3 title=" Vision & Our Values" />
 
-      <div className="p-2 lg:p-10 grid grid-cols-1 lg:grid-cols-4 gap-2">
-        <div className="col-span-2 p-3 rounded-lg bg-gray-300">
+      <div className="my-5 p-2 lg:p-10 grid grid-cols-2 lg:grid-cols-4 gap-2">
+        <div className="col-span-2 p-3 lg:p-5 rounded-lg bg-[#D6C9EF]/80">
           <div className="flex gap-5 items-center">
             <Image
               src={"/assets/image/accountability (2) 1.png"}
@@ -19,12 +19,12 @@ const MissionAndValues = () => {
               height={60}
             />
             <h4
-              className={`${poppins.className} text-[#3B2565] text-lg font-bold text-balance`}
+              className={`${poppins.className} text-[#3B2565] text-lg font-bold underline underline-offset-4 text-balance`}
             >
               Our Core Values
             </h4>
           </div>
-          <p className="text-[#3B2565] text-sm lg:text-base my-3">
+          <p className="text-[#3B2565] lg:text-base my-3 font-medium">
             Beersheba School, located in Haldwani, was established on July 4,
             1977, in the heart of the city with an initial enrollment of only 60
             children. This co-educational English Medium school was founded by
@@ -35,24 +35,24 @@ const MissionAndValues = () => {
           <div className="text-[#3B2565] ">
             <div className="flex gap-5 items-center my-2">
               <CircleCheckBig size={20} color="#DE4848" />{" "}
-              <p className="text-sm lg:base">Values 1</p>
+              <p className="text-base">Values 1</p>
             </div>
             <div className="flex gap-5 items-center my-2">
               <CircleCheckBig size={20} color="#DE4848" />{" "}
-              <p className="text-sm lg:base">Values 1</p>
+              <p className="text-base">Values 1</p>
             </div>
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-2 lg:col-span-1">
           <Image
             src={"/assets/image/about image.jpg"}
             alt="About"
-            width={300}
-            height={300}
-            className="flex justify-center items-center"
+            width={250}
+            height={200}
+            className=" w-full h-80 flex justify-center items-center"
           />
         </div>
-        <div className="col-span-1 p-5 rounded-lg bg-gray-300">
+        <div className="col-span-2 lg:col-span-1 p-5 rounded-lg bg-[#D6C9EF]/80 text-[#3B2565]">
           <div className="flex gap-5 items-center">
             <Image
               src={"/assets/image/ep_view.png"}
@@ -61,7 +61,7 @@ const MissionAndValues = () => {
               height={60}
             />
             <h4
-              className={`${poppins.className}  text-[#3B2565] text-lg font-bold text-balance`}
+              className={`${poppins.className} text-[#3B2565] text-lg font-bold underline underline-offset-4 text-balance`}
             >
               Our Vision
             </h4>
@@ -79,10 +79,10 @@ const MissionAndValues = () => {
             alt="About"
             width={600}
             height={300}
-            className="flex justify-center items-center"
+            className="h-80 w-full flex justify-center items-center"
           />
         </div>
-        <div className="col-span-2 p-3 rounded-lg bg-gray-300">
+        <div className="col-span-2 p-3 rounded-lg bg-[#D6C9EF]/80">
           <div className="flex gap-5 items-center">
             <Image
               src={"/assets/image/vector.png"}
@@ -91,7 +91,7 @@ const MissionAndValues = () => {
               height={60}
             />
             <h4
-              className={`${poppins.className} text-[#3B2565] text-lg font-bold text-balance`}
+              className={`${poppins.className}text-[#3B2565] text-lg font-bold underline underline-offset-4 text-balance`}
             >
               Our Mission
             </h4>
