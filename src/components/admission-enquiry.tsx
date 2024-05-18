@@ -10,10 +10,10 @@ const AdmissionEnquiry = () => {
         alt="Admission Enquiry"
         width={1000}
         height={350}
-        className="object-cover w-full"
+        className="object-cover w-full h-full"
       />
       <div className="absolute flex flex-col gap-5 justify-center items-center w-full h-72 inset-0 bg-[#3B2565]/80">
-        <p className="text-4xl font-semibold text-white text-balance">
+        <p className=" text-3xl lg:text-4xl font-semibold text-white text-balance text-center">
           Your kids deserve the best education
         </p>
         <Button size={"lg"}>Admission Enquiry</Button>
