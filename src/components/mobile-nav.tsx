@@ -1,5 +1,10 @@
 import React from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -16,46 +21,62 @@ const MobileNav = () => {
         <SheetContent>
           <nav>
             <ul className="pt-10">
-              <Link href={"/"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Home
-                </li>
-              </Link>
-              <Link href={"/about"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  About
-                </li>
-              </Link>
-              <Link href={"/message"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Message
-                </li>
-              </Link>
-              <Link href={"/academics"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Academics
-                </li>
-              </Link>
-              <Link href={"/facility"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Facility
-                </li>
-              </Link>
-              <Link href={"/gallery"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Gallary
-                </li>
-              </Link>
-              <Link href={"/contact-us"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Conatct us
-                </li>
-              </Link>
-              <Link href={"/disclosure"}>
-                <li className="hover:text-secondary py-2 text-base font-medium">
-                  Disclosure
-                </li>
-              </Link>
+              <SheetClose asChild>
+                <Link href={"/"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Home
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/about"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    About
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/message"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Message
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/academics"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Academics
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/facility"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Facility
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/gallery"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Gallary
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/contact-us"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Conatct us
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/disclosure"}>
+                  <li className="hover:text-secondary py-2 text-base font-medium">
+                    Disclosure
+                  </li>
+                </Link>
+              </SheetClose>
             </ul>
           </nav>
         </SheetContent>
