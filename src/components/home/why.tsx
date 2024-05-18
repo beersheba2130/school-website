@@ -11,7 +11,7 @@ const Why = () => {
         <div className="bg-[#DED4F2] rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
-              Best Teacher
+              Best Teachers
             </p>
             <Image
               src={

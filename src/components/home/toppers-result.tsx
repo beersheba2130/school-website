@@ -104,13 +104,11 @@ const ToppersResult = () => {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
         </div>
         <div className="lg:p-10 py-10">
           <h3 className="font-extrabold text-[#3B2565] text-balance text-3xl">
-            Toppers Class XII
+            Toppers Class X
           </h3>
           <p className="py-5">
             Beersheba School&apos;s Early Years program provides a caring and

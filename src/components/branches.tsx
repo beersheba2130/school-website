@@ -19,7 +19,7 @@ const Branches = () => {
               className="w-16 h-16 object-cover"
             />
             <h5
-              className={`${poppins.className} text-xl text-[#3B2565] pt-5 font-bold`}
+              className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
             >
               NNDM Beersheba School
             </h5>
@@ -34,7 +34,7 @@ const Branches = () => {
               className="w-16 h-16 object-cover"
             />
             <h5
-              className={`${poppins.className} text-xl text-[#3B2565] pt-5 font-bold`}
+              className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
             >
               Beersheba School
             </h5>
@@ -49,9 +49,9 @@ const Branches = () => {
               className="w-16 h-16 object-cover"
             />
             <h5
-              className={`${poppins.className} text-xl text-[#3B2565] pt-5 font-bold`}
+              className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
             >
-              Beershiva School
+              Beershiba School
             </h5>
             <p>Chaukhutia</p>
           </div>
@@ -64,7 +64,7 @@ const Branches = () => {
               className="w-16 h-16 object-cover"
             />
             <h5
-              className={`${poppins.className} text-xl text-[#3B2565] pt-5 font-bold`}
+              className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
             >
               Beersheba Sr. Sec. School
             </h5>

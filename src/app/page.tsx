@@ -1,3 +1,4 @@
+import Branches from "@/components/branches";
 import About from "@/components/home/about";
 import Academics from "@/components/home/academics";
 // import HeroSection from "@/components/home/hero-section";
@@ -16,6 +17,7 @@ const page = () => {
       <Video />
       <Why />
       <ToppersResult />
+      <Branches />
     </>
   );
 };
