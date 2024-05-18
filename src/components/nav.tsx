@@ -12,8 +12,10 @@ const Nav = () => {
       <Link href={"/"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Home
@@ -22,8 +24,10 @@ const Nav = () => {
       <Link href={"/about"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/about" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/about"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           About
@@ -32,8 +36,10 @@ const Nav = () => {
       <Link href={"/message"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/message" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/message"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Message
@@ -42,8 +48,10 @@ const Nav = () => {
       <Link href={"/academics"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/academics" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/academics"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Academic
@@ -52,8 +60,10 @@ const Nav = () => {
       <Link href={"/facility"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/facility" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/facility"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Facility
@@ -62,8 +72,10 @@ const Nav = () => {
       <Link href={"/gallery"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/gallery" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/gallery"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Gallary
@@ -72,8 +84,10 @@ const Nav = () => {
       <Link href={"/contact-us"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/contact-us" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/contact-us"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Conatct us
@@ -82,8 +96,10 @@ const Nav = () => {
       <Link href={"/disclosure"}>
         <li
           className={cn(
-            "hover:text-secondary",
-            path === "/disclosure" ? "underline underline-offset-4" : ""
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/disclosure"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : ""
           )}
         >
           Disclosure
