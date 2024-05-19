@@ -16,7 +16,7 @@ const Slider = ({ source }) => {
   };
 
   return (
-    <div className="relative container w-full mx-auto overflow-hidden">
+    <div className="relative w-full mx-auto overflow-hidden">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -35,17 +35,17 @@ const Slider = ({ source }) => {
               width={800}
               quality={100}
               height={700}
-              className="w-full h-96 object-cover"
+              className="w-full h-72 lg:h-96 object-cover"
             />
 
-            <div className="bg-[#3B2565]/70 absolute inset-0 text-white flex justify-center items-center flex-col gap-5">
+            <div className="bg-[#3B2565]/70 p-5 absolute inset-0 text-white flex justify-center items-center flex-col gap-3 lg:gap-5">
               <div
-                className={`${poppins.className} text-3xl font-semibold tracking-tight leading-snug text-center`}
+                className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
               >
                 <p>WELCOME TO</p>
                 <p>BEERSHEBA SCHOOL</p>
               </div>
-              <div className="text-center text-white">
+              <div className="text-center text-white text-sm lg:text-base">
                 <p>
                   Beersheba School offers a diverse range of courses,
                   including Humanities,{" "}

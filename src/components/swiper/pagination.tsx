@@ -4,8 +4,8 @@ import React from "react";
 // @ts-expect-error
 const Pagination = ({ currentIndex, goToSlide }) => {
   return (
-    <div className="flex justify-center mt-4">
-      <div className="w-full relative h-14 gap-2 rounded-2xl flex justify-between items-center">
+    <div className="flex justify-center  mt-2 lg:mt-4">
+      <div className="w-full relative h-14 gap-1 lg:gap-2 rounded-2xl flex justify-between items-center">
         <div
           className={cn(
             "bg-[#DE4848] w-full h-full flex justify-center items-center cursor-pointer  transition-all duration-200",
@@ -13,7 +13,7 @@ const Pagination = ({ currentIndex, goToSlide }) => {
           )}
           onClick={() => goToSlide(0)}
         >
-          <p className="text-center font-semibold text-white text-lg ">
+          <p className="text-center font-semibold text-white text-sm lg:text-lg ">
             You Learn | We Educate
           </p>
         </div>
@@ -24,7 +24,7 @@ const Pagination = ({ currentIndex, goToSlide }) => {
           )}
           onClick={() => goToSlide(1)}
         >
-          <p className="text-center font-semibold text-white text-lg ">
+          <p className="text-center font-semibold text-white text-sm lg:text-lg ">
             You Evolve | We Adapt
           </p>
         </div>
@@ -35,7 +35,7 @@ const Pagination = ({ currentIndex, goToSlide }) => {
           )}
           onClick={() => goToSlide(2)}
         >
-          <p className="text-center font-semibold text-white text-lg ">
+          <p className="text-center font-semibold text-white text-sm lg:text-lg  ">
             You Grow | We Build
           </p>
         </div>
@@ -49,10 +49,10 @@ const Pagination = ({ currentIndex, goToSlide }) => {
             borderBottom: "30px solid #ffffff",
           }}
           className={cn(
-            "absolute -top-10 z-50",
-            currentIndex === 0 && "left-52",
+            "absolute -top-8 lg:-top-10 z-50",
+            currentIndex === 0 && "left-[10%]  lg:left-[15%]",
             currentIndex === 1 && "left-1/2",
-            currentIndex === 2 && "left-[85%]"
+            currentIndex === 2 && "left-[80%] lg:left-[85%]"
           )}
         ></div>
       </div>

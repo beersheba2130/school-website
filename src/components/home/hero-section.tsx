@@ -10,9 +10,9 @@ const HeroSection = () => {
     "/assets/image/unsplash_d1Wj9qU5C-o.png",
   ];
   return (
-    <div>
+    <section>
       <Slider source={slides} />
-    </div>
+    </section>
   );
 };
 
