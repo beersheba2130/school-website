@@ -11,9 +11,9 @@ import ContactUsForm from "./contact-us-form";
 
 const ContactUsCard = () => {
   return (
-    <section className="container p-10">
-      <div className="rounded-lg p-10 shadow-xl grid grid-cols-5">
-        <div className="col-span-2 bg-[#3B2565] text-white p-10 rounded-lg relative">
+    <section className="container p-5 lg:p-10">
+      <div className="rounded-lg lg:p-10 shadow-xl grid grid-cols-1 lg:grid-cols-5">
+        <div className="col-span-2 bg-[#3B2565] text-white p-5 lg:p-10 rounded-lg relative">
           <h2 className="text-3xl font-bold text-balance">
             Contact Information
           </h2>
@@ -29,11 +29,11 @@ const ContactUsCard = () => {
             </div>
           </div>
           <div className="flex gap-5 my-3">
-            <Mail />
+            <Mail size={25} />
             <p className="">beershebaschool_hld@rediffmail.com</p>
           </div>
           <div className="flex gap-5 my-3">
-            <MapPin />
+            <MapPin size={35} />
             <p>Civil Lines, Nainital Road, Haldwani, Uttarakhand-263139</p>
           </div>
 

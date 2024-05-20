@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -28,18 +27,20 @@ const formSchema = z.object({
 });
 
 const ContactUsForm = () => {
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
     },
   });
 
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
   }
 
@@ -47,7 +48,7 @@ const ContactUsForm = () => {
     <div className="p-10 relative">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
-          <div className="flex gap-5 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
             <FormField
               control={form.control}
               name="firstName"
@@ -55,7 +56,11 @@ const ContactUsForm = () => {
                 <FormItem>
                   <FormLabel>First Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Enter your First Name" {...field} />
+                    <Input
+                      placeholder="Enter your First Name"
+                      className="w-full"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -75,7 +80,7 @@ const ContactUsForm = () => {
               )}
             />
           </div>
-          <div className="flex items-center gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
             <FormField
               control={form.control}
               name="email"
