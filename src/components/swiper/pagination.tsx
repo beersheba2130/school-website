@@ -51,8 +51,8 @@ const Pagination = ({ currentIndex, goToSlide }) => {
           className={cn(
             "absolute -top-8 lg:-top-10 z-50",
             currentIndex === 0 && "left-[10%]  lg:left-[15%]",
-            currentIndex === 1 && "left-1/2",
-            currentIndex === 2 && "left-[80%] lg:left-[85%]"
+            currentIndex === 1 && "left-[49.3%]",
+            currentIndex === 2 && "left-[80%] lg:left-[82.5%]"
           )}
         ></div>
       </div>
