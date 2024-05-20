@@ -7,7 +7,7 @@ const Gallery = () => {
     <section className="container p-5 lg:p-10 ">
       <Heading3 title="Gallery" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 py-10">
+      <div className="grid grid-cols-3 gap-1 py-10">
         <Image
           src={"/assets/image/unsplash_fwfobhsF1Kw.png"}
           alt="Gallery Photo"
