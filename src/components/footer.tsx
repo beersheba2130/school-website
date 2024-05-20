@@ -28,14 +28,14 @@ const Footer = () => {
           <Link href={"/about"}>
             <li>About</li>
           </Link>
-          <Link href={"/list-of-facilities"}>
+          <Link href={"/facility"}>
             <li>List of Facilities</li>
           </Link>
-          <Link href={"/facilities"}>
-            <li>Facilities</li>
+          <Link href={"/gallery"}>
+            <li>Gallery</li>
           </Link>
-          <Link href={"/rules-and-regulations"}>
-            <li>Rules and Regulations</li>
+          <Link href={"/contact-us"}>
+            <li>Contact Us</li>
           </Link>
         </ul>
       </div>
@@ -44,20 +44,17 @@ const Footer = () => {
           Quick Links
         </p>
         <ul className="flex flex-col gap-2 font-medium">
-          <Link href={"/photo-gallery"}>
+          <Link href={"/gallery"}>
             <li>Photo Gallery</li>
           </Link>
-          <Link href={"/online-payment"}>
-            <li>Online Payment</li>
-          </Link>
-          <Link href={"/download-brocher"}>
-            <li>Download Brocher</li>
-          </Link>
-          <Link href={"/messages"}>
+          <Link href={"/message"}>
             <li>Messages</li>
           </Link>
-          <Link href={"/connections"}>
-            <li>Connections</li>
+          <Link href={"/disclosure"}>
+            <li>Disclosure</li>
+          </Link>
+          <Link href={"/contact-us"}>
+            <li>Contact Us</li>
           </Link>
         </ul>
       </div>
