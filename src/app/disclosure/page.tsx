@@ -108,7 +108,7 @@ const page = () => {
                 </tr>
                 <tr className=" border-2  border-[#3B2565]">
                   <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Club and Committees 2023-24 
+                    Club and Committees 2023-24
                   </td>
                   <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
                     <Button>View Details</Button>
