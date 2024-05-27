@@ -57,6 +57,8 @@ const formSchema = z.object({
   motherOccupation: z.string({
     required_error: "Please select the class.",
   }),
+  annualIncome: z.string().min(5).max(10),
+  referedBy: z.string().min(5).max(20),
 });
 
 const RegisterationForm = () => {
@@ -74,6 +76,8 @@ const RegisterationForm = () => {
       lastSchoolName: "",
       fatherOccupation: "",
       motherOccupation: "",
+      annualIncome: "",
+      referedBy: "",
     },
   });
 
@@ -335,6 +339,32 @@ const RegisterationForm = () => {
                       <SelectItem value="teacher">Teacher</SelectItem>
                     </SelectContent>
                   </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="annualIncome"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Annual Incone</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Annual Income..." {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="referedBy"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Refered By</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Refered By..." {...field} />
+                  </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
