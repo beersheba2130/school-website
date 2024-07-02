@@ -25,31 +25,29 @@ const MissionAndValues = () => {
             </h4>
           </div>
           <p className="text-[#3B2565] lg:text-base my-3 font-medium">
-            Beersheba School, located in Haldwani, was established on July 4,
-            1977, in the heart of the city with an initial enrollment of only 60
-            children. This co-educational English Medium school was founded by
-            the late Shri. and Smt. N.N.D. Bhatt. The school&apos;s origin,
-            existence, and development can be attributed to the unwavering
-            efforts of the late Mr. N.N.D. Bhatt.
+            At Beersheba School, we are committed to fostering a nurturing and
+            inclusive environment where every student can thrive. We emphasize
+            the importance of holistic development, ensuring that our students
+            are well-prepared for the challenges of the future
           </p>
           <div className="text-[#3B2565] ">
             <div className="flex gap-5 items-center my-2">
               <CircleCheckBig size={20} color="#DE4848" />{" "}
-              <p className="text-base">Values 1</p>
+              <p className="text-base">Honesty and Respect</p>
             </div>
             <div className="flex gap-5 items-center my-2">
               <CircleCheckBig size={20} color="#DE4848" />{" "}
-              <p className="text-base">Values 1</p>
+              <p className="text-base"> Creativity and Excellence</p>
             </div>
           </div>
         </div>
         <div className="col-span-2 lg:col-span-1">
           <Image
-            src={"/assets/image/about image.jpg"}
+            src={"/assets/image/beershiba-2.jpeg"}
             alt="About"
             width={250}
             height={200}
-            className=" w-full h-80 flex justify-center items-center"
+            className=" w-full h-80 flex rounded-md justify-center items-center"
           />
         </div>
         <div className="col-span-2 lg:col-span-1 p-5 rounded-lg bg-[#D6C9EF]/80 text-[#3B2565]">
@@ -67,15 +65,15 @@ const MissionAndValues = () => {
             </h4>
           </div>
           <p className="text-[#3B2565] text-sm lg:text-base my-3">
-            Ended by the late Shri. and Smt. N.N.D. Bhatt. The school&apos;s
-            origin, existence, and development can be attributed to the
-            unwavering efforts of the late Mr. N.N.D. Bhatt. His dedication and
-            inspiration left a lasting impact on numerous individuals.{" "}
+            To unlock each students potential through innovative and responsive
+            teaching practices. We foster adaptability, critical thinking, and
+            lifelong learning, preparing students for academic success and to
+            thrive in a changing global landscape.
           </p>
         </div>
         <div className="col-span-2">
           <Image
-            src={"/assets/image/college.png"}
+            src={"/assets/image/beershiba-6.jpeg"}
             alt="About"
             width={600}
             height={300}
@@ -97,18 +95,19 @@ const MissionAndValues = () => {
             </h4>
           </div>
           <p className="text-[#3B2565] text-sm lg:text-base my-3">
-            Beersheba School, located in Haldwani, was established on July 4,
-            1977, in the heart of the city with an initial enrollment of only 60
-            children. This co-educational English Medium school was founded by
-            the late Shri. and Smt. N.N.D. Bhatt. English Medium school was
-            founded by the late Shri. and Smt. N.N.D. Bhatt.
+            Beersheba School is dedicated to providing a comprehensive education
+            that nurtures the intellectual, physical, and social development of
+            every student. We strive to create a supportive and stimulating
+            learning environment that encourages curiosity, creativity, and
+            critical thinking. Our mission is to equip students with the skills
+            and values needed to succeed in a rapidly evolving world.
           </p>
           <div className="text-[#3B2565] ">
             <div className="flex gap-5 items-center my-2">
-              <CircleCheckBig color="#DE4848" /> <p>Values 1</p>
+              <CircleCheckBig color="#DE4848" /> <p> Holistic Development</p>
             </div>
             <div className="flex gap-5 items-center my-2">
-              <CircleCheckBig color="#DE4848" /> <p>Values 1</p>
+              <CircleCheckBig color="#DE4848" /> <p> Lifelong Learning</p>
             </div>
           </div>
         </div>

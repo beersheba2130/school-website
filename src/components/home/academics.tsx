@@ -25,11 +25,11 @@ const Academics = () => {
             <div className=" lg:p-10 gap-7 grid grid-cols-1 lg:grid-cols-2">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/college2.jpg"}
+                  src={"/assets/image/beershiba-2.jpeg"}
                   alt="About Image"
                   width={330}
                   height={330}
-                  className="object-cover z-10"
+                  className="object-cover z-10 rounded-md"
                 />
               </div>
               <div className="md:px-10">
@@ -42,15 +42,16 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Beersheba School, located in Haldwani, was established on July
-                  4, 1977, in the heart of the city with an initial enrollment
-                  of only 60 children. This co-educational English Medium school
-                  was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school&apos;s origin, existence, and development can be
-                  attributed to the unwavering efforts of the late Mr. N.N.D.
-                  Bhatt. His dedication and inspiration left a lasting impact on
-                  numerous individuals. May his vision and the great work he
-                  initiated continue to be blessed.
+                  Founded in 1977 by the late Shri. and Smt. N.N.D. Bhatt,
+                  Beersheba School in Haldwani began with just 60 children. From
+                  its inception, our co-educational English Medium school has
+                  been dedicated to providing a nurturing environment for early
+                  childhood development. Our Early Years program focuses on
+                  fostering curiosity, creativity, and foundational skills
+                  through engaging activities and personalized attention. We
+                  continue to uphold Mr. N.N.D. Bhatts vision of holistic
+                  education, ensuring every childs journey at Beersheba School
+                  begins with a strong and supportive start.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -61,11 +62,11 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/college2.jpg"}
+                  src={"/assets/image/beershiba-2.jpeg"}
                   alt="About Image"
                   width={330}
                   height={330}
-                  className="object-cover z-10"
+                  className="object-cover z-10 rounded-md"
                 />
               </div>
               <div className="md:px-10">
@@ -78,15 +79,14 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Beersheba School, located in Haldwani, was established on July
-                  4, 1977, in the heart of the city with an initial enrollment
-                  of only 60 children. This co-educational English Medium school
-                  was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school&apos;s origin, existence, and development can be
-                  attributed to the unwavering efforts of the late Mr. N.N.D.
-                  Bhatt. His dedication and inspiration left a lasting impact on
-                  numerous individuals. May his vision and the great work he
-                  initiated continue to be blessed.
+                  Our Elementary School curriculum is structured to build
+                  essential skills in reading, writing, mathematics, and
+                  science. We emphasize a balanced approach to education,
+                  integrating arts, physical education, and technology to create
+                  a well-rounded learning experience. Our dedicated teachers
+                  provide personalized attention, ensuring that each student
+                  progresses at their own pace and develops a strong academic
+                  foundation.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -97,11 +97,11 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/college2.jpg"}
+                  src={"/assets/image/beershiba-2.jpeg"}
                   alt="About Image"
                   width={330}
                   height={330}
-                  className="object-cover z-10"
+                  className="object-cover z-10 rounded-md"
                 />
               </div>
               <div className="md:px-10">
@@ -114,15 +114,14 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Beersheba School, located in Haldwani, was established on July
-                  4, 1977, in the heart of the city with an initial enrollment
-                  of only 60 children. This co-educational English Medium school
-                  was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school&apos;s origin, existence, and development can be
-                  attributed to the unwavering efforts of the late Mr. N.N.D.
-                  Bhatt. His dedication and inspiration left a lasting impact on
-                  numerous individuals. May his vision and the great work he
-                  initiated continue to be blessed.
+                  In Middle School, we focus on developing critical thinking and
+                  problem-solving skills. Our curriculum becomes more
+                  specialized, allowing students to explore subjects in greater
+                  depth. We encourage collaborative learning and provide
+                  opportunities for students to engage in projects and
+                  activities that promote teamwork and independent research.
+                  This stage is crucial for preparing students for the academic
+                  challenges of high school.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -133,11 +132,11 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/college2.jpg"}
+                  src={"/assets/image/beershiba-2.jpeg"}
                   alt="About Image"
                   width={330}
                   height={330}
-                  className="object-cover z-10"
+                  className="object-cover z-10 rounded-md"
                 />
               </div>
               <div className="md:px-10">
@@ -150,15 +149,15 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Beersheba School, located in Haldwani, was established on July
-                  4, 1977, in the heart of the city with an initial enrollment
-                  of only 60 children. This co-educational English Medium school
-                  was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school&apos;s origin, existence, and development can be
-                  attributed to the unwavering efforts of the late Mr. N.N.D.
-                  Bhatt. His dedication and inspiration left a lasting impact on
-                  numerous individuals. May his vision and the great work he
-                  initiated continue to be blessed.
+                  High School at Beersheba School is designed to prepare
+                  students for higher education and future careers. We offer a
+                  diverse range of courses, including Humanities, Commerce,
+                  Artificial Intelligence, Coding, Yoga, and Science, all
+                  aligned with the CBSE curriculum. Our experienced faculty
+                  guide students through rigorous academic programs while
+                  fostering leadership skills and personal growth.
+                  Extracurricular activities and sports are integral, ensuring a
+                  balanced and enriching high school experience.
                 </p>
 
                 <Button className="mt-5">Read More</Button>
@@ -169,11 +168,11 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/college2.jpg"}
+                  src={"/assets/image/beershiba-2.jpeg"}
                   alt="About Image"
                   width={330}
                   height={330}
-                  className="object-cover z-10"
+                  className="object-cover z-10 rounded-md"
                 />
               </div>
               <div className="md:px-10">
@@ -186,15 +185,14 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Beersheba School, located in Haldwani, was established on July
-                  4, 1977, in the heart of the city with an initial enrollment
-                  of only 60 children. This co-educational English Medium school
-                  was founded by the late Shri. and Smt. N.N.D. Bhatt. The
-                  school&apos;s origin, existence, and development can be
-                  attributed to the unwavering efforts of the late Mr. N.N.D.
-                  Bhatt. His dedication and inspiration left a lasting impact on
-                  numerous individuals. May his vision and the great work he
-                  initiated continue to be blessed.
+                  Our examination process is structured to assess students
+                  understanding and mastery of the curriculum. Regular
+                  assessments, projects, and practical exams ensure
+                  comprehensive evaluation. We provide a supportive environment
+                  that helps students manage exam stress and perform to the best
+                  of their abilities. Continuous feedback and guidance from
+                  teachers enable students to improve and excel in their
+                  academic pursuits.
                 </p>
 
                 <Button className="mt-5">Read More</Button>

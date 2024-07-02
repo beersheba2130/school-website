@@ -43,10 +43,8 @@ const Slider = ({ source }: { source: string[] }) => {
         </div>
         <div className="text-center text-white text-sm lg:text-base">
           <p>
-            Beersheba School offers a diverse range of courses,
-            including Humanities,
+            Empowering students with knowledge and skills for a brighter future
           </p>
-          <p>Commerce, Artificial Intelligence, Coding, Yoga, and Science,</p>
         </div>
         <div className="flex gap-10 items-center">
           <Button>Apply Now</Button>

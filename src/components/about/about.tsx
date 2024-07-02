@@ -16,24 +16,22 @@ const About = () => {
         <Heading2 title="Beersheba School" />
 
         <p className="text-gray-600 mt-5">
-          Beersheba School, located in Haldwani, was established on July 4,
-          1977, in the heart of the city with an initial enrollment of only 60
-          children. This co-educational English Medium school was founded by the
-          late Shri. and Smt. N.N.D. Bhatt. The origin of school existence, and
-          development can be attributed to the unwavering efforts of the late
-          Mr. N.N.D. Bhatt. His dedication and inspiration left a lasting impact
-          on numerous individuals. May his vision and the great work he
-          initiated continue to be blessed.
+          Established on July 4, 1977, in the heart of Haldwani, Beersheba
+          School started with just 60 children under the visionary leadership of
+          the late Shri. and Smt. N.N.D. Bhatt. Their dedication and inspiration
+          have been instrumental in shaping the school&pos;s growth and
+          commitment to educational excellence. Today, Beersheba School stands
+          as a premier co-educational English Medium institution, known for its
+          nurturing environment and comprehensive curriculum.
         </p>
         <p className="text-gray-600 mt-5">
-          Beersheba School, located in Haldwani, was established on July 4,
-          1977, in the heart of the city with an initial enrollment of only 60
-          children. This co-educational English Medium school was founded by the
-          late Shri. and Smt. N.N.D. Bhatt. The school&apos;s origin, existence,
-          and development can be attributed to the unwavering efforts of the
-          late Mr. N.N.D. Bhatt. His dedication and inspiration left a lasting
-          impact on numerous individuals. May his vision and the great work he
-          initiated continue to be blessed.
+          Over the years, Beersheba School has grown to accommodate a diverse
+          student body and a dedicated faculty committed to holistic
+          development. Our school boasts a rich legacy of over 25 years of
+          academic excellence, supported by a library of over 3000 books and
+          advanced facilities including 70 computers. Affiliated with CBSE and
+          regulated by state government norms, we continue to uphold high
+          standards in education and prepare students for a successful future.
         </p>
       </div>
       <div
@@ -41,14 +39,14 @@ const About = () => {
       "
       >
         <Image
-          src={"/assets/image/about image.jpg"}
+          src={"/assets/image/beershiba-2.jpeg"}
           alt="About Image"
           width={400}
           height={400}
           className="rounded-lg absolute top-0 left-0 md:left-24 w-60 h-80 object-cover"
         />
         <Image
-          src={"/assets/image/about image 2.jpg"}
+          src={"/assets/image/beershiba-6.jpeg"}
           alt="About Image"
           width={400}
           height={400}

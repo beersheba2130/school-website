@@ -82,12 +82,11 @@ const ToppersResult = () => {
             Toppers Class X
           </h3>
           <p className="py-5">
-            Beersheba School&apos;s Early Years program provides a caring and
-            safe environment that meets the specific needs of young learners.
-            This program focuses on developing fundamental literacy. Beersheba
-            School&apos;s Early Years program provides a caring and safe
-            environment that meets the specific needs of young learners. This
-            program focuses on developing fundamental literacy.
+            At Beersheba School, our Early Years program is designed to provide
+            a caring and safe environment that caters to the specific needs of
+            young learners. With a strong focus on developing fundamental
+            literacy skills, our program ensures that every child receives the
+            support they need to excel academically and beyond.
           </p>
         </div>
       </div>
@@ -126,12 +125,12 @@ const ToppersResult = () => {
             Toppers Class XII
           </h3>
           <p className="py-5">
-            Beersheba School&apos;s Early Years program provides a caring and
-            safe environment that meets the specific needs of young learners.
-            This program focuses on developing fundamental literacy. Beersheba
-            School&apos;s Early Years program provides a caring and safe
-            environment that meets the specific needs of young learners. This
-            program focuses on developing fundamental literacy.
+            At Beersheba School, our Class XII program is tailored to provide a
+            supportive and enriching environment that meets the academic needs
+            of senior students. With a focus on comprehensive learning and
+            preparation for board examinations, our program aims to equip
+            students with the knowledge and skills essential for future success
+            in higher education and beyond.
           </p>
         </div>
       </div>

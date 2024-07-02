@@ -7,14 +7,13 @@ import { poppins } from "@/utils/font";
 const OurDesc = () => {
   return (
     <section className="container mx-auto py-10 px-5 md:px-20">
-      <Heading3 title="Our Description" />
+      <Heading3 title="Milestones of Excellence" />
       <p className=" text-gray-600 mt-3 md:mt-5">
-        Beersheba School, located in Haldwani, was established on July 4, 1977,
-        in the heart of the city with an initial enrollment of only 60 children.
-        This co-educational English Medium school was founded by the late Shri.
-        and Smt. N.N.D. Bhatt. The school&apos;s origin, existence, and
-        development can be attributed to the unwavering efforts of the late Mr.
-        N.N.D. Bhatt.unwavering efforts of the late
+        At Beersheba School, we take pride in our rich legacy of excellence,
+        supported by a vibrant community of alumni, advanced facilities, and a
+        comprehensive library. We are dedicated to providing quality education
+        and fostering holistic development, preparing students to excel in a
+        dynamic world.
       </p>
       <IconCard />
       <p className=" text-gray-600 mt-3 md:mt-5">
@@ -51,7 +50,7 @@ const OurDesc = () => {
               Affiliation Status:
             </td>
             <td className="border-2 border-[#3B2565] py-3 px-5">
-              May 1, 2020 to April 2035
+              01.04.2024 to 31.03.2029
             </td>
           </tr>
           <tr>
@@ -76,11 +75,12 @@ const OurDesc = () => {
             </h5>
           </div>
           <p className="py-3 text-gray-600">
-            Beersheba School, located in Haldwani, was established on July 4,
-            1977, in the heart of the city with an initial enrollment of only 60
-            children. This co-educational English Medium school was founded by
-            the late Shri. and Smt. N.N.D. Bhatt. English Medium school was
-            founded by the late Shri. and Smt. N.N.D. Bhatt.{" "}
+            Founded on July 4, 1977, in the heart of Haldwani, Beersheba School
+            started with an initial enrollment of 60 children and was
+            established by the late Shri. and Smt. N.N.D. Bhatt. As a
+            co-educational English Medium school, our mission is to provide a
+            nurturing environment that fosters holistic development and prepares
+            students for future challenges and successes.
           </p>
         </div>
         <div className="">
@@ -93,11 +93,14 @@ const OurDesc = () => {
             </h5>
           </div>
           <p className="py-3 text-gray-600">
-            Beersheba School, located in Haldwani, was established on July 4,
-            1977, in the heart of the city with an initial enrollment of only 60
-            children. This co-educational English Medium school was founded by
-            the late Shri. and Smt. N.N.D. Bhatt. English Medium school was
-            founded by the late Shri. and Smt. N.N.D. Bhatt.{" "}
+            At Beersheba School, we envision a dynamic learning environment
+            where innovation and excellence converge. Founded on July 4, 1977,
+            in the heart of Haldwani by the late Shri. and Smt. N.N.D. Bhatt,
+            our vision is to empower students with the skills, knowledge, and
+            values necessary to thrive in a global society. We are committed to
+            cultivating leadership, critical thinking, and lifelong learning
+            habits that prepare our students to contribute positively to the
+            world.
           </p>
         </div>
       </div>

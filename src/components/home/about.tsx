@@ -9,11 +9,11 @@ const About = () => {
     <section className="container p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
       <div className="p-5 relative flex justify-center items-center">
         <Image
-          src={"/assets/image/college2.jpg"}
+          src={"/assets/image/beershiba-2.jpeg"}
           alt="About Image"
           width={330}
           height={330}
-          className="object-cover z-10"
+          className="object-cover z-10 rounded-md"
         />
 
         <div className="absolute top-0 left-0 lg:left-32 border-2 border-dashed border-[#DB2F2F] rounded-md h-64 w-64 lg:h-80 lg:w-80 -z-10"></div>
