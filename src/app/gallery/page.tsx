@@ -3,6 +3,113 @@ import Heading3 from "@/components/heading3";
 import Image from "next/image";
 import React from "react";
 
+const gImages = [
+  {
+    id: 1,
+    src: "/assets/image/image-1.jpeg",
+  },
+  {
+    id: 2,
+    src: "/assets/image/image-2.jpeg",
+  },
+  {
+    id: 3,
+    src: "/assets/image/image-3.jpeg",
+  },
+  {
+    id: 4,
+    src: "/assets/image/image-4.jpeg",
+  },
+  {
+    id: 5,
+    src: "/assets/image/image-5.jpeg",
+  },
+  {
+    id: 6,
+    src: "/assets/image/image-6.jpeg",
+  },
+  {
+    id: 7,
+    src: "/assets/image/image-7.jpeg",
+  },
+  {
+    id: 8,
+    src: "/assets/image/image-8.jpeg",
+  },
+  {
+    id: 9,
+    src: "/assets/image/image-9.jpeg",
+  },
+  {
+    id: 10,
+    src: "/assets/image/image-10.jpeg",
+  },
+  {
+    id: 11,
+    src: "/assets/image/image-11.jpeg",
+  },
+  {
+    id: 12,
+    src: "/assets/image/image-12.jpeg",
+  },
+  {
+    id: 13,
+    src: "/assets/image/image-13.jpeg",
+  },
+  {
+    id: 14,
+    src: "/assets/image/image-14.jpeg",
+  },
+  {
+    id: 15,
+    src: "/assets/image/image-15.jpeg",
+  },
+  {
+    id: 16,
+    src: "/assets/image/image-16.jpeg",
+  },
+  {
+    id: 17,
+    src: "/assets/image/image-17.jpeg",
+  },
+  {
+    id: 18,
+    src: "/assets/image/image-18.jpeg",
+  },
+  {
+    id: 19,
+    src: "/assets/image/image-19.jpeg",
+  },
+  {
+    id: 20,
+    src: "/assets/image/image-20.jpeg",
+  },
+  {
+    id: 21,
+    src: "/assets/image/image-21.jpeg",
+  },
+  {
+    id: 22,
+    src: "/assets/image/image-22.jpeg",
+  },
+  {
+    id: 23,
+    src: "/assets/image/image-23.jpeg",
+  },
+  {
+    id: 24,
+    src: "/assets/image/image-24.jpeg",
+  },
+  {
+    id: 25,
+    src: "/assets/image/image-25.jpeg",
+  },
+  {
+    id: 26,
+    src: "/assets/image/image-26.jpeg",
+  },
+];
+
 const page = () => {
   return (
     <>
@@ -14,51 +121,17 @@ const page = () => {
       <section className="container p-5 lg:p-10 ">
         <Heading3 title="Gallery" />
 
-        <div className="grid grid-cols-3 gap-1 py-10">
-          <Image
-            src={"/assets/image/unsplash_fwfobhsF1Kw.png"}
-            alt="Gallery Photo"
-            className="w-full h-auto object-cover rounded-lg shadow-md"
-            width={700}
-            height={500}
-          />
-          <Image
-            src={"/assets/image/unsplash_iwJscb2Ezsk.png"}
-            alt="Gallery Photo"
-            className="w-full h-auto object-cover rounded-lg shadow-md"
-            width={700}
-            height={500}
-          />
-          <Image
-            src={"/assets/image/unsplash_9856jObeogs.png"}
-            alt="Gallery Photo"
-            className="w-full h-auto object-cover rounded-lg shadow-md"
-            width={700}
-            height={700}
-          />
-          <Image
-            src={"/assets/image/unsplash_LAY19dUD_ro.png"}
-            alt="Gallery Photo"
-            className="w-full h-auto object-cover rounded-lg shadow-md col-span-2"
-            width={700}
-            height={700}
-          />
-          <div>
+        <div className="flex flex-wrap justify-center gap-5 mt-5 items-center">
+          {gImages.map((image) => (
             <Image
-              src={"/assets/image/unsplash_yQnyP1g5zl4.png"}
-              alt="Gallery Photo"
-              className="w-full h-auto object-cover rounded-lg shadow-md col-span-1 mb-1"
-              width={700}
-              height={700}
+              key={image.id}
+              src={image.src}
+              alt="gallery"
+              width={300}
+              height={300}
+              objectFit="cover"
             />
-            <Image
-              src={"/assets/image/unsplash_yQnyP1g5zl4.png"}
-              alt="Gallery Photo"
-              className="w-full h-auto object-cover rounded-lg shadow-md col-span-1 mt-1"
-              width={700}
-              height={700}
-            />
-          </div>
+          ))}
         </div>
       </section>
     </>
