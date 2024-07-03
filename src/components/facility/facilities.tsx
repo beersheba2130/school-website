@@ -6,41 +6,61 @@ const facilitiesData = [
   {
     title: "Library",
     description:
-      "Well-resourced, aesthetically designed Primary School Library and Senior School Library are air-conditioned facilities with colourful, age-appropriate furniture that creates an inviting ambience for the young readers. These libraries have dedicated highspeed internet browsing facilities for the students to access various online resources. A dedicated story-telling corner in the Primary Library makes it a special place for the students.",
+      "Certainly! It's fantastic to learn that your library is well-stocked with books catering to varied tastes and age groups. Additionally, the subscription to newspapers and journals enhances students' knowledge, and the regular purchase of new books keeps the collection current. A diverse collection, including digital resources, would further enrich the learning experience. Comfortable reading spaces, knowledgeable library staff, and collaboration with teachers are crucial elements for fostering a positive environment. Implementing information literacy programs, organizing library events, and considering extended hours are also commendable practices that contribute to a thriving and dynamic library setting. Overall, your commitment to maintaining an engaging library bodes well for promoting a love of reading and supporting academic pursuits within the school community.",
     images: [
-      "/assets/image/image 35.png",
-      "/assets/image/image 37.png",
-      "/assets/image/image 36.png",
+      "/assets/image/library-1.jpg",
+      "/assets/image/library-2.jpg",
+      "/assets/image/library-3.jpg",
     ],
   },
   {
-    title: "Library",
+    title: "Laboratory",
     description:
-      "Well-resourced, aesthetically designed Primary School Library and Senior School Library are air-conditioned facilities with colourful, age-appropriate furniture that creates an inviting ambience for the young readers. These libraries have dedicated highspeed internet browsing facilities for the students to access various online resources. A dedicated story-telling corner in the Primary Library makes it a special place for the students.",
+      "The school boasts well-equipped science laboratories, integral to the curriculum's scientific components. These laboratories are extensively utilized to support hands-on learning experiences, employing practical experiments whenever feasible to enrich students' understanding of scientific concepts.",
     images: [
-      "/assets/image/image 35.png",
-      "/assets/image/image 37.png",
-      "/assets/image/image 36.png",
+      "/assets/image/laboratry-1.jpg",
+      "/assets/image/laboratry-2.jpg",
+      "/assets/image/laboratry-3.jpg",
     ],
   },
   {
-    title: "Library",
+    title: "Computer Lab",
     description:
-      "Well-resourced, aesthetically designed Primary School Library and Senior School Library are air-conditioned facilities with colourful, age-appropriate furniture that creates an inviting ambience for the young readers. These libraries have dedicated highspeed internet browsing facilities for the students to access various online resources. A dedicated story-telling corner in the Primary Library makes it a special place for the students.",
+      "The school features a spacious and well-equipped computer lab, complemented by a dedicated computer lecture room. Students benefit from ample hands-on experience with computers, recognizing the contemporary demand for technological proficiency. To meet this demand, the lab is equipped with the latest hardware and software. Furthermore, the program's syllabus is regularly updated to align with current technological advancements, ensuring students are well-prepared for the evolving landscape of technology.",
     images: [
-      "/assets/image/image 35.png",
-      "/assets/image/image 37.png",
-      "/assets/image/image 36.png",
+      "/assets/image/computer-1.jpg",
+      "/assets/image/computer-2.jpg",
+      "/assets/image/computer-3.jpg",
     ],
   },
   {
-    title: "Library",
+    title: "School Bus Facility",
     description:
-      "Well-resourced, aesthetically designed Primary School Library and Senior School Library are air-conditioned facilities with colourful, age-appropriate furniture that creates an inviting ambience for the young readers. These libraries have dedicated highspeed internet browsing facilities for the students to access various online resources. A dedicated story-telling corner in the Primary Library makes it a special place for the students.",
+      "The bus routes and stops will be decided keeping in mind convenience to as many as possible.The change in bus route can be done on request of the parents, provided it does not cause any inconvenience to any body else.The student should arrive at the stop 5 minutes prior to the arrival time of the bus.Buses will not wait for the late comers.The safety of the student till he/she boards the bus is totally parents responsibility.",
     images: [
-      "/assets/image/image 35.png",
-      "/assets/image/image 37.png",
-      "/assets/image/image 36.png",
+      "/assets/image/school-bus-1.jpg",
+      "/assets/image/school-bus-2.jpg",
+      "/assets/image/school-bus-3.jpg",
+    ],
+  },
+  {
+    title: "Music Room",
+    description:
+      "Acoustic Considerations: Proper acoustic treatment to minimize sound reflections and create an environment that enhances the quality of music production.Instruments: A variety of musical instruments based on the needs of the music program, such as pianos, guitars, drums, string instruments, and wind instruments.Music Stands: Adjustable and sturdy music stands for holding sheet music during practice and performances.Piano/Keyboard: An acoustic piano or electronic keyboard for accompaniment and practice.",
+    images: [
+      "/assets/image/music-1.jpg",
+      "/assets/image/music-2.jpg",
+      "/assets/image/music-3.jpg",
+    ],
+  },
+  {
+    title: "Art Room",
+    description:
+      "A quality music room in a school should prioritize acoustic design, soundproofing, and a diverse collection of well-maintained instruments. It should feature quality pianos/keyboards, amplification and recording equipment, and organized storage. Visual aids, and technology integration enhance the learning environment. ",
+    images: [
+      "/assets/image/art-1.jpg",
+      "/assets/image/art-2.jpg",
+      "/assets/image/art-3.jpg",
     ],
   },
 ];
@@ -59,6 +79,7 @@ const Facilities = () => {
               alt={facility.title}
               width={600}
               height={300}
+              className=" h-[300px] object-cover"
             />
             <div className="flex">
               <Image
@@ -66,12 +87,14 @@ const Facilities = () => {
                 alt={facility.title}
                 width={300}
                 height={300}
+                className="w-[150px] w-[300px] object-cover"
               />
               <Image
                 src={facility.images[2]}
                 alt={facility.title}
                 width={300}
                 height={300}
+                className=" w-[150px] md:w-[300px]  object-cover"
               />
             </div>
           </div>
