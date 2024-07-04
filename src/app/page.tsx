@@ -9,8 +9,26 @@ import MissionAndValues from "@/components/home/mission-values";
 import ToppersResult from "@/components/home/toppers-result";
 import Video from "@/components/home/video";
 import Why from "@/components/home/why";
+import { server_query_function } from "@/lib/graphql";
 
-const page = () => {
+const page = async () => {
+  const query = `
+query MyQuery {
+  blogs(first: 5) {
+    id
+    mainImage {
+      url
+    }
+    title
+    slug
+    shortDesc
+  }
+}
+
+`;
+
+  const response = (await server_query_function(query)) as blogType;
+
   return (
     <>
       <HeroSection />
@@ -22,7 +40,7 @@ const page = () => {
       <ToppersResult />
       <Branches />
       <Gallery />
-      <Events />
+      <Events blogs={response.blogs} />
       <AdmissionEnquiry />
     </>
   );

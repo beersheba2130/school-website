@@ -28,3 +28,27 @@ type HomeType = {
     homeGallery: homeGalleryType;
   }[];
 };
+
+type blogType = {
+  blogs: {
+    id: string;
+    mainImage: {
+      url: string;
+    };
+    title: string;
+    shortDesc: string;
+    slug: string;
+  }[];
+};
+type SingleBlogType = {
+  blogs: {
+    id: string;
+    mainImage: {
+      url: string;
+    };
+    title: string;
+    shortDesc: string;
+    slug: string;
+    content: htm;
+  }[];
+};

@@ -1,6 +1,4 @@
 import React from "react";
-
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -10,71 +8,36 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Heading2 from "../heading2";
+import Link from "next/link";
 
-const Events = () => {
+const Events = ({ blogs }: blogType) => {
   return (
     <section className="p-5 lg:p-10 container bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2">
       <div className="pt-5 ">
         <Heading2 title="News & Events" />
         <Carousel className="mt-10 overflow-hidden md:overflow-visible">
           <CarouselContent>
-            <CarouselItem className="md:basis-1/2 rounded-3xl">
-              <div className=" w-72 lg:w-80 bg-white">
-                <Image
-                  src={"/assets/image/image 7.jpg"}
-                  alt="events"
-                  width={400}
-                  height={150}
-                />
+            {blogs.map((blog) => (
+              <CarouselItem className="md:basis-1/2 rounded-3xl" key={blog?.id}>
+                <div className=" bg-white w-72 lg:w-80">
+                  <Image
+                    src={blog?.mainImage?.url}
+                    alt="events"
+                    width={400}
+                    height={150}
+                    className="h-60 w-80"
+                  />
 
-                <h3 className="p-3 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug">
-                  Inter School Quiz Bharat Ko Jano
-                </h3>
+                  <Link href={`/blog/${blog?.slug}`}>
+                    <h3 className="px-2 py-1 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug">
+                      {blog?.title}
+                    </h3>
+                  </Link>
 
-                <p className="text-gray-600 p-3">
-                  Himalaya Diwas 2024: Each year, on September 9th, the world
-                  observes Himalaya Day, also known as Himalaya Diwas.
-                </p>
-              </div>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 rounded-3xl">
-              <div className="w-72 lg:w-80 bg-white">
-                <Image
-                  src={"/assets/image/image 8.jpg"}
-                  alt="events"
-                  width={400}
-                  height={150}
-                />
-
-                <h3 className="p-3 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug">
-                  Himalyan Day 14th Celebration
-                </h3>
-
-                <p className="text-gray-600 p-3">
-                  Himalaya Diwas 2024: Each year, on September 9th, the world
-                  observes Himalaya Day, also known as Himalaya Diwas.
-                </p>
-              </div>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 rounded-3xl">
-              <div className=" bg-white w-72 lg:w-80">
-                <Image
-                  src={"/assets/image/image 7.jpg"}
-                  alt="events"
-                  width={400}
-                  height={150}
-                />
-
-                <h3 className="p-3 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug">
-                  Inter School Quiz Bharat Ko Jano
-                </h3>
-
-                <p className="text-gray-600 p-3">
-                  Himalaya Diwas 2024: Each year, on September 9th, the world
-                  observes Himalaya Day, also known as Himalaya Diwas.
-                </p>
-              </div>
-            </CarouselItem>
+                  <p className="px-2 py-1 text-gray-600">{blog?.shortDesc}</p>
+                </div>
+              </CarouselItem>
+            ))}
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
