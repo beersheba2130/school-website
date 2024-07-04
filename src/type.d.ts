@@ -29,17 +29,48 @@ type HomeType = {
   }[];
 };
 
-type blogType = {
-  blogs: {
-    id: string;
-    mainImage: {
-      url: string;
-    };
-    title: string;
-    shortDesc: string;
-    slug: string;
+// type blogType = {
+//   blogs: {
+//     id: string;
+//     mainImage: {
+//       url: string;
+//     };
+//     title: string;
+//     shortDesc: string;
+//     slug: string;
+//   }[];
+//   homes: {
+//     events: {
+//       id: string;
+//       day: string;
+//       eventName: string;
+//     }[];
+//   }[];
+// };
+
+type Blog = {
+  id: string;
+  mainImage: {
+    url: string;
+  };
+  title: string;
+  slug: string;
+  shortDesc: string;
+};
+
+type Event = {
+  id: string;
+  day: string;
+  eventName: string;
+};
+
+type BlogType = {
+  blogs: Blog[];
+  homes: {
+    event: Event[];
   }[];
 };
+
 type SingleBlogType = {
   blogs: {
     id: string;

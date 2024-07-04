@@ -11,6 +11,8 @@ import Video from "@/components/home/video";
 import Why from "@/components/home/why";
 import { server_query_function } from "@/lib/graphql";
 
+export const dynamic = "force-dynamic";
+
 const page = async () => {
   const query = `
 query MyQuery {
@@ -23,11 +25,18 @@ query MyQuery {
     slug
     shortDesc
   }
+     homes {
+    event {
+      id
+      day
+      eventName
+    }
+  }
 }
 
 `;
 
-  const response = (await server_query_function(query)) as blogType;
+  const response = (await server_query_function(query)) as BlogType;
 
   return (
     <>
@@ -40,7 +49,7 @@ query MyQuery {
       <ToppersResult />
       <Branches />
       <Gallery />
-      <Events blogs={response.blogs} />
+      <Events blogs={response.blogs} events={response.homes[0]?.event} />
       <AdmissionEnquiry />
     </>
   );

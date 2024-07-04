@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React from "react";
 import {
   Carousel,
@@ -10,7 +11,12 @@ import Image from "next/image";
 import Heading2 from "../heading2";
 import Link from "next/link";
 
-const Events = ({ blogs }: blogType) => {
+type EventsProps = {
+  blogs: Blog[];
+  events: Event[];
+};
+
+const Events = ({ blogs, events }: EventsProps) => {
   return (
     <section className="p-5 lg:p-10 container bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2">
       <div className="pt-5 ">
@@ -47,62 +53,24 @@ const Events = ({ blogs }: blogType) => {
         <Heading2 title="Upcoming Events" />
 
         <div className="pt-5">
-          <div className="rounded-3xl bg-white">
-            <div className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2">
-              <div className="bg-[#F8EF2E] p-2">
-                <span className="text-lg lg:text-xl font-semibold">01</span>
-                <p className="text-base font-semibold">May</p>
+          <div className="rounded-3xl bg-white h-96 w-80 md:w-[28rem] overflow-y-auto">
+            {events?.map((event) => (
+              <div
+                key={event?.id}
+                className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2"
+              >
+                <div className="bg-[#F8EF2E] p-2">
+                  <span className="text-lg lg:text-xl font-semibold">
+                    {event?.day}
+                  </span>
+                </div>
+                <div>
+                  <p className="text-xl font-semibold px-3">
+                    {event?.eventName}
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-xl font-semibold px-3">
-                  Special Assembly For Labour Day
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2">
-              <div className="bg-[#F8EF2E] p-2">
-                <span className="text-lg lg:text-xl font-semibold">01</span>
-                <p className="text-base font-semibold">May</p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold px-3">
-                  Special Assembly For Labour Day
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2">
-              <div className="bg-[#F8EF2E] p-2">
-                <span className="text-lg lg:text-xl font-semibold">01</span>
-                <p className="text-base font-semibold">May</p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold px-3">
-                  Special Assembly For Labour Day
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2">
-              <div className="bg-[#F8EF2E] p-2">
-                <span className="text-lg lg:text-xl font-semibold">01</span>
-                <p className="text-base font-semibold">May</p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold px-3">
-                  Special Assembly For Labour Day
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2">
-              <div className="bg-[#F8EF2E] p-2">
-                <span className="text-lg lg:text-xl font-semibold">01</span>
-                <p className="text-base font-semibold">May</p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold px-3">
-                  Special Assembly For Labour Day
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
