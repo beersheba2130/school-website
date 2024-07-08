@@ -3,6 +3,7 @@ import React from "react";
 import Heading2 from "../heading2";
 import { poppins } from "@/utils/font";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -38,7 +39,9 @@ const About = () => {
           initiated continue to be blessed.
         </p>
 
-        <Button className="mt-5">Read More</Button>
+        <Link href={"/about"}>
+          <Button className="mt-5">Read More</Button>
+        </Link>
       </div>
     </section>
   );

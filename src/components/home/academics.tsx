@@ -54,7 +54,7 @@ const Academics = () => {
                   begins with a strong and supportive start.
                 </p>
 
-                <Button className="mt-5">Read More</Button>
+                {/* <Button className="mt-5">Read More</Button> */}
               </div>
             </div>
           </TabsContent>
@@ -89,7 +89,7 @@ const Academics = () => {
                   foundation.
                 </p>
 
-                <Button className="mt-5">Read More</Button>
+                {/* <Button className="mt-5">Read More</Button> */}
               </div>
             </div>
           </TabsContent>
@@ -124,7 +124,7 @@ const Academics = () => {
                   challenges of high school.
                 </p>
 
-                <Button className="mt-5">Read More</Button>
+                {/* <Button className="mt-5">Read More</Button> */}
               </div>
             </div>
           </TabsContent>
@@ -160,7 +160,7 @@ const Academics = () => {
                   balanced and enriching high school experience.
                 </p>
 
-                <Button className="mt-5">Read More</Button>
+                {/* <Button className="mt-5">Read More</Button> */}
               </div>
             </div>
           </TabsContent>
@@ -195,7 +195,7 @@ const Academics = () => {
                   academic pursuits.
                 </p>
 
-                <Button className="mt-5">Read More</Button>
+                {/* <Button className="mt-5">Read More</Button> */}
               </div>
             </div>
           </TabsContent>

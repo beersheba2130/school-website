@@ -15,7 +15,7 @@ const page = () => {
       />
       <Sessions />
       <Uniform />
-      <TransferCertificate />
+      {/* <TransferCertificate /> */}
       <AccountDetails />
     </>
   );

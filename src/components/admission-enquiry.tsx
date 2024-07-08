@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const AdmissionEnquiry = () => {
   return (
@@ -16,7 +17,9 @@ const AdmissionEnquiry = () => {
         <p className=" text-3xl lg:text-4xl font-semibold text-white text-balance text-center">
           Your kids deserve the best education
         </p>
-        <Button size={"lg"}>Admission Enquiry</Button>
+        <Link href={"/registeration"}>
+          <Button size={"lg"}>Admission Enquiry</Button>
+        </Link>
       </div>
     </section>
   );

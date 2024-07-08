@@ -30,26 +30,26 @@ const Slider = ({ source }: { source: string[] }) => {
               height={700}
               className="w-full h-72 lg:h-96 object-cover"
             />
+            <div className="absolute inset-0 mb-16 overflow-hidden lg:mb-[4.4rem] bg-[#3B2565]/70 p-5 text-white flex justify-center items-center flex-col gap-3 lg:gap-5 pointer-events-none h-72 lg:h-96">
+              <div
+                className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
+              >
+                <p>WELCOME TO</p>
+                <p>BEERSHEBA SCHOOL (Haldwani)</p>
+              </div>
+              <div className="text-center text-white text-sm lg:text-base">
+                <p>
+                  Empowering students with knowledge and skills for a brighter
+                  future
+                </p>
+              </div>
+              {/* <div className="flex gap-10 items-center">
+                <Button>Apply Now</Button>
+                <Button>Virtual Tour</Button>
+              </div> */}
+            </div>
           </div>
         ))}
-      </div>
-
-      <div className="absolute inset-0 mb-16 overflow-hidden lg:mb-[4.4rem] bg-[#3B2565]/70 p-5 text-white flex justify-center items-center flex-col gap-3 lg:gap-5 pointer-events-none">
-        <div
-          className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
-        >
-          <p>WELCOME TO</p>
-          <p>BEERSHEBA SCHOOL</p>
-        </div>
-        <div className="text-center text-white text-sm lg:text-base">
-          <p>
-            Empowering students with knowledge and skills for a brighter future
-          </p>
-        </div>
-        <div className="flex gap-10 items-center">
-          <Button>Apply Now</Button>
-          <Button>Virtual Tour</Button>
-        </div>
       </div>
 
       <Pagination currentIndex={currentIndex} goToSlide={goToSlide} />
@@ -58,3 +58,23 @@ const Slider = ({ source }: { source: string[] }) => {
 };
 
 export default Slider;
+
+{
+  /* <div className="absolute inset-0 mb-16 overflow-hidden lg:mb-[4.4rem] bg-[#3B2565]/70 p-5 text-white flex justify-center items-center flex-col gap-3 lg:gap-5 pointer-events-none">
+<div
+  className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
+>
+  <p>WELCOME TO</p>
+  <p>BEERSHEBA SCHOOL</p>
+</div>
+<div className="text-center text-white text-sm lg:text-base">
+  <p>
+    Empowering students with knowledge and skills for a brighter future
+  </p>
+</div>
+<div className="flex gap-10 items-center">
+  <Button>Apply Now</Button>
+  <Button>Virtual Tour</Button>
+</div>
+</div> */
+}
