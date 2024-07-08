@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Heading3 from "../heading3";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
+import axios from "axios";
 import {
   Form,
   FormControl,
@@ -33,7 +34,7 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 
 const formSchema = z.object({
-  class: z.string({
+  classes: z.string({
     required_error: "Please select the class.",
   }),
   name: z.string().min(5).max(20),
@@ -62,10 +63,12 @@ const formSchema = z.object({
 });
 
 const RegisterationForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      class: "",
+      classes: "",
       name: "",
       fatherName: "",
       motherName: "",
@@ -81,8 +84,34 @@ const RegisterationForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    setIsLoading(true);
+    try {
+      const resp = await axios.post("/api/registeration", {
+        classes: values.classes,
+        name: values.name,
+        fatherName: values.fatherName,
+        motherName: values.motherName,
+        gender: values.gender,
+        email: values.email,
+        phoneNumber: values.phoneNumber,
+        category: values.category,
+        lastSchoolName: values.lastSchoolName,
+        fatherOccupation: values.fatherOccupation,
+        motherOccupation: values.motherOccupation,
+        annualIncome: values.annualIncome,
+        referedBy: values.referedBy,
+      });
+
+      console.log(resp);
+
+      form.reset();
+      setIsLoading(false);
+    } catch (error) {
+      setIsLoading(false);
+      form.reset();
+    }
   }
 
   return (
@@ -97,7 +126,7 @@ const RegisterationForm = () => {
           >
             <FormField
               control={form.control}
-              name="class"
+              name="classes"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Class</FormLabel>
@@ -369,7 +398,9 @@ const RegisterationForm = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit">Submit</Button>
+            <Button type="submit" disabled={isLoading}>
+              Submit
+            </Button>
           </form>
         </Form>
       </div>
