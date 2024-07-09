@@ -5,6 +5,7 @@ import { latto, poppins } from "@/utils/font";
 import TopHeader from "@/components/top-header";
 import Marque from "@/components/marque";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "BeerSheba School",
@@ -26,7 +27,9 @@ export default function RootLayout({
         <Footer />
         <div className="p-5">
           <p className={`${poppins.className} text-center font-medium`}>
-            © 2024 Beersheba School | All Rights Reserved
+            <Link href={"https://preettech.com/"}>
+              @ Developed by PreetTech
+            </Link>
           </p>
         </div>
       </body>
