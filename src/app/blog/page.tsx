@@ -22,7 +22,7 @@ const page = async () => {
     
     `;
 
-  const response = (await server_query_function(query)) as blogType;
+  const response = (await server_query_function(query)) as BlogType;
 
   return (
     <>
