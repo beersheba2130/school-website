@@ -16,12 +16,13 @@ Since 1977"
           of academic achievement and holistic development.
         </p>
       </div>
-      <div className=" flex items-center justify-center">
+      <div className=" flex justify-center">
         <video
-          src="/assets/videos/3258365-hd_1920_1080_30fps.mp4"
-          controls
-          height={400}
+          src="/assets/image/Beersheba Senior Secondary School, Haldwani-(1080p) (1).mp4"
+          muted
+          height={500}
           width={500}
+          className="h-80"
         />
       </div>
       <div className="absolute lg:-bottom-24 -bottom-52 flex justify-evenly items-center w-full flex-wrap gap-2">

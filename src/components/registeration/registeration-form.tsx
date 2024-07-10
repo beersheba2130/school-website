@@ -303,8 +303,8 @@ const RegisterationForm = () => {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="male">Male</SelectItem>
-                      <SelectItem value="female">FeMail</SelectItem>
+                      <SelectItem value="general">Genral </SelectItem>
+                      <SelectItem value="reserved">reserved </SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -377,9 +377,9 @@ const RegisterationForm = () => {
               name="annualIncome"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Annual Incone</FormLabel>
+                  <FormLabel> Incone</FormLabel>
                   <FormControl>
-                    <Input placeholder="Annual Income..." {...field} />
+                    <Input placeholder=" Income..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

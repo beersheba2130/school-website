@@ -5,9 +5,11 @@ import {
   MapPin,
   PhoneCall,
   Twitter,
+  Youtube,
 } from "lucide-react";
 import React from "react";
 import ContactUsForm from "./contact-us-form";
+import Link from "next/link";
 
 const ContactUsCard = () => {
   return (
@@ -41,12 +43,33 @@ const ContactUsCard = () => {
             <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
               <Twitter />
             </div>
-            <div className="flex justify-center items-center bg-white rounded-full p-3 hover:scale-105 duration-300 ">
-              <Instagram color="#3B2565" />
-            </div>
-            <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
-              <Facebook />
-            </div>
+            <Link
+              href={
+                "https://www.instagram.com/beersheba_hld?igsh=NDB5eXVjNHFkYm8w"
+              }
+            >
+              <div className="flex justify-center items-center bg-white rounded-full p-3 hover:scale-105 duration-300 ">
+                <Instagram color="#3B2565" />
+              </div>
+            </Link>
+            <Link
+              href={
+                "https://www.facebook.com/profile.php?id=100083542743919&mibextid=ZbWKwL"
+              }
+            >
+              <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
+                <Facebook />
+              </div>
+            </Link>
+            <Link
+              href={
+                "https://youtube.com/@beershebasr.sec.schoolhald5487?si=NgdB1efwKxqTI0Gp"
+              }
+            >
+              <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
+                <Youtube />
+              </div>
+            </Link>
           </div>
 
           <div className="bg-white/10 rounded-full absolute -bottom-12 -right-12 z-10 w-64 h-64"></div>

@@ -10,7 +10,7 @@ const About = () => {
     <section className="container p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
       <div className="p-5 relative flex justify-center items-center">
         <Image
-          src={"/assets/image/beershiba-2.jpeg"}
+          src={"/assets/image/about (1).jpg"}
           alt="About Image"
           width={330}
           height={330}

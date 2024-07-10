@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <OurDesc />
       <Branches />
-      <Video source="/assets/videos/video.mp4" />
+      <Video source="/assets/image/Beersheba Senior Secondary School, Haldwani-(1080p) (1).mp4" />
       <AdmissionEnquiry />
     </main>
   );

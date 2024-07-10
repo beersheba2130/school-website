@@ -43,7 +43,7 @@ const MissionAndValues = () => {
         </div>
         <div className="col-span-2 lg:col-span-1">
           <Image
-            src={"/assets/image/beershiba-2.jpeg"}
+            src={"/assets/image/vision (1).jpg"}
             alt="About"
             width={250}
             height={200}
@@ -73,11 +73,11 @@ const MissionAndValues = () => {
         </div>
         <div className="col-span-2">
           <Image
-            src={"/assets/image/beershiba-6.jpeg"}
+            src={"/assets/image/vision (1).jpg"}
             alt="About"
             width={600}
             height={300}
-            className="h-80 w-full flex justify-center items-center"
+            className="h-80 w-full flex justify-center object-cover items-center rounded-md"
           />
         </div>
         <div className="col-span-2 p-3 rounded-lg bg-[#D6C9EF]/80">

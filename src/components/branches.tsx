@@ -12,7 +12,7 @@ const Branches = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 py-10">
           <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
             <Image
-              src={"/assets/image/logo1.png"}
+              src={"/assets/image/BEERSHIBA SCHOOL (2).png"}
               alt="logo"
               width={900}
               height={800}
@@ -27,7 +27,7 @@ const Branches = () => {
           </div>
           <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
             <Image
-              src={"/assets/image/logo1.png"}
+              src={"/assets/image/BEERSHIBA SCHOOL (2).jpg"}
               alt="logo"
               width={900}
               height={800}
@@ -42,7 +42,7 @@ const Branches = () => {
           </div>
           <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
             <Image
-              src={"/assets/image/logo1.png"}
+              src={"/assets/image/ranikhet logo (1).png"}
               alt="logo"
               width={900}
               height={800}
@@ -57,7 +57,7 @@ const Branches = () => {
           </div>
           <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
             <Image
-              src={"/assets/image/logo1.png"}
+              src={"/assets/image/ranikhet logo (1).png"}
               alt="logo"
               width={900}
               height={800}

@@ -89,7 +89,7 @@ const OurDesc = () => {
             <h5
               className={`${poppins.className} text-[#3B2565] text-xl font-extrabold`}
             >
-              Our Mission
+              Our Vision
             </h5>
           </div>
           <p className="py-3 text-gray-600">
