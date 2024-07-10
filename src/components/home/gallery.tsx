@@ -3,6 +3,8 @@ import React from "react";
 import Heading3 from "../heading3";
 import { server_query_function } from "@/lib/graphql";
 
+export const dynamic = "force-dynamic";
+
 const Gallery = async () => {
   const query = `
   query MyQuery {
