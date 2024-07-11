@@ -36,7 +36,22 @@ query MyQuery {
 
 `;
 
-  const response = (await server_query_function(query)) as BlogType;
+  const res = (await server_query_function(query)) as BlogType;
+
+  const query1 = `
+  query MyQuery {
+    homes {
+      homeGallery {
+        homeGalleryImage {
+          url
+        }
+      }
+    }
+  }
+  
+  `;
+
+  const response = (await server_query_function(query1)) as HomeType;
 
   return (
     <>
@@ -48,8 +63,8 @@ query MyQuery {
       <Why />
       <ToppersResult />
       <Branches />
-      <Gallery />
-      <Events blogs={response.blogs} events={response.homes[0]?.event} />
+      <Gallery image={response?.homes[0]?.homeGallery.homeGalleryImage} />
+      <Events blogs={res.blogs} events={res.homes[0]?.event} />
       <AdmissionEnquiry />
     </>
   );

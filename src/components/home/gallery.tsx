@@ -1,26 +1,18 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Heading3 from "../heading3";
-import { server_query_function } from "@/lib/graphql";
 
 export const dynamic = "force-dynamic";
 
-const Gallery = async () => {
-  const query = `
-  query MyQuery {
-    homes {
-      homeGallery {
-        homeGalleryImage {
-          url
-        }
-      }
-    }
-  }
-  
-  `;
-
-  const response = (await server_query_function(query)) as HomeType;
-  console.log(response.homes[0].homeGallery);
+const Gallery = ({
+  image,
+}: {
+  image: {
+    url: string;
+  }[];
+}) => {
+  console.log(image[0].url);
 
   return (
     <section className="container p-5 lg:p-10 ">
@@ -28,28 +20,28 @@ const Gallery = async () => {
 
       <div className="grid grid-cols-3 gap-1 py-10">
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[0]?.url}
+          src={image[0]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md"
           width={700}
           height={500}
         />
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[1]?.url}
+          src={image[1]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md"
           width={700}
           height={500}
         />
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[2]?.url}
+          src={image[2]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md"
           width={700}
           height={700}
         />
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[3]?.url}
+          src={image[3]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md col-span-2"
           width={700}
@@ -57,14 +49,14 @@ const Gallery = async () => {
         />
         <div>
           <Image
-            src={response.homes[0].homeGallery.homeGalleryImage[4]?.url}
+            src={image[4]?.url}
             alt="Gallery Photo"
             className="w-full h-auto object-cover rounded-lg shadow-md col-span-1 mb-1"
             width={700}
             height={700}
           />
           <Image
-            src={response.homes[0].homeGallery.homeGalleryImage[5]?.url}
+            src={image[5]?.url}
             alt="Gallery Photo"
             className="w-full h-auto object-cover rounded-lg shadow-md col-span-1 mt-1"
             width={700}
@@ -74,28 +66,28 @@ const Gallery = async () => {
       </div>
       <div className="grid grid-cols-3 gap-1 py-10">
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[6]?.url}
+          src={image[6]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md"
           width={700}
           height={500}
         />
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[7]?.url}
+          src={image[7]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md"
           width={700}
           height={500}
         />
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[8]?.url}
+          src={image[8]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md"
           width={700}
           height={700}
         />
         <Image
-          src={response.homes[0].homeGallery.homeGalleryImage[9]?.url}
+          src={image[9]?.url}
           alt="Gallery Photo"
           className="w-full h-auto object-cover rounded-lg shadow-md col-span-2"
           width={700}
@@ -103,14 +95,14 @@ const Gallery = async () => {
         />
         <div>
           <Image
-            src={response.homes[0].homeGallery.homeGalleryImage[4]?.url}
+            src={image[10]?.url}
             alt="Gallery Photo"
             className="w-full h-auto object-cover rounded-lg shadow-md col-span-1 mb-1"
             width={700}
             height={700}
           />
           <Image
-            src={response.homes[0].homeGallery.homeGalleryImage[5]?.url}
+            src={image[11]?.url}
             alt="Gallery Photo"
             className="w-full h-auto object-cover rounded-lg shadow-md col-span-1 mt-1"
             width={700}
