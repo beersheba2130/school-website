@@ -20,6 +20,7 @@ const Gallery = async () => {
   `;
 
   const response = (await server_query_function(query)) as HomeType;
+  console.log(response.homes[0].homeGallery);
 
   return (
     <section className="container p-5 lg:p-10 ">

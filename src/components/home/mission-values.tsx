@@ -83,7 +83,7 @@ const MissionAndValues = () => {
         <div className="col-span-2 p-3 rounded-lg bg-[#D6C9EF]/80">
           <div className="flex gap-5 items-center">
             <Image
-              src={"/assets/image/vector.png"}
+              src={"/assets/image/Vector-icon.png"}
               alt="logo Mission and Values"
               width={60}
               height={60}
