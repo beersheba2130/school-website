@@ -12,7 +12,7 @@ const Gallery = ({
     url: string;
   }[];
 }) => {
-  console.log(image[0].url);
+  console.log(image);
 
   return (
     <section className="container p-5 lg:p-10 ">
