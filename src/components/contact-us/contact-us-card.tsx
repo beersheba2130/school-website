@@ -66,7 +66,7 @@ const ContactUsCard = () => {
                 "https://youtube.com/@beershebasr.sec.schoolhald5487?si=NgdB1efwKxqTI0Gp"
               }
             >
-              <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
+              <div className="flex justify-center items-center border  rounded-full p-3 hover:scale-105 duration-300 bg-white">
                 <Youtube />
               </div>
             </Link>
