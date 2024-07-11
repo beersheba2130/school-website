@@ -93,7 +93,7 @@ const Nav = () => {
           Conatct us
         </li>
       </Link>
-      <Link href={"/disclosure"}>
+      <Link href={"/registeration"}>
         <li
           className={cn(
             "hover:text-[#DB2F2F] text-[#3B2565]",
@@ -102,7 +102,7 @@ const Nav = () => {
               : ""
           )}
         >
-          Disclosure
+          Register
         </li>
       </Link>
     </ul>

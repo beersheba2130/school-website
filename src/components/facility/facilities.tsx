@@ -79,22 +79,22 @@ const Facilities = () => {
               alt={facility.title}
               width={600}
               height={300}
-              className=" h-[300px] object-cover"
+              className=" h-[300px] w-full object-cover"
             />
-            <div className="flex">
+            <div className="grid grid-cols-2">
               <Image
                 src={facility.images[1]}
                 alt={facility.title}
                 width={300}
                 height={300}
-                className="w-[150px] w-[300px] object-cover"
+                className="object-cover w-full"
               />
               <Image
                 src={facility.images[2]}
                 alt={facility.title}
                 width={300}
                 height={300}
-                className=" w-[150px] md:w-[300px]  object-cover"
+                className=" w-full  object-cover"
               />
             </div>
           </div>

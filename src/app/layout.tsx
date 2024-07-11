@@ -7,6 +7,8 @@ import Marque from "@/components/marque";
 import Footer from "@/components/footer";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "BeerSheba School",
   description: "School in Hladwani",
