@@ -63,7 +63,7 @@ query MyQuery {
       <Why />
       <ToppersResult />
       <Branches />
-      <Gallery image={response?.homes[0]?.homeGallery.homeGalleryImage} />
+      <Gallery image={response?.homes[0]?.homeGallery?.homeGalleryImage} />
       <Events blogs={res.blogs} events={res.homes[0]?.event} />
       <AdmissionEnquiry />
     </>

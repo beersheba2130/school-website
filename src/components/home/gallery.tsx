@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 import Heading3 from "../heading3";
@@ -12,7 +11,7 @@ const Gallery = ({
     url: string;
   }[];
 }) => {
-  console.log(image);
+  console.log(image[0].url);
 
   return (
     <section className="container p-5 lg:p-10 ">
