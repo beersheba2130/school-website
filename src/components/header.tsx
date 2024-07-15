@@ -16,7 +16,7 @@ const Header = () => {
           alt="logo"
           width={400}
           height={100}
-          className=" "
+          className="object-cover"
         />
       </Link>
 

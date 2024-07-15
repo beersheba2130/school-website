@@ -73,7 +73,7 @@ const MissionAndValues = () => {
         </div>
         <div className="col-span-2">
           <Image
-            src={"/assets/image/vision (1).jpg"}
+            src={"/assets/image/mission (1).jpg"}
             alt="About"
             width={600}
             height={300}

@@ -23,6 +23,7 @@ Since 1977"
           height={500}
           width={500}
           className="h-80"
+          autoPlay
         />
       </div>
       <div className="absolute lg:-bottom-24 -bottom-52 flex justify-evenly items-center w-full flex-wrap gap-2">
