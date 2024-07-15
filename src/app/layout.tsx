@@ -29,8 +29,11 @@ export default function RootLayout({
         <Footer />
         <div className="p-5">
           <p className={`${poppins.className} text-center font-medium`}>
+            @Copyright 2023 All Rights Reserved
+          </p>
+          <p className={`${poppins.className} text-center font-medium`}>
             <Link href={"https://preettech.com/"}>
-              @ Developed by PreetTech
+              @ Developed by Preet Tech
             </Link>
           </p>
         </div>

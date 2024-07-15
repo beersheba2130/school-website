@@ -78,21 +78,22 @@ const Nav = () => {
               : ""
           )}
         >
-          Gallary
+          Photo Gallary
         </li>
       </Link>
-      <Link href={"/contact-us"}>
+      <Link href={"/video-gallery"}>
         <li
           className={cn(
             "hover:text-[#DB2F2F] text-[#3B2565]",
-            path === "/contact-us"
+            path === "/video-gallery"
               ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
               : ""
           )}
         >
-          Conatct us
+          Video Gallary
         </li>
       </Link>
+
       <Link href={"/registeration"}>
         <li
           className={cn(
