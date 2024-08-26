@@ -22,7 +22,7 @@ Since 1977"
           muted
           height={500}
           width={500}
-          className="h-80 max-w-[40rem] object-center object-contain w-full md:object-cover"
+          className="h-60 w-80 md:w-full md:h-80 max-w-[40rem] object-center object-contain  md:object-cover"
           autoPlay
           loop
         />
