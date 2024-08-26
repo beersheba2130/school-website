@@ -36,6 +36,9 @@ const FounderMessage = () => {
           <TabsTrigger value="coordinator" className="py-3">
             Coordinator Senior Message
           </TabsTrigger>
+          <TabsTrigger value="junior-coordinator" className="py-3">
+            Coordinator’s Junior Message
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="founder" className="p-5 w-full">
           <div className="text-center">
@@ -348,6 +351,64 @@ const FounderMessage = () => {
             day, to provide excellent education to our children . One that they
             will cherish for a lifetime , one that will make them kind and
             compassionate human beings.
+          </p>
+        </TabsContent>
+        <TabsContent value="junior-coordinator" className="p-5 w-full">
+          <div className="text-center">
+            <Heading3 title="Coordinator’s Message" />
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
+            {/*TODO */}
+            <Image
+              alt="founders"
+              src={"/assets/image/cordinate.jpeg"}
+              width={500}
+              height={400}
+              className="rounded w-36 h-40 object-cover"
+            />
+
+            <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
+              <p className="max-w-xl text-[#3B2565] text-lg">
+                “Learning is truly exhilarating when knowledge is acquired
+                through engaging activities”
+              </p>
+              <p className="pt-5">
+                Anita Bisht - Junior Coordinator&pos;s Message
+              </p>
+            </div>
+          </div>
+          <p className="mt-2 lg:px-10 text-lg">Dear Parents and Visitors,</p>
+          <p className="mt-2 lg:px-10 text-lg">Warmest Greetings of the Day!</p>
+          <p className="mt-2 lg:px-10 text-lg">
+            At Beersheba, we believe that learning becomes a joyful and dynamic
+            experience when it involves active participation. Our approach
+            provides numerous opportunities for young learners to explore,
+            discover, and innovate across various domains, including physical,
+            language, cognitive, social, and emotional skills. This holistic
+            development enhances their creativity, intellect, and imagination,
+            with a focus on nurturing their innate talents.
+          </p>
+          <p className="mt-2 lg:px-10 text-lg">
+            Aligned with the NEP-2020, our goal is to foster active, engaged,
+            and creative learners who are well-prepared for the evolving world.
+            Our well-rounded curriculum, which includes literary activities,
+            arts, sports, community service, and awareness programs, supports
+            all-round development and aims to cultivate responsible global
+            citizens.
+          </p>
+          <p className="mt-2 lg:px-10 text-lg">
+            Beersheba has been dedicated for over four and a half decades to
+            providing a nurturing environment where academics and co-curricular
+            activities complement each other. We aim to equip children with
+            essential skills such as creativity, problem-solving, communication,
+            and leadership, ensuring they are ready to face the future with
+            confidence.
+          </p>
+          <p className="mt-2 lg:px-10 text-lg">
+            I invite you to explore Beersheba as we continually strive to offer
+            an exceptional education that our children will cherish and that
+            will help them grow into kind and compassionate individuals.
           </p>
         </TabsContent>
       </Tabs>

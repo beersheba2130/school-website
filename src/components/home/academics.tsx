@@ -8,14 +8,14 @@ import Heading2 from "../heading2";
 
 const Academics = () => {
   return (
-    <section className="container p-5 lg:p-10">
+    <section className="container p-5">
       <Heading3 title="Academics" />
 
-      <div className="py-5 lg:p-5">
+      <div className="py-5 lg:p-5 ">
         <Tabs defaultValue="early-years">
           <TabsList className="">
             <TabsTrigger value="early-years">EARLY YEARS</TabsTrigger>
-            <TabsTrigger value="elementry-school">ELEMENTRY SCHOOL</TabsTrigger>
+            <TabsTrigger value="elementry-school">ELEMENTARY </TabsTrigger>
             <TabsTrigger value="middle-school">MIDDLE SCHOOL</TabsTrigger>
             <TabsTrigger value="high-school">HIGH SCHOOL</TabsTrigger>
             <TabsTrigger value="examination">EXAMINATION</TabsTrigger>
@@ -42,16 +42,17 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Founded in 1977 by the late Shri. and Smt. N.N.D. Bhatt,
-                  Beersheba School in Haldwani began with just 60 children. From
-                  its inception, our co-educational English Medium school has
-                  been dedicated to providing a nurturing environment for early
-                  childhood development. Our Early Years program focuses on
-                  fostering curiosity, creativity, and foundational skills
-                  through engaging activities and personalized attention. We
-                  continue to uphold Mr. N.N.D. Bhatts vision of holistic
-                  education, ensuring every childs journey at Beersheba School
-                  begins with a strong and supportive start.
+                  Founded in 1977 by the late Shri. and Smt. N.N.D.
+                  Bhatt&apos;s, Beersheba School in Haldwani began with just 60
+                  children. From its inception, our co-educational English
+                  Medium school has been dedicated to providing a nurturing
+                  environment for early childhood development. Our Early Years
+                  program focuses on fostering curiosity, creativity, and
+                  foundational skills through engaging activities and
+                  personalized attention. We continue to uphold Mr. N.N.D.
+                  Bhatt&apos;s vision of holistic education, ensuring every
+                  child&apos;s journey at Beersheba School begins with a strong
+                  and supportive start.
                 </p>
 
                 {/* <Button className="mt-5">Read More</Button> */}

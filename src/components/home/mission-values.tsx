@@ -64,11 +64,11 @@ const MissionAndValues = () => {
               Our Vision
             </h4>
           </div>
-          <p className="text-[#3B2565] text-sm lg:text-base my-3">
-            To unlock each students potential through innovative and responsive
-            teaching practices. We foster adaptability, critical thinking, and
-            lifelong learning, preparing students for academic success and to
-            thrive in a changing global landscape.
+          <p className="text-[rgb(59,37,101)] text-sm lg:text-base my-3">
+            To unlock each student&apos;s potential through innovative and
+            responsive teaching practices. We foster adaptability, critical
+            thinking, and lifelong learning, preparing students for academic
+            success and to thrive in a changing global landscape.
           </p>
         </div>
         <div className="col-span-2">

@@ -19,7 +19,7 @@ const About = () => {
           Established on July 4, 1977, in the heart of Haldwani, Beersheba
           School started with just 60 children under the visionary leadership of
           the late Shri. and Smt. N.N.D. Bhatt. Their dedication and inspiration
-          have been instrumental in shaping the school&pos;s growth and
+          have been instrumental in shaping the school&apos;s growth and
           commitment to educational excellence. Today, Beersheba School stands
           as a premier co-educational English Medium institution, known for its
           nurturing environment and comprehensive curriculum.
@@ -27,7 +27,7 @@ const About = () => {
         <p className="text-gray-600 mt-5">
           Over the years, Beersheba School has grown to accommodate a diverse
           student body and a dedicated faculty committed to holistic
-          development. Our school boasts a rich legacy of over 25 years of
+          development. Our school boasts a rich legacy of over 45 years of
           academic excellence, supported by a library of over 3000 books and
           advanced facilities including 70 computers. Affiliated with CBSE and
           regulated by state government norms, we continue to uphold high

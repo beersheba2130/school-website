@@ -56,10 +56,11 @@ query MyQuery {
   return (
     <>
       <HeroSection />
+      <Video />
+
       <About />
       <MissionAndValues />
       <Academics />
-      <Video />
       <Why />
       <ToppersResult />
       <Branches />

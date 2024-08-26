@@ -16,13 +16,13 @@ Since 1977"
           of academic achievement and holistic development.
         </p>
       </div>
-      <div className=" flex justify-center">
+      <div className=" flex justify-center ">
         <video
           src="/assets/image/Beersheba Senior Secondary School, Haldwani-(1080p) (1).mp4"
           muted
           height={500}
           width={500}
-          className="h-80"
+          className="h-80 w-[30rem] object-cover"
           autoPlay
         />
       </div>
@@ -38,7 +38,7 @@ Since 1977"
           source="/assets/image/icon cool-icon-l22.svg"
         />
         <VideoCard
-          title="Book's Library"
+          title="Library"
           desc="Discover our vast collection of books."
           source="/assets/image/icon cool-icon-l25.svg"
         />

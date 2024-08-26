@@ -53,7 +53,7 @@ const Branches = () => {
             >
               Beershiba School
             </h5>
-            <p>Chaukhutia</p>
+            <p>Chaukhutiya</p>
           </div>
           <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
             <Image

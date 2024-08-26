@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const Why = () => {
   return (
-    <section className="p-5 lg:p-10 pt-64 lg:pt-48">
+    <section className="p-5 lg:p-10 ">
       <Heading3 title="Why Beersheba School" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 pt-12 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className="bg-[#DED4F2] rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
@@ -23,8 +23,8 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-[#3B2565]">
-            We have a strong expertise in diverse industrial domains.We have a
-            strong expertise.
+            We have a strong expertise in diverse domains.We have a strong
+            expertise.
           </p>
         </div>
         <div className=" rounded-md p-5 shadow-lg">
@@ -40,8 +40,7 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-[#3B2565]">
-            We provide a constant channel of talent for your business
-            requirements.
+            We provide a constant channel of talent for your requirements.
           </p>
         </div>
         <div className="bg-[#DED4F2] rounded-md p-5 shadow-lg">
@@ -107,8 +106,8 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-white">
-            Our recruitment panel is highly experienced and efficient for
-            complete recruitment solutions.
+            Enhancing school life at Beersheba with top-notch sports facilities
+            and exceptional recruitment solutions.
           </p>
         </div>
       </div>
