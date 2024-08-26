@@ -22,8 +22,9 @@ Since 1977"
           muted
           height={500}
           width={500}
-          className="h-80 max-w-[40rem] object-center object-cover"
+          className="h-80 max-w-[40rem] object-center object-contain w-full md:object-cover"
           autoPlay
+          loop
         />
       </div>
       <div className="absolute lg:-bottom-24 -bottom-52 flex justify-evenly items-center w-full flex-wrap gap-2">
