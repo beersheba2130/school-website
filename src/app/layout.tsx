@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${latto.className} bg-white`}>
+      <body className={`${latto.className} bg-white overflow-x-hidden`}>
         <TopHeader />
         <Header />
         <Marque />

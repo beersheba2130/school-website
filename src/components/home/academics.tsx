@@ -63,7 +63,7 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/beershiba-2.jpeg"}
+                  src={"/assets/image/elementary.jpg"}
                   alt="About Image"
                   width={330}
                   height={330}
@@ -98,7 +98,7 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/beershiba-2.jpeg"}
+                  src={"/assets/image/middle.jpg"}
                   alt="About Image"
                   width={330}
                   height={330}
@@ -133,7 +133,7 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/beershiba-2.jpeg"}
+                  src={"/assets/image/High.jpg"}
                   alt="About Image"
                   width={330}
                   height={330}
@@ -169,7 +169,7 @@ const Academics = () => {
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
                 <Image
-                  src={"/assets/image/beershiba-2.jpeg"}
+                  src={"/assets/image/examination.jpg"}
                   alt="About Image"
                   width={330}
                   height={330}

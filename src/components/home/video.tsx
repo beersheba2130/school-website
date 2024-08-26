@@ -22,7 +22,7 @@ Since 1977"
           muted
           height={500}
           width={500}
-          className="h-80 w-[30rem] object-cover"
+          className="h-80 max-w-[30rem] object-center object-cover"
           autoPlay
         />
       </div>

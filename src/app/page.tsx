@@ -57,7 +57,6 @@ query MyQuery {
     <>
       <HeroSection />
       <Video />
-
       <About />
       <MissionAndValues />
       <Academics />
