@@ -362,7 +362,7 @@ const FounderMessage = () => {
             {/*TODO */}
             <Image
               alt="founders"
-              src={"/assets/image/cordinate.jpeg"}
+              src={"/assets/image/Anita.png"}
               width={500}
               height={400}
               className="rounded w-36 h-40 object-cover"
@@ -373,9 +373,7 @@ const FounderMessage = () => {
                 “Learning is truly exhilarating when knowledge is acquired
                 through engaging activities”
               </p>
-              <p className="pt-5">
-                Anita Bisht - Junior Coordinator&pos;s Message
-              </p>
+              <p className="pt-5">Anita Bisht - Junior Coordinator Message</p>
             </div>
           </div>
           <p className="mt-2 lg:px-10 text-lg">Dear Parents and Visitors,</p>
