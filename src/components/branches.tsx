@@ -52,7 +52,7 @@ const Branches = () => {
             <h5
               className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
             >
-              NNDM Beersheba School
+              NNDM Beershiva School
             </h5>
             <p>Ranikhet</p>
           </div>
@@ -67,7 +67,7 @@ const Branches = () => {
             <h5
               className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
             >
-              Beersheba School
+              Beershiva School
             </h5>
             <p>Chaukhutiya</p>
           </div>
