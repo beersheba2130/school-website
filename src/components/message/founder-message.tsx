@@ -362,7 +362,9 @@ const FounderMessage = () => {
             {/*TODO */}
             <Image
               alt="founders"
-              src={"/assets/image/Anita.png"}
+              src={
+                "/assets/image/WhatsApp Image 2024-08-28 at 10.07.10 AM.jpeg"
+              }
               width={500}
               height={400}
               className="rounded w-36 h-40 object-cover"

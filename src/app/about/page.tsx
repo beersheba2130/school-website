@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="">
       <Banner
-        source="/assets/image/beershiba-7.jpeg"
+        source="/assets/image/WhatsApp Image 2024-08-28 at 9.46.33 AM.jpeg"
         title="About School"
         description="Beersheba - Haldwani"
       />
