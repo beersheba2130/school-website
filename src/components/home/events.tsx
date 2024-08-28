@@ -59,7 +59,7 @@ const Events = ({ blogs, events }: EventsProps) => {
                 key={event?.id}
                 className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2"
               >
-                <div className="bg-[#F8EF2E] p-2">
+                <div className="bg-[#F8EF2E] w-28 py-1 px-2">
                   <span className="text-lg lg:text-xl font-semibold">
                     {event?.day}
                   </span>

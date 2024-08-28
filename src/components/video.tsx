@@ -12,8 +12,8 @@ const Video = ({ source }: Props) => {
         width={1300}
         height={500}
         muted
-        controls
         loop
+        autoPlay
         poster="/assets/image/thumbnail.jpg"
       >
         <source src={source} type="video/mp4" />
