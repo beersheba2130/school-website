@@ -17,7 +17,7 @@ const Gallery = ({
     <section className="container p-5 lg:p-10 ">
       <Heading3 title="Gallery" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5">
+      <div className=" mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5">
         {image?.map((uri, index) => (
           <Image
             key={index}

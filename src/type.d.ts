@@ -83,3 +83,14 @@ type SingleBlogType = {
     content: htm;
   }[];
 };
+
+type galleryType = {
+  beersheebaImages: {
+    imageGallery: {
+      imageCategoryName: string;
+      image: {
+        url: string;
+      }[];
+    }[];
+  }[];
+};
