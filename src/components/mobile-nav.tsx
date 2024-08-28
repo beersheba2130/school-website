@@ -59,7 +59,14 @@ const MobileNav = () => {
               <SheetClose asChild>
                 <Link href={"/gallery"}>
                   <li className="hover:text-[#3B2565] py-2 text-base font-medium">
-                    Gallary
+                    Image Gallary
+                  </li>
+                </Link>
+              </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/video-gallery"}>
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
+                    Video Gallary
                   </li>
                 </Link>
               </SheetClose>
