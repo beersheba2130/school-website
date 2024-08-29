@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const query = `
 query MyQuery {
