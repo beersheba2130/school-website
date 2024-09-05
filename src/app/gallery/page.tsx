@@ -9,7 +9,7 @@ export const revalidate = 0;
 
 const query = `
 query MyQuery {
-  beersheebaImages {
+  haldwaniImageGalleries {
     imageGallery {
       imageCategoryName
       image {
@@ -23,7 +23,7 @@ query MyQuery {
 const page = async () => {
   const res = (await server_query_function(query)) as galleryType;
 
-  const images = res.beersheebaImages[0].imageGallery;
+  const images = res.haldwaniImageGalleries[0].imageGallery;
   // console.log("😒😒😒😒😒", images);
 
   return (
@@ -59,19 +59,6 @@ const page = async () => {
             </div>
           );
         })}
-
-        {/* <div className="flex flex-wrap justify-center gap-5 mt-5 items-center">
-          {gImages.map((image) => (
-            <Image
-              key={image.id}
-              src={image.src}
-              alt="gallery"
-              width={300}
-              height={300}
-              objectFit="cover"
-            />
-          ))}
-        </div> */}
       </section>
     </>
   );

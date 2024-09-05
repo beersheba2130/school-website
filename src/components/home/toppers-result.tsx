@@ -19,7 +19,7 @@ const ToppersResult = () => {
 
   const query = `
   query MyQuery {
-    homes {
+    haldwaniHomes {
       toppers {
         class
         id
@@ -39,8 +39,8 @@ const ToppersResult = () => {
 
   async function toppers() {
     const response = (await client_query_function(query)) as HomeType;
-    setTopper(response.homes[0].toppers[0]);
-    setOtherTopper(response.homes[0].toppers[1]);
+    setTopper(response.haldwaniHomes[0].toppers[0]);
+    setOtherTopper(response.haldwaniHomes[0].toppers[1]);
   }
 
   return (

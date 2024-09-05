@@ -14,7 +14,7 @@ const page = async ({
 }) => {
   const query = gql`
     query MyQuery {
-      blogs(where: { slug: "${params.slug}" }) {
+      haldwaniBlogs(where: { slug: "${params.slug}" }) {
         id
         mainImage {
           url
@@ -36,16 +36,20 @@ const page = async ({
         <Image
           width={1200}
           height={500}
-          src={response.blogs[0]?.mainImage.url}
+          src={response.haldwaniBlogs[0]?.mainImage.url}
           alt="banner"
           className="h-80 w-full object-cover object-center"
         />
 
-        <h1 className="text-3xl font-bold mt-6">{response.blogs[0]?.title}</h1>
+        <h1 className="text-3xl font-bold mt-6">
+          {response.haldwaniBlogs[0]?.title}
+        </h1>
 
         <div
           className="mt-6"
-          dangerouslySetInnerHTML={{ __html: response.blogs[0]?.content?.html }}
+          dangerouslySetInnerHTML={{
+            __html: response.haldwaniBlogs[0]?.content?.html,
+          }}
         />
       </section>
     </>

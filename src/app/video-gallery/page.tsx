@@ -20,13 +20,13 @@ const Page = () => {
   };
 
   const query = `
-  query MyQuery {
-    videoGalleries {
-      video {
+query MyQuery {
+  haldwaniVideoGalleries{
+     video {
         url
       }
-    }
   }
+}
   
   `;
 
@@ -38,8 +38,8 @@ const Page = () => {
 
   async function getVideos() {
     const videos = await client_query_function(query);
-    setVideos(videos?.videoGalleries[0]?.video?.url);
-    console.log(videos?.videoGalleries[0]?.video?.url, "🟢🟢🟢🟢🟢");
+    setVideos(videos?.haldwaniVideoGalleries[0]?.video?.url);
+    console.log(videos?.haldwaniVideoGalleries[0]?.video?.url, "🟢🟢🟢🟢🟢");
   }
 
   const { width: playerWidth, height: playerHeight } = getPlayerDimensions();

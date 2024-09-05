@@ -12,20 +12,21 @@ import Why from "@/components/home/why";
 import { server_query_function } from "@/lib/graphql";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const page = async () => {
   const query = `
-query MyQuery {
-  blogs(first: 5) {
+  query MyQuery {
+  haldwaniBlogs {
     id
     mainImage {
       url
     }
-    title
+     title
     slug
     shortDesc
   }
-     homes {
+   haldwaniHomes {
     event {
       id
       day
@@ -37,18 +38,18 @@ query MyQuery {
 `;
 
   const res = (await server_query_function(query)) as BlogType;
+  // console.log(res);
 
   const query1 = `
   query MyQuery {
-    homes {
-      homeGallery {
-        homeGalleryImage {
-          url
-        }
+  haldwaniHomes {
+    homeGallery {
+      homeGalleryImage {
+        url
       }
     }
   }
-  
+}
   `;
 
   const response = (await server_query_function(query1)) as HomeType;
@@ -63,8 +64,10 @@ query MyQuery {
       <Why />
       <ToppersResult />
       <Branches />
-      <Gallery image={response?.homes[0]?.homeGallery?.homeGalleryImage} />
-      <Events blogs={res.blogs} events={res.homes[0]?.event} />
+      <Gallery
+        image={response?.haldwaniHomes[0]?.homeGallery?.homeGalleryImage}
+      />
+      <Events blogs={res.haldwaniBlogs} events={res.haldwaniHomes[0]?.event} />
       <AdmissionEnquiry />
     </>
   );

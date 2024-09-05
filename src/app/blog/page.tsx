@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 const page = async () => {
   const query = `
     query MyQuery {
-      blogs(first: 100) {
+      haldwaniBlogs(first: 100) {
         id
         mainImage {
           url
@@ -33,7 +33,7 @@ const page = async () => {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {response?.blogs.map((blog) => (
+        {response?.haldwaniBlogs.map((blog) => (
           <div className=" bg-white w-72 lg:w-80 mx-auto" key={blog?.id}>
             <Image
               src={blog?.mainImage?.url}

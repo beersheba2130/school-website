@@ -23,7 +23,7 @@ type homeGallery = {
 }[];
 
 type HomeType = {
-  homes: {
+  haldwaniHomes: {
     toppers: TopperType[];
     homeGallery: homeGalleryType;
   }[];
@@ -65,14 +65,14 @@ type Event = {
 };
 
 type BlogType = {
-  blogs: Blog[];
-  homes: {
+  haldwaniBlogs: Blog[];
+  haldwaniHomes: {
     event: Event[];
   }[];
 };
 
 type SingleBlogType = {
-  blogs: {
+  haldwaniBlogs: {
     id: string;
     mainImage: {
       url: string;
@@ -85,7 +85,7 @@ type SingleBlogType = {
 };
 
 type galleryType = {
-  beersheebaImages: {
+  haldwaniImageGalleries: {
     imageGallery: {
       imageCategoryName: string;
       image: {
