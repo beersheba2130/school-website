@@ -69,7 +69,7 @@ const Branches = () => {
             >
               Beershiva School
             </h5>
-            <p>Chaukhutiya</p>
+            <p>Chaukhutia</p>
           </div>
         </div>
       </div>
