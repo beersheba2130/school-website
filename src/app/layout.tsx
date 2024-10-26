@@ -6,6 +6,7 @@ import TopHeader from "@/components/top-header";
 import Marque from "@/components/marque";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Link href={"https://preettech.com/"}>Developed by Preet Tech</Link>
           </p>
         </div>
+        <GoogleTagManager gtmId="G-7Y7CGWPKR3" />
       </body>
     </html>
   );
