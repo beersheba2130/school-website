@@ -94,3 +94,9 @@ type galleryType = {
     }[];
   }[];
 };
+
+type DisclosureType = {
+  id: string;
+  title: string;
+  url: string;
+}[];

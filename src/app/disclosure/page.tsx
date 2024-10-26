@@ -1,15 +1,35 @@
 import Banner from "@/components/banner";
 import Heading3 from "@/components/heading3";
 import { Button } from "@/components/ui/button";
+import { server_query_function } from "@/lib/graphql";
+import Link from "next/link";
 import React from "react";
 
-const page = () => {
+export const dynamic = "force-dynamic";
+
+const page = async () => {
+  const query = `query MyQuery {
+  disclosurePages {
+    haldwaniDisclosure {
+      id
+      title
+      url
+    }
+  }
+}`;
+
+  const response = await server_query_function(query);
+
+  //@ts-expect-error
+  const disclosure = response.disclosurePages[0]
+    .haldwaniDisclosure as DisclosureType;
+
   return (
     <>
       <Banner
         source="/assets/image/aboutImage.jpg"
         title="Disclosure"
-        description="Beersheba - Haldwani"
+        description="Beersheba - Almora"
       />
 
       <section className="container p-5 lg:p-10">
@@ -18,102 +38,21 @@ const page = () => {
           <div className="max-w-4xl mx-auto overflow-x-auto">
             <table className="w-full my-10 text-[#3B2565] border-collapse">
               <tbody>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Affiliation/Extension
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    NOC
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Bank Account Type
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Building SafetyView Details
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Fire SafetyView Details
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    General Information
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Committees and Incharges 2022-23
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Safe water condition and sanitary condition
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Recognition Certificate Under RTE Act 2009
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Annual Academic Calender 2023-24
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Society Registration
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
-                <tr className=" border-2  border-[#3B2565]">
-                  <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
-                    Club and Committees 2023-24
-                  </td>
-                  <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
-                    <Button>View Details</Button>
-                  </td>
-                </tr>
+                {disclosure.map((disclosure) => (
+                  <tr
+                    key={disclosure?.id}
+                    className=" border-2  border-[#3B2565]"
+                  >
+                    <td className=" text-lg lg:text-xl font-semibold  py-2 px-5">
+                      {disclosure?.title}
+                    </td>
+                    <td className="border-l-2 border-[#3B2565] py-2 px-5 flex justify-center items-center">
+                      <Link href={`${disclosure?.url}`}>
+                        <Button>View Details</Button>
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

@@ -11,8 +11,11 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata: Metadata = {
-  title: "BeerSheba School",
-  description: "School in Hladwani",
+  title: "Beersheba Sr Sec School Haldwani - Academic Excellence",
+  description:
+    "Beersheba Sr Sec School in Haldwani offers top-notch education, modern facilities, and a focus on holistic development. Enroll now for a brighter future!",
+  keywords:
+    "School , private schools near me ,montessori ,schools near me , boarding school , classroom google , private school , private school , educate , new education policy , schooling , teacher and student , secondary, 9th class , cbse official website , middle , my favourite teacher",
 };
 
 export default function RootLayout({
