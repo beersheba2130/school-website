@@ -54,7 +54,7 @@ const ContactUsCard = () => {
             </Link>
             <Link
               href={
-                "https://www.facebook.com/profile.php?id=100083542743919&mibextid=ZbWKwL"
+                "https://www.facebook.com/share/18KZyh6Tbz/"
               }
             >
               <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
@@ -63,7 +63,7 @@ const ContactUsCard = () => {
             </Link>
             <Link
               href={
-                "https://youtube.com/@beershebasr.sec.schoolhald5487?si=NgdB1efwKxqTI0Gp"
+                "https://youtube.com/@beershebasr.sec.schoolhald5487?si=nd4T5fswYu1cUHUC"
               }
             >
               <div className="flex justify-center items-center border  rounded-full p-3 hover:scale-105 duration-300 bg-white">

@@ -106,7 +106,7 @@ const FounderMessage = () => {
                 “At Beersheba, we nurture more than just minds; we cultivate
                 well-rounded individuals equipped to lead impactful lives.”
               </p>
-              <p className="pt-5">Mr. H. S. Babbar - Vice Principal</p>
+        
             </div>
           </div>
           <p className="mt-2 lg:px-10 text-lg">
