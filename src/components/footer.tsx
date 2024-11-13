@@ -1,4 +1,5 @@
 import { poppins } from "@/utils/font";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -89,6 +90,25 @@ const Footer = () => {
               height={30}
             />
             <p>beershebaschool_hld@rediffmail.com</p>
+          </li>
+          <li>
+            <ul className="flex gap-2 items-center">
+              <Link href={"https://www.instagram.com/beersheba_hld?igsh=NDB5eXVjNHFkYm8w"}>
+              <li>
+                <Instagram />
+              </li>
+              </Link>
+              <Link href={"https://www.facebook.com/share/18KZyh6Tbz/"}>
+              <li>
+                <Facebook />
+              </li>
+              </Link>
+              <Link href={"https://youtube.com/@beershebasr.sec.schoolhald5487?si=nd4T5fswYu1cUHUC"}>
+              <li>
+                <Youtube />
+              </li>
+              </Link>
+            </ul>
           </li>
         </ul>
       </div>
