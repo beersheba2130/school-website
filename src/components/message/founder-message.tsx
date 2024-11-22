@@ -132,7 +132,7 @@ const FounderMessage = () => {
             let us embark on a journey of learning, growth, and excellence.
           </p>
           <p className="mt-2 lg:px-10 text-lg">
-            Thank you for choosing Beersheba Senior Secondary School. Here&pos;s
+            Thank you for choosing Beersheba Senior Secondary School. Here is
             to a bright future filled with knowledge, character, and endless
             possibilities.
           </p>
@@ -220,7 +220,7 @@ const FounderMessage = () => {
             learning is child centric and child oriented. In our curriculum, the
             student is given the primary focus and is involved in the learning
             process. We motivate them to follow the golden words of the great
-            thinkers. &quot;Don&pos;t give up&quot; and implement it to make
+            thinkers. &quot;Do not give up&quot; and implement it to make
             them humble citizens of Incredible India.
           </p>
           <p className="mt-2 lg:px-10 text-lg">
@@ -304,7 +304,7 @@ const FounderMessage = () => {
                 “Learning can truly be fun and exhilarating when knowledge is
                 acquired by way of performing through activities.”
               </p>
-              <p className="pt-5">Nishi Varma - Coordinator&pos;s Message</p>
+              <p className="pt-5">Nishi Varma - Coordinator Message</p>
             </div>
           </div>
           <p className="mt-2 lg:px-10 text-lg">Dear Parents and Visitors,</p>
