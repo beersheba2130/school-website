@@ -315,7 +315,7 @@ const FounderMessage = () => {
             offer several opportunities to our young minds to explore , ponder,
             discover, reflect, innovate and to develop multitudinous skills in
             physical and motor, language , cognitive , social and emotional
-            domains, thereby enriching their imaginative , intellectual and
+            domains, thereby enriching their imaginative, intellectual and
             aesthetic abilities with priority to enhance their innate
             capabilities.
           </p>
