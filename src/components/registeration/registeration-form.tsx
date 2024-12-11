@@ -380,7 +380,7 @@ const RegisterationForm = () => {
               name="annualIncome"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel> Incone</FormLabel>
+                  <FormLabel> Income</FormLabel>
                   <FormControl>
                     <Input placeholder=" Income..." {...field} />
                   </FormControl>
