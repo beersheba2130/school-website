@@ -23,14 +23,13 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-[#3B2565]">
-            We have a strong expertise in diverse domains.We have a strong
-            expertise.
+          We have a strong expertise (repeated-remove repetition)
           </p>
         </div>
         <div className=" rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
-              Our Achivers
+            Our Achievers
             </p>
             <Image
               src={"/assets/image/success-svgrepo-com (1) 1.png"}
@@ -79,7 +78,7 @@ const Why = () => {
         <div className=" rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
-              Academic Excellence
+            Academic Excellence
             </p>
             <Image
               src={"/assets/image/student-reading-svgrepo-com 1.png"}
@@ -89,7 +88,7 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-[#3B2565]">
-            We provide a constant channel of talent for your business
+            We provide a constant channel of talent for your academic
             requirements.
           </p>
         </div>

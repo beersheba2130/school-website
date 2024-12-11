@@ -43,14 +43,14 @@ const Academics = () => {
 
                 <p className="text-gray-600 mt-5">
                   Founded in 1977 by the late Shri. and Smt. N.N.D.
-                  Bhatt&apos;s, Beersheba School in Haldwani began with just 60
+                  Bhatt, Beersheba School in Haldwani began with just 60
                   children. From its inception, our co-educational English
                   Medium school has been dedicated to providing a nurturing
                   environment for early childhood development. Our Early Years
                   program focuses on fostering curiosity, creativity, and
                   foundational skills through engaging activities and
                   personalized attention. We continue to uphold Mr. N.N.D.
-                  Bhatt&apos;s vision of holistic education, ensuring every
+                  Bhatt vision of holistic education, ensuring every
                   child&apos;s journey at Beersheba School begins with a strong
                   and supportive start.
                 </p>
@@ -74,7 +74,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  Elementry School
+                  Elementory School
                 </p>
 
                 <Heading2 title="Beersheba School" />
@@ -186,7 +186,7 @@ const Academics = () => {
                 <Heading2 title="Beersheba School" />
 
                 <p className="text-gray-600 mt-5">
-                  Our examination process is structured to assess students
+                  Our examination process is structured to assess student&apos;s
                   understanding and mastery of the curriculum. Regular
                   assessments, projects, and practical exams ensure
                   comprehensive evaluation. We provide a supportive environment

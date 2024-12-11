@@ -79,14 +79,15 @@ const ToppersResult = () => {
         </div>
         <div className="lg:p-10 py-10">
           <h3 className="font-extrabold text-[#3B2565] text-balance text-3xl">
-            Toppers Class X
+          performance in grade X.
           </h3>
           <p className="py-5">
             At Beersheba School, our Early Years program is designed to provide
             a caring and safe environment that caters to the specific needs of
             young learners. With a strong focus on developing fundamental
             literacy skills, our program ensures that every child receives the
-            support they need to excel academically and beyond.
+            support they need to excel academically and beyond. As a result, our students display exemplary
+            performance in grade X.
           </p>
         </div>
       </div>
