@@ -74,7 +74,7 @@ const Academics = () => {
                 <p
                   className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}
                 >
-                  Elementory School
+                  Elementary School
                 </p>
 
                 <Heading2 title="Beersheba School" />

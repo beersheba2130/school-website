@@ -23,7 +23,7 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-[#3B2565]">
-          We have a strong expertise (repeated-remove repetition)
+          We have a strong expertise in nurturing young minds with the best educators.
           </p>
         </div>
         <div className=" rounded-md p-5 shadow-lg">
