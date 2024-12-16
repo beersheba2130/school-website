@@ -20,7 +20,7 @@ const About = () => {
           School started with just 60 children under the visionary leadership of
           the late Shri. and Smt. N.N.D. Bhatt. Their dedication and inspiration
           have been instrumental in shaping the school&apos;s growth and
-          commitment to educational excellence. Today, Beersheba School stands
+          commitment to educational excellence. Today Beersheba School stands
           as a premier co-educational English Medium institution, known for its
           nurturing environment and comprehensive curriculum.
         </p>
