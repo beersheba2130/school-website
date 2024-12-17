@@ -123,7 +123,7 @@ const ToppersResult = () => {
         </div>
         <div className="my-5 lg:my-0 lg:p-10 order-2 lg:order-1">
           <h3 className="font-extrabold text-[#3B2565] text-balance text-3xl">
-          performance in grade XII.
+          Performance in grade XII.
           </h3>
           <p className="py-5">
             At Beersheba School, our Class XII program is tailored to provide a
