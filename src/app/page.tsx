@@ -15,6 +15,47 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 const page = async () => {
+  const bannerVideoQuery = `
+  query MyQuery {
+  haldwaniHomes {
+    homeVideoBanner {
+      url
+    }
+  }
+}
+  `;
+  const videoBanner = (await server_query_function(
+    bannerVideoQuery
+  )) as homeBannerType;
+
+  const featuredNews = `
+  query MyQuery {
+  haldwaniHomes {
+    featuredNews {
+      imageCategoryName
+      image {
+        url
+      }
+    }
+  }
+}
+  `;
+
+  interface homeFeaturedNewsType {
+    haldwaniHomes: [
+      {
+        featuredNews: {
+          imageCategoryName: string;
+          image: { url: string }[];
+        }[];
+      }
+    ];
+  }
+
+  const featuredNewsResponse = (await server_query_function(
+    featuredNews
+  )) as homeFeaturedNewsType;
+
   const query = `
   query MyQuery {
   haldwaniBlogs {
@@ -56,8 +97,8 @@ const page = async () => {
 
   return (
     <>
-      <HeroSection />
-      <Video />
+      <HeroSection video={videoBanner.haldwaniHomes} />
+      <Video featured={featuredNewsResponse.haldwaniHomes[0]} />
       <About />
       <MissionAndValues />
       <Academics />

@@ -29,6 +29,26 @@ type HomeType = {
   }[];
 };
 
+type homeBannerType = {
+  haldwaniHomes: {
+    homeVideoBanner: {
+      url: string;
+    }[];
+  }[];
+};
+
+type homeFeaturedNewsType = {
+  haldwaniHomes: {
+    featuredNews: {
+      imageCategoryName: {
+        image: {
+          url: string;
+        }[];
+      }[];
+    }[];
+  }[];
+};
+
 // type blogType = {
 //   blogs: {
 //     id: string;
