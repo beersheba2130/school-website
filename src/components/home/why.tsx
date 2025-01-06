@@ -7,7 +7,7 @@ const Why = () => {
     <section className="p-5 lg:p-10 ">
       <Heading3 title="Why Beersheba School" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
         <div className="bg-[#DED4F2] rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
@@ -23,13 +23,14 @@ const Why = () => {
             />
           </div>
           <p className="my-3 text-[#3B2565]">
-          We have a strong expertise in nurturing young minds with the best educators.
+            We have a strong expertise in nurturing young minds with the best
+            educators.
           </p>
         </div>
         <div className=" rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
-            Our Achievers
+              Our Achievers
             </p>
             <Image
               src={"/assets/image/success-svgrepo-com (1) 1.png"}
@@ -78,7 +79,7 @@ const Why = () => {
         <div className=" rounded-md p-5 shadow-lg">
           <div className="flex justify-between items-center">
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
-            Academic Excellence
+              Academic Excellence
             </p>
             <Image
               src={"/assets/image/student-reading-svgrepo-com 1.png"}

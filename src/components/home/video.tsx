@@ -47,28 +47,28 @@ Since 1977"
       </div>
       <div className=" flex justify-center ">
         <Carousel>
-            <CarouselContent className="flex justify-center items-center w-72 mx-auto">
+          <CarouselContent className="flex justify-center items-center w-72 mx-auto">
             {featured?.featuredNews?.map((item, index) => (
               <CarouselItem key={index}>
-              <Card className="border-none">
-                <CardContent className="flex flex-col gap-4 p-6">
-                <Image
-                  src={item?.image[0]?.url}
-                  alt="featured news"
-                  width={400}
-                  height={300}
-                  className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-                />
-                <div className="text-center">
-                  <p className="text-lg font-semibold text-gray-800">
-                  {item?.imageCategoryName}
-                  </p>
-                </div>
-                </CardContent>
-              </Card>
+                <Card className="border-none">
+                  <CardContent className="flex flex-col gap-4 p-6">
+                    <Image
+                      src={item?.image[0]?.url}
+                      alt="featured news"
+                      width={400}
+                      height={300}
+                      className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="text-center">
+                      <p className="text-lg font-semibold text-gray-800">
+                        {item?.imageCategoryName}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
-            </CarouselContent>
+          </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
@@ -76,22 +76,22 @@ Since 1977"
       <div className="absolute lg:-bottom-24 -bottom-52 flex justify-evenly items-center w-full flex-wrap gap-2">
         <VideoCard
           title="Campus"
-          desc="Exploring our expansive campus and its facilities."
+          desc="Discover our state-of-the-art facilities and vibrant learning spaces."
           source="/assets/image/icon cool-icon-l19.svg"
         />
         <VideoCard
           title=" Teacher"
-          desc="Meet our dedicated faculty members."
+          desc="Meet our dedicated educators shaping bright futures with passion."
           source="/assets/image/icon cool-icon-l22.svg"
         />
         <VideoCard
           title="Library"
-          desc="Discover our vast collection of books."
+          desc="Explore our vast collection of books and digital resources for knowledge seekers."
           source="/assets/image/icon cool-icon-l25.svg"
         />
         <VideoCard
           title="Smart School"
-          desc="Embrace technology in education."
+          desc="Experience cutting-edge technology enhancing every aspect of learning"
           source="/assets/image/icon cool-icon-l28.svg"
         />
       </div>
