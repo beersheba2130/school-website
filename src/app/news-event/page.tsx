@@ -1,10 +1,14 @@
 "use client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { server_query_function } from "@/lib/graphql";
+import { ListRestart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
+
   const [filteredNews, setFilteredNews] = useState<NewsEvent[]>([]);
   const query = `query MyQuery {
   newsEvents {
@@ -42,59 +46,60 @@ const page = () => {
   return (
     <div>
       <div className="container mx-auto p-4">
-      <div className="flex gap-2 mb-4">
-        <input
-        type="text"
-        placeholder="Search news..."
-        className="w-full p-2 border rounded-lg"
-        onChange={(e) => {
-          const searchTerm = e.target.value.toLowerCase().trim();
-          if (!searchTerm) {
-          news(); // Reset to original data if search is empty
-          return;
-          }
-          const searchResults = filteredNews.filter((item) => {
-          const heading = item.newsHeading.toLowerCase();
-          return heading.includes(searchTerm) || 
-               heading.startsWith(searchTerm) || 
-               heading.split(' ').some(word => word === searchTerm);
-          });
-          setFilteredNews(searchResults);
-        }}
-        />
-        <button
-        className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-        onClick={() => news()} // Reset search
-        >
-        Reset
-        </button>
-      </div>
-      <div className="container grid py-10 md:py-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        {filteredNews.reverse().map((item) => (
-        <Link href={`/news-event/${item?.id}`} key={item?.id}>
-          <div
-          key={item.id}
-          className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-          >
-          <Image
-            src={item?.newsImage.url}
-            alt={item?.newsHeading}
-            width={500}
-            height={500}
-            className="w-full h-48 object-cover"
+        <div className="flex gap-2 mb-4">
+          <Input
+            type="text"
+            placeholder="Search from here..."
+            className="w-full p-2 border rounded-lg"
+            onChange={(e) => {
+              const searchTerm = e.target.value.toLowerCase().trim();
+              if (!searchTerm) {
+                news();
+                return;
+              }
+              const searchResults = filteredNews.filter((item) => {
+                const heading = item.newsHeading.toLowerCase();
+                return (
+                  heading.includes(searchTerm) ||
+                  heading.startsWith(searchTerm) ||
+                  heading.split(" ").some((word) => word === searchTerm)
+                );
+              });
+              setFilteredNews(searchResults);
+            }}
           />
-          <div className="p-4">
-            <h2 className="text-xl font-semibold text-gray-800">
-            {item?.newsHeading}
-            </h2>
-          </div>
-          </div>
-        </Link>
-        ))}
-      </div>
+          <Button
+            onClick={() => news()} // Reset search
+          >
+            Reset Filter <ListRestart size={20} className="ml-2" />
+          </Button>
+        </div>
+        <div className="container grid py-10 md:py-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+          {filteredNews.reverse().map((item) => (
+            <Link href={`/news-event/${item?.id}`} key={item?.id}>
+              <div
+                key={item.id}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              >
+                <Image
+                  src={item?.newsImage.url}
+                  alt={item?.newsHeading}
+                  width={500}
+                  height={500}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold text-gray-800">
+                    {item?.newsHeading}
+                  </h2>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;
