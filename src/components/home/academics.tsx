@@ -50,7 +50,7 @@ const Academics = () => {
                   program focuses on fostering curiosity, creativity, and
                   foundational skills through engaging activities and
                   personalized attention. We continue to uphold Mr. N.N.D.
-                  Bhatt vision of holistic education, ensuring every
+                  Bhatt&apos;s vision of holistic education, ensuring every
                   child&apos;s journey at Beersheba School begins with a strong
                   and supportive start.
                 </p>

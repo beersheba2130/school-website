@@ -41,7 +41,7 @@ Since 1977"
           greater challenges. Join our transformative journey where students are
           empowered to dream big, achieve more, and impact the world.
         </p>
-        <Link href={"/blogs"}>
+        <Link href={"/blog"}>
           <Button>Explore Our Highlights</Button>
         </Link>
       </div>

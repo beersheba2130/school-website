@@ -56,7 +56,7 @@ const facilitiesData = [
   {
     title: "Art Room",
     description:
-      "A quality music room in a school should prioritize acoustic design, soundproofing, and a diverse collection of well-maintained instruments. It should feature quality pianos/keyboards, amplification and recording equipment, and organized storage. Visual aids, and technology integration enhance the learning environment. ",
+      "The Senior Secondary Art Room at Beersheba Sr. Sec. School is a vibrant and inspiring space where creativity flourishes. Equipped with a wide array of art supplies and tools, it provides students with the perfect environment to explore their artistic talents. The room is filled with natural light and adorned with students' artwork, creating an atmosphere that encourages imagination and innovation. This creative haven is where students can express themselves freely and develop their skills under the guidance of dedicated art instructors.",
     images: [
       "/assets/image/art-1.jpg",
       "/assets/image/art-2.jpg",
