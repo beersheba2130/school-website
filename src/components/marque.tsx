@@ -14,12 +14,12 @@ const Marque = () => {
           Online Registration Open
         </p>
       </Link>
-      <Link href={"/registeration"}>
+      <Link href={"/registeration"} className="hidden md:block">
         <p className=" animate-marquee text-center whitespace-nowrap">
           Online Registration Open
         </p>
       </Link>
-      <Link href={"/registeration"}>
+      <Link href={"/registeration"} className="hidden lg:block">
         <p className=" animate-marquee text-center whitespace-nowrap">
           Online Registration Open
         </p>
