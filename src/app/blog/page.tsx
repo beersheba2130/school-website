@@ -44,12 +44,14 @@ const page = async () => {
             />
 
             <Link href={`/blog/${blog?.slug}`}>
-              <h3 className="px-2 py-1 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug">
+              <h3 className="px-2 py-1 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug line-clamp-3">
                 {blog?.title}
               </h3>
             </Link>
 
-            <p className="px-2 py-1 text-gray-600">{blog?.shortDesc}</p>
+            <p className="px-2 py-1 text-gray-600 line-clamp-4">
+              {blog?.shortDesc}
+            </p>
           </div>
         ))}
       </div>
