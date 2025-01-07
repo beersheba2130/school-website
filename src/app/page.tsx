@@ -6,6 +6,7 @@ import Events from "@/components/home/events";
 import Gallery from "@/components/home/gallery";
 import HeroSection from "@/components/home/hero-section";
 import MissionAndValues from "@/components/home/mission-values";
+import NewSection from "@/components/home/new-section";
 import ToppersResult from "@/components/home/toppers-result";
 import Video from "@/components/home/video";
 import Why from "@/components/home/why";
@@ -103,6 +104,7 @@ const page = async () => {
       <MissionAndValues />
       <Academics />
       <Why />
+      <NewSection />
       <ToppersResult />
       <Branches />
       <Gallery
