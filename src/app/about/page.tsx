@@ -1,5 +1,6 @@
 import About from "@/components/about/about";
 import OurDesc from "@/components/about/our-desc";
+import AccountDetails from "@/components/academics/account-details";
 import AdmissionEnquiry from "@/components/admission-enquiry";
 import Banner from "@/components/banner";
 import Branches from "@/components/branches";
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <OurDesc />
       <Branches />
+      <AccountDetails />
       <Video source="/assets/image/Beersheba Senior Secondary School, Haldwani-(1080p) (1).mp4" />
       <AdmissionEnquiry />
     </main>

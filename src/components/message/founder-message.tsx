@@ -46,16 +46,8 @@ const FounderMessage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
-            <Image
-              alt="founders"
-              src={"/assets/image/founders.png"}
-              width={500}
-              height={400}
-              className="rounded w-36 h-40 object-cover"
-            />
-
-            <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
+            <div className="bg-gray-200 px-5 lg:px-5 py-5 relative">
+              <p className="max-w-sm text-[#3B2565] text-lg">
                 “Our mission is to provide a caring, healthy and challenging
                 environment where children prepare to meet with confidence,
                 imagination and integrity the challenges of life.”
@@ -64,6 +56,14 @@ const FounderMessage = () => {
                 LATE MR. N.N.D BHATT - FOUNDER BEERSHEBA HALDWANI
               </p>
             </div>
+
+            <Image
+              alt="founders"
+              src={"/assets/image/founders.png"}
+              width={600}
+              height={500}
+              className="rounded w-96 h-52 object-contain"
+            />
           </div>
           <p className="mt-10 lg:px-10 text-lg">
             Educational Institutions are aplenty, all of which impart the
@@ -93,21 +93,19 @@ const FounderMessage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
+            <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
+              <p className="bg-gray-200 px-5 lg:px-5 py-5 relative">
+                “At Beersheba, we nurture more than just minds; we cultivate
+                well-rounded individuals equipped to lead impactful lives.”
+              </p>
+            </div>
             <Image
               alt="founders"
               src={"/assets/image/principal.jpeg"}
               width={500}
               height={400}
-              className="rounded w-36 h-40 object-cover"
+              className="rounded w-96 h-52 object-contain"
             />
-
-            <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
-                “At Beersheba, we nurture more than just minds; we cultivate
-                well-rounded individuals equipped to lead impactful lives.”
-              </p>
-        
-            </div>
           </div>
           <p className="mt-2 lg:px-10 text-lg">
             Welcome to Beersheba Senior Secondary School, Haldwani, where we are
@@ -132,8 +130,8 @@ const FounderMessage = () => {
             let us embark on a journey of learning, growth, and excellence.
           </p>
           <p className="mt-2 lg:px-10 text-lg">
-            Thank you for choosing Beersheba Senior Secondary School. Here is
-            to a bright future filled with knowledge, character, and endless
+            Thank you for choosing Beersheba Senior Secondary School. Here is to
+            a bright future filled with knowledge, character, and endless
             possibilities.
           </p>
         </TabsContent>
@@ -143,21 +141,20 @@ const FounderMessage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
-            <Image
-              alt="founders"
-              src={"/assets/image/vice-principal.jpeg"}
-              width={500}
-              height={400}
-              className="rounded w-36 h-40 object-cover"
-            />
-
             <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
+              <p className="bg-gray-200 px-5 lg:px-5 py-5 relative">
                 “Learning is an ever-unfolding series of challenges, a lifelong
                 undertaking, with each success merely the beginning towards
                 greater fulfillment . ”
               </p>
             </div>
+            <Image
+              alt="founders"
+              src={"/assets/image/vice-principal.jpeg"}
+              width={500}
+              height={400}
+              className="rounded w-96 h-52 object-contain"
+            />
           </div>
           <p className="mt-2 lg:px-10 text-lg">
             As John Dewey rightly said, “Education is not preparation for life ;
@@ -195,16 +192,8 @@ const FounderMessage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
-            <Image
-              alt="founders"
-              src={"/assets/image/manager.jpeg"}
-              width={500}
-              height={400}
-              className="rounded w-36 h-40 object-cover"
-            />
-
             <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
+              <p className="bg-gray-200 px-5 lg:px-5 py-5 relative">
                 “By education, I mean the overall development of child-mind,
                 body and soul.”
               </p>
@@ -213,6 +202,13 @@ const FounderMessage = () => {
                 Haldwani, Almora, Ranikhet & Chaukhutia
               </p>
             </div>
+            <Image
+              alt="founders"
+              src={"/assets/image/manager.jpeg"}
+              width={500}
+              height={400}
+              className="rounded w-96 h-52 object-contain"
+            />
           </div>
           <p className="mt-2 lg:px-10 text-lg">
             It is a matter of great pride that Beersheba Group of Institutions
@@ -220,8 +216,8 @@ const FounderMessage = () => {
             learning is child centric and child oriented. In our curriculum, the
             student is given the primary focus and is involved in the learning
             process. We motivate them to follow the golden words of the great
-            thinkers. &quot;Do not give up&quot; and implement it to make
-            them humble citizens of Incredible India.
+            thinkers. &quot;Do not give up&quot; and implement it to make them
+            humble citizens of Incredible India.
           </p>
           <p className="mt-2 lg:px-10 text-lg">
             Inspired by the quote given by the Father of Nation, &quot;I
@@ -237,21 +233,20 @@ const FounderMessage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
-            <Image
-              alt="founders"
-              src={"/assets/image/school-admin.jpeg"}
-              width={500}
-              height={400}
-              className="rounded w-36 h-40 object-cover"
-            />
-
             <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
+              <p className="bg-gray-200 px-5 lg:px-5 py-5 relative">
                 “Education is the passport to the future, for tomorrow belongs
                 to those who prepare for it today.”
               </p>
               <p className="pt-5">NISHA SINGH - Administrator</p>
             </div>
+            <Image
+              alt="founders"
+              src={"/assets/image/school-admin.jpeg"}
+              width={500}
+              height={400}
+              className="rounded w-96 h-52 object-contain"
+            />
           </div>
           <p className="mt-2 lg:px-10 text-lg">Dear Readers,</p>
           <p className="mt-2 lg:px-10 text-lg">
@@ -291,21 +286,20 @@ const FounderMessage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
-            <Image
-              alt="founders"
-              src={"/assets/image/cordinate.jpeg"}
-              width={500}
-              height={400}
-              className="rounded w-36 h-40 object-cover"
-            />
-
             <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
+              <p className="bg-gray-200 px-5 lg:px-5 py-5 relative">
                 “Learning can truly be fun and exhilarating when knowledge is
                 acquired by way of performing through activities.”
               </p>
               <p className="pt-5">Nishi Varma - Coordinator Message</p>
             </div>
+            <Image
+              alt="founders"
+              src={"/assets/image/cordinate.jpeg"}
+              width={500}
+              height={400}
+              className="rounded w-96 h-52 object-contain"
+            />
           </div>
           <p className="mt-2 lg:px-10 text-lg">Dear Parents and Visitors,</p>
           <p className="mt-2 lg:px-10 text-lg">Warmest Greetings of the Day!</p>
@@ -360,6 +354,14 @@ const FounderMessage = () => {
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mt-10">
             {/*TODO */}
+
+            <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
+              <p className="bg-gray-200 px-5 lg:px-5 py-5 relative">
+                “Learning is truly exhilarating when knowledge is acquired
+                through engaging activities”
+              </p>
+              <p className="pt-5">Anita Bisht - Junior Coordinator Message</p>
+            </div>
             <Image
               alt="founders"
               src={
@@ -367,16 +369,8 @@ const FounderMessage = () => {
               }
               width={500}
               height={400}
-              className="rounded w-36 h-40 object-cover"
+              className="rounded w-96 h-52 object-contain"
             />
-
-            <div className="bg-gray-200 px-5 lg:px-20 py-5 relative">
-              <p className="max-w-xl text-[#3B2565] text-lg">
-                “Learning is truly exhilarating when knowledge is acquired
-                through engaging activities”
-              </p>
-              <p className="pt-5">Anita Bisht - Junior Coordinator Message</p>
-            </div>
           </div>
           <p className="mt-2 lg:px-10 text-lg">Dear Parents and Visitors,</p>
           <p className="mt-2 lg:px-10 text-lg">Warmest Greetings of the Day!</p>

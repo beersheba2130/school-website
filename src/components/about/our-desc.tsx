@@ -17,7 +17,7 @@ const OurDesc = () => {
       </p>
       <IconCard />
       <p className=" text-gray-600 mt-3 md:mt-5">
-        Beersheba School, located in Haldwani, was established on July 4, 1977,
+        Beersheba School, located in Haldwani, was established on April 1, 1994,
         in the heart of the city with an initial enrollment of only 60 children.
         This co-educational English Medium school was founded by the late Shri.
         and Smt. N.N.D. Bhatt. The school&apos;s origin, existence, and
