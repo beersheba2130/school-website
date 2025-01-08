@@ -44,12 +44,12 @@ const Slider = ({
             <div
               className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
             >
-              <p className="capitalize">
-                WELCOME TO{" "}
-                <span className=" text-3xl md:text-5xl">
-                  BEERSHEBA SR. SEC. SCHOOL{" "}
-                </span>{" "}
-                <span className="text-xl">HALDWANI</span>{" "}
+              <p className="capitalize flex flex-col">
+                <span>WELCOME TO</span>
+                <span className="text-3xl py-3 md:text-5xl">
+                  BEERSHEBA SR. SEC. SCHOOL
+                </span>
+                <span className="text-xl">HALDWANI</span>
               </p>
             </div>
             <div className="text-center text-white text-sm lg:text-base">

@@ -69,16 +69,16 @@ const Nav = () => {
           Facility
         </li>
       </Link>
-      <Link href={"/gallery"}>
+      <Link href={"/image-gallery"}>
         <li
           className={cn(
             "hover:text-[#DB2F2F] text-[#3B2565]",
-            path === "/gallery"
+            path === "/image-gallery"
               ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
               : ""
           )}
         >
-          Photo Gallary
+          Photo Gallery
         </li>
       </Link>
       <Link href={"/video-gallery"}>
@@ -90,7 +90,7 @@ const Nav = () => {
               : ""
           )}
         >
-          Video Gallary
+          Video Gallery
         </li>
       </Link>
 

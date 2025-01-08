@@ -41,7 +41,7 @@ Since 1977"
           greater challenges. Join our transformative journey where students are
           empowered to dream big, achieve more, and impact the world.
         </p>
-        <Link href={"/blog"}>
+        <Link href={"/news-event"}>
           <Button>Explore Our Highlights</Button>
         </Link>
       </div>
@@ -73,7 +73,7 @@ Since 1977"
           <CarouselNext />
         </Carousel>
       </div>
-      <div className="absolute lg:-bottom-24 -bottom-52 flex justify-evenly items-center w-full flex-wrap gap-2">
+      <div className="absolute md:-bottom-20  -bottom-96 lg:-bottom-44 flex justify-evenly items-center w-full flex-wrap gap-2">
         <VideoCard
           title="Campus"
           desc="Discover our state-of-the-art facilities and vibrant learning spaces."

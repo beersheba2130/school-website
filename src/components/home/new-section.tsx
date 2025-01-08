@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const NewSection = () => {
   return (
-    <section className="container pt-64 lg:pt-48 p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
+    <section className="container pt-20 lg:pt-24 p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
       <div className="p-5 relative flex justify-center items-center">
         <Image
           src={"/assets/image/about (1).jpg"}
