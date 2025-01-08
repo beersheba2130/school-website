@@ -12,20 +12,24 @@ const page = async ({
 }) => {
   const query = gql`
     query MyQuery {
-      newsEvent(where: {id: "${params.id}"}) {
-        newsHeading
-        newsDesc
-        newsImage {
-          url
-        }
-      }
+  newsEvent(where: {id: "${params.id}"}) {
+    newsHeading
+    newsImage {
+      url
     }
+    newsDesc {
+      html
+    }
+  }
+}
   `;
   const response = await server_query_function(query);
   const { newsEvent } = response as {
     newsEvent: {
       newsHeading: string;
-      newsDesc: string;
+      newsDesc: {
+        html: string;
+      };
       newsImage: {
         url: string;
       };
@@ -46,9 +50,10 @@ const page = async ({
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             {newsEvent.newsHeading}
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            {newsEvent.newsDesc}
-          </p>
+            <div
+            className="text-gray-600 text-lg leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: newsEvent.newsDesc.html }}
+            />
         </div>
       </div>
     </div>

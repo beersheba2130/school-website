@@ -16,14 +16,7 @@ import { Card, CardContent } from "../ui/card";
 const Video = ({
   featured,
 }: {
-  featured: {
-    featuredNews: {
-      imageCategoryName: string;
-      image: {
-        url: string;
-      }[];
-    }[];
-  };
+  featured: { id: string; newsHeading: string; newsImage: { url: string } }[];
 }) => {
   return (
     <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-96 lg:pb-48">
@@ -46,26 +39,28 @@ Since 1977"
         </Link>
       </div>
       <div className=" flex justify-center ">
-        <Carousel>
-          <CarouselContent className="flex justify-center items-center w-72 mx-auto">
-            {featured?.featuredNews?.map((item, index) => (
+        <Carousel className="w-72 mx-auto">
+          <CarouselContent>
+            {featured?.map((item, index) => (
               <CarouselItem key={index}>
-                <Card className="border-none">
-                  <CardContent className="flex flex-col gap-4 p-6">
-                    <Image
-                      src={item?.image[0]?.url}
-                      alt="featured news"
-                      width={400}
-                      height={300}
-                      className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="text-center">
-                      <p className="text-lg font-semibold text-gray-800">
-                        {item?.imageCategoryName}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
+          <Card className="border-none">
+            <CardContent className="flex flex-col gap-4 p-4">
+              <Image
+                src={item?.newsImage?.url}
+                alt="featured news"
+                width={400}
+                height={300}
+                className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+              />
+              <div className="text-center">
+                <Link href={`/news-event/${item?.id}`}>
+            <p className="text-lg font-semibold text-gray-800">
+              {item?.newsHeading}
+            </p>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
               </CarouselItem>
             ))}
           </CarouselContent>

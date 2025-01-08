@@ -29,33 +29,31 @@ const page = async () => {
     bannerVideoQuery
   )) as homeBannerType;
 
-  const featuredNews = `
-  query MyQuery {
-  haldwaniHomes {
-    featuredNews {
-      imageCategoryName
-      image {
-        url
-      }
+  const featuredNewsQuery = `
+query MyQuery {
+  newsEvents(where: {featured: true}) {
+    id
+    newsHeading
+    newsImage {
+      url
     }
   }
 }
-  `;
+`;
 
-  interface homeFeaturedNewsType {
-    haldwaniHomes: [
-      {
-        featuredNews: {
-          imageCategoryName: string;
-          image: { url: string }[];
-        }[];
-      }
-    ];
-  }
+  type NewsEventType = {
+    newsEvents: Array<{
+      id: string;
+      newsHeading: string;
+      newsImage: {
+        url: string;
+      };
+    }>;
+  };
 
-  const featuredNewsResponse = (await server_query_function(
-    featuredNews
-  )) as homeFeaturedNewsType;
+  const featuredResponse = (await server_query_function(
+    featuredNewsQuery
+  )) as NewsEventType;
 
   const query = `
   query MyQuery {
@@ -99,7 +97,7 @@ const page = async () => {
   return (
     <>
       <HeroSection video={videoBanner.haldwaniHomes} />
-      <Video featured={featuredNewsResponse.haldwaniHomes[0]} />
+      <Video featured={featuredResponse.newsEvents} />
       <About />
       <MissionAndValues />
       <Academics />
