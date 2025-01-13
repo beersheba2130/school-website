@@ -38,29 +38,29 @@ Since 1977"
           <Button>Explore Our Highlights</Button>
         </Link>
       </div>
-      <div className=" flex justify-center ">
+      <div className=" flex justify-center mt-10 md:mt-0 ">
         <Carousel className="w-72 mx-auto">
           <CarouselContent>
             {featured?.map((item, index) => (
               <CarouselItem key={index}>
-          <Card className="border-none">
-            <CardContent className="flex flex-col gap-4 p-4">
-              <Image
-                src={item?.newsImage?.url}
-                alt="featured news"
-                width={400}
-                height={300}
-                className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-              />
-              <div className="text-center">
-                <Link href={`/news-event/${item?.id}`}>
-            <p className="text-lg font-semibold text-gray-800">
-              {item?.newsHeading}
-            </p>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+                <Card className="border-none">
+                  <CardContent className="flex flex-col gap-4 p-4">
+                    <Image
+                      src={item?.newsImage?.url}
+                      alt="featured news"
+                      width={400}
+                      height={300}
+                      className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="text-center">
+                      <Link href={`/news-event/${item?.id}`}>
+                        <p className="text-lg font-semibold text-gray-800">
+                          {item?.newsHeading}
+                        </p>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
           </CarouselContent>

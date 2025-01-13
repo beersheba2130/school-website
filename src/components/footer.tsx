@@ -45,8 +45,11 @@ const Footer = () => {
           Quick Links
         </p>
         <ul className="flex flex-col gap-2 font-medium">
-          <Link href={"/gallery"}>
+          <Link href={"/image-gallery"}>
             <li>Photo Gallery</li>
+          </Link>
+          <Link href={"/news-event"}>
+            <li> News Event </li>
           </Link>
           <Link href={"/message"}>
             <li>Messages</li>
@@ -93,20 +96,28 @@ const Footer = () => {
           </li>
           <li>
             <ul className="flex gap-2 items-center">
-              <Link href={"https://www.instagram.com/beersheba_hld?igsh=NDB5eXVjNHFkYm8w"}>
-              <li>
-                <Instagram />
-              </li>
+              <Link
+                href={
+                  "https://www.instagram.com/beersheba_hld?igsh=NDB5eXVjNHFkYm8w"
+                }
+              >
+                <li>
+                  <Instagram />
+                </li>
               </Link>
               <Link href={"https://www.facebook.com/share/18KZyh6Tbz/"}>
-              <li>
-                <Facebook />
-              </li>
+                <li>
+                  <Facebook />
+                </li>
               </Link>
-              <Link href={"https://youtube.com/@beershebasr.sec.schoolhald5487?si=nd4T5fswYu1cUHUC"}>
-              <li>
-                <Youtube />
-              </li>
+              <Link
+                href={
+                  "https://youtube.com/@beershebasr.sec.schoolhald5487?si=nd4T5fswYu1cUHUC"
+                }
+              >
+                <li>
+                  <Youtube />
+                </li>
               </Link>
             </ul>
           </li>

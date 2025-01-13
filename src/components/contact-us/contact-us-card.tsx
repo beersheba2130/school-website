@@ -40,9 +40,7 @@ const ContactUsCard = () => {
           </div>
 
           <div className="flex gap-5 mt-36">
-            <div className="flex justify-center items-center border border-white rounded-full p-3 hover:scale-105 duration-300 ">
-              <Twitter />
-            </div>
+          
             <Link
               href={
                 "https://www.instagram.com/beersheba_hld?igsh=NDB5eXVjNHFkYm8w"

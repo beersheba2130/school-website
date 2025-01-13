@@ -9,7 +9,6 @@ import axios from "axios";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -81,6 +80,7 @@ const RegisterationForm = () => {
       motherOccupation: "",
       annualIncome: "",
       referedBy: "",
+      dob: new Date(),
     },
   });
 
@@ -102,6 +102,7 @@ const RegisterationForm = () => {
         motherOccupation: values.motherOccupation,
         annualIncome: values.annualIncome,
         referedBy: values.referedBy,
+        dob: values.dob,
       });
 
       console.log(resp);
@@ -235,7 +236,7 @@ const RegisterationForm = () => {
                         <Button
                           variant={"outline"}
                           className={cn(
-                            "w-[240px] pl-3 text-left font-normal",
+                            "w-full pl-3 text-left font-normal",
                             !field.value && "text-muted-foreground"
                           )}
                         >

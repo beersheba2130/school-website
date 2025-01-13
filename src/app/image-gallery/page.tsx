@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 const Page = () => {
   const [filteredImages, setFilteredImages] = useState<ImageGallery[]>([]);
   const query = `query MyQuery {
-  imageGalleries {
+  imageGalleries (first: 100) {
     heading
     id
     banner {

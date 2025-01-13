@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 const Page = () => {
   const [filteredNews, setFilteredNews] = useState<NewsEvent[]>([]);
   const query = `query MyQuery {
-  newsEvents {
+  newsEvents(first: 100) {
     newsImage {
       url
     }

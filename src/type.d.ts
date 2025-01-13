@@ -49,24 +49,6 @@ type homeFeaturedNewsType = {
   }[];
 };
 
-// type blogType = {
-//   blogs: {
-//     id: string;
-//     mainImage: {
-//       url: string;
-//     };
-//     title: string;
-//     shortDesc: string;
-//     slug: string;
-//   }[];
-//   homes: {
-//     events: {
-//       id: string;
-//       day: string;
-//       eventName: string;
-//     }[];
-//   }[];
-// };
 
 type Blog = {
   id: string;
