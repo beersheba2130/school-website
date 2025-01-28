@@ -29,7 +29,7 @@ const Branches = () => {
             </div>
           </Link>
 
-          <Link href={"https://www.almora.beershebaschool.in/"}>
+          <Link href={"https://www.beershebaalmora.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
               <Image
                 src={"/assets/image/haldwani (1).png"}
@@ -46,7 +46,7 @@ const Branches = () => {
               <p>Almora</p>
             </div>
           </Link>
-          <Link href={"https://ranikhet.beershebaschool.in/"}>
+          <Link href={"https://www.beershiva.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
               <Image
                 src={"/assets/image/BEERSHIBA SCHOOL (2).jpg"}
@@ -63,7 +63,7 @@ const Branches = () => {
               <p>Ranikhet</p>
             </div>
           </Link>
-          <Link href={"https://chaukhutiya.beershebaschool.in/"}>
+          <Link href={"https://www.beershivachaukhutia.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
               <Image
                 src={"/assets/image/BEERSHIBA SCHOOL (2).jpg"}
