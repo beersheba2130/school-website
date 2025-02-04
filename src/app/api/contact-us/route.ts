@@ -19,7 +19,7 @@ export async function POST(req: Request, res: Response) {
 
   const service = google.sheets({ version: "v4", auth });
 
-  let range = ["Sheet1!A:F"];
+  let range = ["Haldwani!A:F"];
 
   try {
     const body = await req.json();
