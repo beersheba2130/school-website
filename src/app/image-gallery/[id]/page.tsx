@@ -1,4 +1,5 @@
-import { server_query_function } from "@/lib/graphql";
+'use client';
+import { client_query_function } from "@/lib/graphql";
 import { gql } from "graphql-request";
 import Image from "next/image";
 import React from "react";
@@ -23,8 +24,8 @@ const page = async ({
   }
 }
   `;
-  const response = await server_query_function(query);
-const { imageGallery } = await server_query_function(query) as {
+  const response = await client_query_function(query);
+const { imageGallery } = await client_query_function(query) as {
     imageGallery: {
         heading: string;
         banner: {
