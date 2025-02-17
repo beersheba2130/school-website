@@ -46,7 +46,7 @@ const { imageGallery } = await server_query_function(query) as {
           alt={imageGallery?.heading}
           width={1920}
           height={1080}
-          className="w-full h-96 object-cover"
+          className="w-full h-96 object-contain"
         />
         <div className="p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
@@ -55,14 +55,14 @@ const { imageGallery } = await server_query_function(query) as {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageGallery?.images.map((image, index) => (
                 <div key={index} className="relative group overflow-hidden rounded-lg">
-                    <Link href={image.url} target="_blank">
-                    <Image
-                      src={image.url}
-                      alt={`Gallery image ${index + 1}`}
-                      width={400}
-                      height={300}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
+                    <Link href={image.url} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={image.url}
+                        alt={`Gallery image ${index + 1}`}
+                        width={400}
+                        height={300}
+                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
                     </Link>
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
                 </div>
