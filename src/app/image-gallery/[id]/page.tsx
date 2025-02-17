@@ -59,15 +59,20 @@ const { imageGallery } = await client_query_function(query) as {
                   className="relative group overflow-hidden rounded-lg cursor-pointer"
                   onClick={() => {
                   const dialog = document.createElement('dialog');
-                  dialog.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75';
+                  dialog.className = 'fixed inset-0 z-50 flex items-center justify-center';
+                  dialog.setAttribute('style', 'background: rgba(0, 0, 0, 0.75); border: none; padding: 0;');
                   dialog.innerHTML = `
-                    <div class="relative bg-black/50 p-4 rounded-lg">
-                    <img src="${image.url}" alt="Large view" class="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl" />
-                    <button class="absolute top-4 right-4 text-white text-xl hover:text-gray-300" onclick="this.closest('dialog').remove()">×</button>
-                    </div>
+                  <div class="relative bg-black/50 p-4 rounded-lg">
+                  <img src="${image.url}" alt="Large view" class="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl" />
+                  <button class="absolute top-4 right-4 text-white text-xl hover:text-gray-300" onclick="this.closest('dialog').remove()">×</button>
+                  </div>
                   `;
                   document.body.appendChild(dialog);
                   dialog.showModal();
+
+                  dialog.addEventListener('click', (e) => {
+                  if (e.target === dialog) dialog.close();
+                  });
                   }}
                 >
                   <Image
