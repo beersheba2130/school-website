@@ -8,12 +8,8 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 
-const Page = async (props: {
-  params: {
-    id: string;
-  };
-}) => {
-  const { id } = props.params;
+const Page = async (props: { params: Promise<{ id: string }> }) => {
+  const { id } = await props.params;
   const query = gql`
   query MyQuery {
   imageGallery(where: {id: "${id}"}) {
