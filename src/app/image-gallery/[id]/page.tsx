@@ -57,7 +57,7 @@ const Page = async (props: { params: Promise<{ id: string }> }) => {
                 rel="noopener noreferrer"
               >
                 <div className="relative group overflow-hidden rounded-lg">
-                  <Image
+                  <img
                     src={image.url}
                     alt={`Gallery image ${index + 1}`}
                     width={400}

@@ -20,14 +20,13 @@ const Gallery = ({
 
       <div className=" mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5">
         {image?.map((uri, index) => (
-          <Image
+          <img
             key={index}
             src={uri.url}
             alt="image"
             width={300}
             height={300}
             className="w-full h-72 rounded-lg object-cover"
-            quality={100}
           
           />
         ))}
