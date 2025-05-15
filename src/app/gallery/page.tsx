@@ -51,7 +51,6 @@ const page = async () => {
                     alt="gallery"
                     width={300}
                     height={300}
-                    objectFit="cover"
                     className="w-fit h-96 "
                   />
                 ))}
