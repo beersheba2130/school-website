@@ -25,7 +25,7 @@ const Events = ({ blogs, events }: EventsProps) => {
             {blogs.map((blog) => (
               <CarouselItem className="md:basis-1/2 rounded-3xl" key={blog?.id}>
                 <div className=" bg-white w-72 lg:w-80">
-                  <Image
+                  <img
                     src={blog?.mainImage?.url}
                     alt="events"
                     width={400}

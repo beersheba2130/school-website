@@ -81,7 +81,7 @@ const ToppersResult = () => {
                         {t?.percentage}%
                       </div>
                     </div>
-                    <Image
+                    <img
                       src={t?.topperImage?.url}
                       alt="topper image"
                       width={170}
@@ -118,7 +118,7 @@ const ToppersResult = () => {
                         {oT?.percentage}%
                       </div>
                     </div>
-                    <Image
+                    <img
                       src={oT?.topperImage?.url}
                       alt="topper image"
                       width={170}

@@ -37,7 +37,7 @@ const Page = async (props: { params: Promise<{ id: string }> }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg  overflow-hidden">
-        <Image
+        <img
           src={imageGallery?.banner?.url}
           alt={imageGallery?.heading}
           width={1920}

@@ -9,7 +9,7 @@ const NewSection = () => {
   return (
     <section className="container pt-20 lg:pt-24 p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2">
       <div className="p-5 relative flex justify-center items-center">
-        <Image
+        <img
           src={"/assets/image/about (1).jpg"}
           alt="About Image"
           width={330}

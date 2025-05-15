@@ -38,14 +38,14 @@ const About = () => {
         className="relative h-[70vh] md:h-full
       "
       >
-        <Image
+        <img
           src={"/assets/image/beershiba-2.jpeg"}
           alt="About Image"
           width={400}
           height={400}
           className="rounded-lg absolute top-0 left-0 md:left-24 w-60 h-80 object-cover"
         />
-        <Image
+        <img
           src={"/assets/image/beershiba-6.jpeg"}
           alt="About Image"
           width={400}

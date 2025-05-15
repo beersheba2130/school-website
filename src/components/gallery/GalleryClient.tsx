@@ -21,7 +21,7 @@ interface GalleryClientProps {
 
 const GalleryClient = ({ initialImages }: GalleryClientProps) => {
   const [filteredImages, setFilteredImages] =
-    useState<ImageGallery[]>(initialImages);
+    useState<imgGallery[]>(initialImages);
 
   const resetFilter = () => {
     setFilteredImages(initialImages);
@@ -64,7 +64,7 @@ const GalleryClient = ({ initialImages }: GalleryClientProps) => {
               key={item.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <Image
+              <img
                 src={item?.banner.url}
                 alt={item?.heading}
                 width={500}

@@ -6,7 +6,7 @@ import Link from "next/link";
 const AdmissionEnquiry = () => {
   return (
     <section className=" relative h-72 overflow-hidden">
-      <Image
+      <img
         src={"/assets/image/enquiry.jpg"}
         alt="Admission Enquiry"
         width={1000}
