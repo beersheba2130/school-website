@@ -17,7 +17,6 @@ const Header = () => {
           width={400}
           height={100}
           className="object-cover"
-          quality={100}
         />
       </Link>
 
