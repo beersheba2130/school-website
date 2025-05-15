@@ -21,7 +21,7 @@ interface GalleryClientProps {
 
 const GalleryClient = ({ initialImages }: GalleryClientProps) => {
   const [filteredImages, setFilteredImages] =
-    useState<imgGallery[]>(initialImages);
+    useState<ImageGallery[]>(initialImages);
 
   const resetFilter = () => {
     setFilteredImages(initialImages);
