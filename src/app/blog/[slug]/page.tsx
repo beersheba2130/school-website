@@ -5,13 +5,14 @@ import React from "react";
 
 export const dynamic = "force-dynamic";
 
-const page = async ({
-  params,
-}: {
-  params: {
-    slug: string;
-  };
-}) => {
+const page = async (
+  props: {
+    params: Promise<{
+      slug: string;
+    }>;
+  }
+) => {
+  const params = await props.params;
   const query = gql`
     query MyQuery {
       haldwaniBlogs(where: { slug: "${params.slug}" }) {
