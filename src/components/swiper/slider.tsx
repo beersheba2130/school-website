@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Pagination from "./pagination";
-import Image from "next/image";
 import { Button } from "../ui/button";
 import { poppins } from "@/utils/font";
 import Link from "next/link";
@@ -18,11 +17,9 @@ const Slider = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  /* @ts-expect-error */
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
-
   return (
     <div className="relative w-full mx-auto overflow-hidden">
       <div
