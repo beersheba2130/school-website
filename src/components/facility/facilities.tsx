@@ -92,7 +92,7 @@ const Facilities = () => {
             >
               <div className={`${index % 2 === 0 ? "order-1" : "lg:order-2"}`}>
                 <div className="relative h-[350px] overflow-hidden">
-                  <img
+                  <Image
                     src={facility.images[0]}
                     alt={facility.title}
                     width={700}
@@ -102,7 +102,7 @@ const Facilities = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-2 mt-2">
                   <div className="overflow-hidden rounded-md">
-                    <img
+                    <Image
                       src={facility.images[1]}
                       alt={`${facility.title} view 2`}
                       width={300}
@@ -111,7 +111,7 @@ const Facilities = () => {
                     />
                   </div>
                   <div className="overflow-hidden rounded-md">
-                    <img
+                    <Image
                       src={facility.images[2]}
                       alt={`${facility.title} view 3`}
                       width={300}

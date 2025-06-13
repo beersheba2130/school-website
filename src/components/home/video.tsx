@@ -48,7 +48,7 @@ Since 1977"
                 <Card>
                   <CardContent className="p-4">
                     <div className="flex justify-center items-center">
-                      <img
+                      <Image
                         src={item.newsImage.url}
                         alt={`Featured news: ${item.newsHeading}`}
                         width={400}

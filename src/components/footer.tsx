@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="grid gap-5 lg:px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 lg:py-16 border-b">
       <div className="flex justify-center items-center">
         <Link href={"/"}>
-          <img
+          <Image
             src="/assets/image/logo.jpg"
             alt="logo"
             width={400}
@@ -68,7 +68,7 @@ const Footer = () => {
         </p>
         <ul className="flex flex-col gap-2 font-medium">
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/locaation.svg"}
               alt="location"
               width={40}
@@ -77,7 +77,7 @@ const Footer = () => {
             <p>Civil Lines, Nainital Road, Haldwani Nainital (Uttarakhand)</p>
           </li>
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/dark-call.svg"}
               alt="location"
               width={40}
@@ -86,7 +86,7 @@ const Footer = () => {
             <p>05946-223030, 05946-222256, +91 9634374446</p>
           </li>
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/dark-email.svg"}
               alt="location"
               width={30}

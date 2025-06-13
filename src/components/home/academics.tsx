@@ -24,7 +24,7 @@ const Academics = () => {
           <TabsContent value="early-years" className="my-7">
             <div className=" lg:p-10 gap-7 grid grid-cols-1 lg:grid-cols-2">
               <div className=" flex justify-center items-center">
-                <img
+                <Image
                   src={"/assets/image/beershiba-2.jpeg"}
                   alt="About Image"
                   width={330}
@@ -62,7 +62,7 @@ const Academics = () => {
           <TabsContent value="elementry-school" className="my-7">
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
-                <img
+                <Image
                   src={"/assets/image/elementary.jpg"}
                   alt="About Image"
                   width={330}
@@ -97,7 +97,7 @@ const Academics = () => {
           <TabsContent value="middle-school" className="my-7">
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
-                <img
+                <Image
                   src={"/assets/image/middle.jpg"}
                   alt="About Image"
                   width={330}
@@ -132,7 +132,7 @@ const Academics = () => {
           <TabsContent value="high-school" className="my-7">
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
-                <img
+                <Image
                   src={"/assets/image/High.jpg"}
                   alt="About Image"
                   width={330}
@@ -168,7 +168,7 @@ const Academics = () => {
           <TabsContent value="examination" className="my-7">
             <div className=" lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
               <div className=" flex justify-center items-center">
-                <img
+                <Image
                   src={"/assets/image/examination.jpg"}
                   alt="About Image"
                   width={330}

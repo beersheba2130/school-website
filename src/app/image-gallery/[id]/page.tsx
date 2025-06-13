@@ -37,7 +37,7 @@ const Page = async (props: { params: Promise<{ id: string }> }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg  overflow-hidden">
-        <img
+        <Image
           src={imageGallery?.banner?.url}
           alt={imageGallery?.heading}
           width={1920}
@@ -57,7 +57,7 @@ const Page = async (props: { params: Promise<{ id: string }> }) => {
                 rel="noopener noreferrer"
               >
                 <div className="relative group overflow-hidden rounded-lg">
-                  <img
+                  <Image
                     src={image.url}
                     alt={`Gallery image ${index + 1}`}
                     width={400}
