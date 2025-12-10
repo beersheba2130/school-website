@@ -166,9 +166,9 @@ const RegisterationForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Student’s Name</FormLabel>
+                  <FormLabel>Student&apos;s Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Student’s Name..." {...field} />
+                    <Input placeholder="Student&apos;s Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -179,9 +179,9 @@ const RegisterationForm = () => {
               name="fatherName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Father&aposs Name</FormLabel>
+                  <FormLabel>Father&apos;s Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Father&aposs Name..." {...field} />
+                    <Input placeholder="Father&apos;s Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -192,9 +192,9 @@ const RegisterationForm = () => {
               name="motherName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel> Mother&aposs Name</FormLabel>
+                  <FormLabel> Mother&apos; Name</FormLabel>
                   <FormControl>
-                    <Input placeholder=" Mother&aposs Name..." {...field} />
+                    <Input placeholder=" Mother&apos; Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -333,14 +333,14 @@ const RegisterationForm = () => {
               name="fatherOccupation"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Father&aposs Occupation </FormLabel>
+                  <FormLabel>Father&apos; Occupation </FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Father&aposs Occupation ..." />
+                        <SelectValue placeholder="Select Father&apos; Occupation ..." />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -357,14 +357,14 @@ const RegisterationForm = () => {
               name="motherOccupation"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mother&aposs Occupation</FormLabel>
+                  <FormLabel>Mother&apos; Occupation</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Mother&aposs Occupation..." />
+                        <SelectValue placeholder="Select Mother&apos; Occupation..." />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
