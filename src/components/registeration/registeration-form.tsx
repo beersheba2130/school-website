@@ -192,9 +192,9 @@ const RegisterationForm = () => {
               name="motherName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel> Mother&apos; Name</FormLabel>
+                  <FormLabel> Mother&apos;s Name</FormLabel>
                   <FormControl>
-                    <Input placeholder=" Mother&apos; Name..." {...field} />
+                    <Input placeholder=" Mother&apos;s Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -320,7 +320,7 @@ const RegisterationForm = () => {
               name="lastSchoolName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mobile Number</FormLabel>
+                  <FormLabel>Last School Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Last School Name..." {...field} />
                   </FormControl>
@@ -333,14 +333,14 @@ const RegisterationForm = () => {
               name="fatherOccupation"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Father&apos; Occupation </FormLabel>
+                  <FormLabel>Father&apos;s Occupation </FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Father&apos; Occupation ..." />
+                        <SelectValue placeholder="Select Father&apos;s Occupation ..." />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -357,14 +357,14 @@ const RegisterationForm = () => {
               name="motherOccupation"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mother&apos; Occupation</FormLabel>
+                  <FormLabel>Mother&apos;s Occupation</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Mother&apos; Occupation..." />
+                        <SelectValue placeholder="Select Mother&apos;s Occupation..." />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
