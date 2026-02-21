@@ -7,6 +7,7 @@ import Marque from "@/components/marque";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -41,6 +42,7 @@ export default function RootLayout({
           </p>
         </div>
         <GoogleTagManager gtmId="G-7Y7CGWPKR3" />
+        <Analytics />
       </body>
     </html>
   );
