@@ -123,7 +123,7 @@ type TransferCertificate = {
   studentClass: string;
   issueDate: string;
   dob: string;
-  status: "Verified" | "Pending" | "Invalid";
+  verificationStatus: "Verified" | "Pending" | "Invalid";
 };
 
 type TCResponse = {

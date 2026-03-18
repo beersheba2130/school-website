@@ -109,7 +109,7 @@ const TCSearchForm = () => {
             <DetailRow label="Date of Issue" value={new Date(result.issueDate).toLocaleDateString()} />
             <DetailRow label="TC Number" value={result.tcNumber} />
             <DetailRow label="Date of Birth" value={new Date(result.dob).toLocaleDateString()} />
-            <DetailRow label="Status" value={result.status} isStatus />
+            <DetailRow label="Status" value={result.verificationStatus} isStatus />
           </div>
         </div>
       )}
