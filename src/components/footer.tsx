@@ -14,6 +14,7 @@ const Footer = () => {
             alt="logo"
             width={400}
             height={400}
+            unoptimized={true}
             className="w-full"
           />
         </Link>
@@ -73,6 +74,7 @@ const Footer = () => {
               alt="location"
               width={40}
               height={40}
+              unoptimized={true}
             />
             <p>Civil Lines, Nainital Road, Haldwani Nainital (Uttarakhand)</p>
           </li>
@@ -82,6 +84,7 @@ const Footer = () => {
               alt="location"
               width={40}
               height={40}
+              unoptimized={true}
             />
             <p>05946-223030, 05946-222256, +91 9634374446</p>
           </li>
@@ -91,6 +94,7 @@ const Footer = () => {
               alt="location"
               width={30}
               height={30}
+              unoptimized={true}
             />
             <p>beershebaschool_hld@rediffmail.com</p>
           </li>

@@ -41,6 +41,7 @@ const About = async () => {
           alt="About Image"
           width={400}
           height={400}
+          unoptimized={true}
           className="rounded-lg absolute top-0 left-0 md:left-24 w-60 h-80 object-cover"
         />
         <Image
@@ -48,6 +49,7 @@ const About = async () => {
           alt="About Image"
           width={400}
           height={400}
+          unoptimized={true}
           className="rounded-lg absolute bottom-0 right-0 md:right-24 w-60 h-80 object-cover"
         />
       </div>

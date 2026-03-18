@@ -36,6 +36,7 @@ const Uniform = () => {
                       alt="womenIcon"
                       width={150}
                       height={150}
+                      unoptimized={true}
                     />
                   </div>
                 </td>
@@ -62,6 +63,7 @@ const Uniform = () => {
                       alt="womenIcon"
                       width={150}
                       height={150}
+                      unoptimized={true}
                     />
                   </div>
                 </td>

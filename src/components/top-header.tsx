@@ -9,11 +9,11 @@ const TopHeader = () => {
     >
       <div className="flex gap-2 lg:gap-5 flex-col lg:flex-row">
         <div className="flex gap-2 items-center">
-          <Image src="/assets/image/email.svg" alt="email" width={16} height={16} />
+          <Image src="/assets/image/email.svg" alt="email" width={16} height={16} unoptimized={true} />
           <p>beershebaschool_hld@rediffmail.com</p>
         </div>
         <div className="flex gap-2 items-center">
-          <Image src="/assets/image/call.svg" alt="call" width={16} height={16} />
+          <Image src="/assets/image/call.svg" alt="call" width={16} height={16} unoptimized={true} />
           <p>05946-223030, 05946-222256, 9634374446</p>
         </div>
       </div>

@@ -11,6 +11,7 @@ const AdmissionEnquiry = () => {
         alt="Admission Enquiry"
         width={1400}
         height={400}
+        unoptimized={true}
         className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110"
       />
       <div className="absolute inset-0 bg-[#3B2565]/80 flex flex-col gap-6 lg:gap-8 justify-center items-center px-4 text-center">

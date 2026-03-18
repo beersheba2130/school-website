@@ -82,6 +82,7 @@ const Academics = () => {
                        alt={tab.title}
                        width={450}
                        height={450}
+                       unoptimized={true}
                        className="object-cover aspect-square transition-transform duration-700 w-full"
                      />
                    </div>

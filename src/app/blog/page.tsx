@@ -40,6 +40,7 @@ const page = async () => {
               alt="events"
               width={400}
               height={150}
+              unoptimized={true}
               className="h-60 w-80"
             />
 

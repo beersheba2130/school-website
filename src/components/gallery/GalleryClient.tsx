@@ -69,6 +69,7 @@ const GalleryClient = ({ initialImages }: GalleryClientProps) => {
                 alt={item?.heading}
                 width={500}
                 height={500}
+                unoptimized={true}
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">

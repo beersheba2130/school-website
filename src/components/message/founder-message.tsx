@@ -61,6 +61,7 @@ const FounderMessage = ({
                 src={message?.image?.url}
                 width={600}
                 height={500}
+                unoptimized={true}
                 className="rounded w-96 h-52 object-contain"
               />
             </div>
