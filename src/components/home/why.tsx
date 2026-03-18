@@ -76,6 +76,7 @@ const Why = () => {
                   alt={feature.title}
                   width={32}
                   height={32}
+                  unoptimized={true}
                   className={`${feature.textColor === 'text-white' ? 'brightness-0 invert' : ''} lg:w-10 lg:h-10`}
                 />
               </div>

@@ -13,6 +13,7 @@ const NewSection = () => {
             alt="Our Inclusive Learning Community"
             width={500}
             height={400}
+            unoptimized={true}
             className="object-cover z-10 rounded-[2rem] shadow-xl w-full h-auto"
           />
           {/* Decorative Border */}

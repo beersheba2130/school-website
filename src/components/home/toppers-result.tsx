@@ -151,7 +151,7 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
           </p>
           <div className="pt-2 flex items-center justify-center lg:justify-start gap-4">
              <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-[#3B2565]/5 flex items-center justify-center shrink-0">
-                <Image src="/assets/image/success-svgrepo-com (1) 1.png" alt="success" width={20} height={20} className="lg:w-6 lg:h-6" />
+                <Image src="/assets/image/success-1.png" alt="success" width={20} height={20} unoptimized={true} className="lg:w-6 lg:h-6" />
              </div>
              <p className="text-[#3B2565] font-bold text-xs lg:text-sm">Setting new benchmarks in excellence every year.</p>
           </div>

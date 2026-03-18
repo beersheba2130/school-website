@@ -57,11 +57,12 @@ const Video = ({ featured }: { featured: FeaturedItem[] }) => {
                     <Card className="border-none shadow-xl rounded-[2rem] overflow-hidden bg-white">
                       <CardContent className="p-0">
                         <div className="relative group">
-                          <Image
+                           <Image
                             src={item.newsImage.url}
                             alt={`Featured news: ${item.newsHeading}`}
                             width={400}
                             height={400}
+                            unoptimized={true}
                             className="w-full aspect-square object-cover"
                           />
                         </div>

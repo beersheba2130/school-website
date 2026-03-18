@@ -25,6 +25,7 @@ const MissionAndValues = () => {
                   alt="Core Values Icon"
                   width={32}
                   height={32}
+                  unoptimized={true}
                   className="lg:w-10 lg:h-10"
                 />
               </div>
@@ -54,6 +55,7 @@ const MissionAndValues = () => {
             src={"/assets/image/vision-1.jpg"}
             alt="School Vision"
             fill
+            unoptimized={true}
             className="object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#3B2565]/80 via-transparent to-transparent" />
@@ -65,7 +67,7 @@ const MissionAndValues = () => {
         {/* Our Vision Card */}
         <div className="p-6 lg:p-8 rounded-3xl bg-white shadow-lg border border-gray-100 flex flex-col gap-4">
           <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#3B2565]/5 rounded-xl flex items-center justify-center">
-             <Image src={"/assets/image/ep_view.png"} alt="Vision Icon" width={24} height={24} className="lg:w-[30px] lg:h-[30px]" />
+             <Image src={"/assets/image/ep_view.png"} alt="Vision Icon" width={24} height={24} unoptimized={true} className="lg:w-[30px] lg:h-[30px]" />
           </div>
           <h4 className={`${poppins.className} text-[#3B2565] text-lg lg:text-xl font-black`}>Forward Thinking</h4>
           <p className="text-gray-500 text-sm leading-relaxed font-medium">
@@ -79,6 +81,7 @@ const MissionAndValues = () => {
             src={"/assets/image/mission-1.jpg"}
             alt="School Mission"
             fill
+            unoptimized={true}
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#3B2565]/60 to-transparent" />
@@ -91,7 +94,7 @@ const MissionAndValues = () => {
         {/* Our Mission Card */}
         <div className="md:col-span-2 p-6 lg:p-8 rounded-3xl bg-[#3B2565] shadow-2xl flex flex-col md:flex-row gap-6 lg:gap-8 items-center">
           <div className="shrink-0 p-3 lg:p-4 bg-white/10 rounded-2xl backdrop-blur-sm">
-             <Image src={"/assets/image/Vector-icon.png"} alt="Mission Icon" width={40} height={40} className="invert brightness-0 lg:w-[60px] lg:h-[60px]" />
+             <Image src={"/assets/image/Vector-icon.png"} alt="Mission Icon" width={40} height={40} unoptimized={true} className="invert brightness-0 lg:w-[60px] lg:h-[60px]" />
           </div>
           <div className="space-y-4 text-center md:text-left">
             <p className="text-white/90 text-base lg:text-lg leading-relaxed font-medium">

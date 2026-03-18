@@ -24,6 +24,7 @@ const About = ({
             alt="Beersheba School Campus"
             width={500}
             height={400}
+            unoptimized={true}
             className="object-cover z-10 rounded-[2rem] shadow-xl group-hover:scale-[1.02] transition-transform duration-500 w-full h-auto"
           />
         </div>
