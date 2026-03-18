@@ -13,7 +13,7 @@ const About = ({
   description?: string 
 }) => {
   return (
-    <section className="container mx-auto px-4 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    <section className="container mx-auto px-4 py-12 lg:py-24 mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
       <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
         {/* Decorative Background Elements */}
         <div className="absolute -top-6 -left-6 border-2 border-dashed border-[#E74040]/30 rounded-[2rem] w-full h-full -z-10 hidden lg:block" />

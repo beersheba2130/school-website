@@ -17,7 +17,7 @@ const About = async () => {
   `;
 
   return (
-    <section className=" container relative mx-auto grid grid-cols-1  lg:grid-cols-2 gap-4 py-10 px-5 md:px-10">
+    <section className="container relative mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 py-10 px-5 md:px-10 mt-10 lg:mt-20">
       <div className="md:px-10">
         <p
           className={`${poppins.className} text-2xl font-medium text-[#DB2F2F]`}

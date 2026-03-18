@@ -19,12 +19,12 @@ const TransferCertificatePage = () => {
   return (
     <main className="min-h-screen bg-gray-50 pb-20">
       <TCHero />
-      
+
       <div className="container mx-auto">
         <TCSearchForm />
-        
+
         {/* Informational Note */}
-        <div className="max-w-4xl mx-auto mt-16 px-6">
+        {/* <div className="max-w-4xl mx-auto mt-16 px-6">
           <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
             <h3 className="text-blue-800 font-bold mb-2">Important Information</h3>
             <p className="text-blue-700 leading-relaxed">
@@ -33,7 +33,7 @@ const TransferCertificatePage = () => {
               The electronic verification record serves as a confirmation of the details mentioned on the physical Transfer Certificate.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

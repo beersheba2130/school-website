@@ -5,11 +5,13 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { client_query_function } from "@/lib/graphql";
 import { poppins } from "@/utils/font";
-import { set } from "date-fns";
+import { getOptimizedImage } from "@/utils/image-optimization";
 
 const ToppersResult = ({ initialData }: { initialData?: any }) => {
   const allToppers = initialData?.allToppers || [];
@@ -88,7 +90,7 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
 
                     <div className="relative aspect-[4/4.5] overflow-hidden">
                       <Image
-                        src={t?.topperImage?.url || "/assets/image/aboutImage.jpg"}
+                        src={getOptimizedImage(t?.topperImage?.url || "/assets/image/aboutImage.jpg", { width: 300, height: 400, fit: "crop" })}
                         alt={t?.name || "Topper"}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -107,6 +109,8 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselNext className="hidden sm:flex -right-4 lg:-right-12 bg-white/80 hover:bg-white text-[#3B2565] border-none shadow-md" />
+            <CarouselPrevious className="hidden sm:flex -left-4 lg:-left-12 bg-white/80 hover:bg-white text-[#3B2565] border-none shadow-md" />
           </Carousel>
         </div>
 
@@ -122,7 +126,7 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
             {classXTopperDesc}
           </p>
-          <div className="pt-2 grid grid-cols-2 gap-3 max-w-sm mx-auto lg:mx-0">
+          {/* <div className="pt-2 grid grid-cols-2 gap-3 max-w-sm mx-auto lg:mx-0">
              <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-sm">
                 <p className="text-[#3B2565] font-black text-2xl lg:text-3xl">100%</p>
                 <p className="text-gray-500 text-[9px] lg:text-[10px] font-bold uppercase tracking-wider">Pass Rate</p>
@@ -131,7 +135,7 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
                 <p className="text-[#E74040] font-black text-2xl lg:text-3xl">50+</p>
                 <p className="text-gray-500 text-[9px] lg:text-[10px] font-bold uppercase tracking-wider">Distinctions</p>
              </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -149,12 +153,12 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
             {classXiiTopperDesc}
           </p>
-          <div className="pt-2 flex items-center justify-center lg:justify-start gap-4">
+          {/* <div className="pt-2 flex items-center justify-center lg:justify-start gap-4">
              <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-[#3B2565]/5 flex items-center justify-center shrink-0">
                 <Image src="/assets/image/success-1.png" alt="success" width={20} height={20} unoptimized={true} className="lg:w-6 lg:h-6" />
              </div>
              <p className="text-[#3B2565] font-bold text-xs lg:text-sm">Setting new benchmarks in excellence every year.</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="relative order-1 lg:order-2 max-w-[320px] sm:max-w-lg mx-auto lg:mr-0">
@@ -174,7 +178,7 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
 
                     <div className="relative aspect-[4/4.5] overflow-hidden">
                       <Image
-                        src={oT?.topperImage?.url || "/assets/image/aboutImage.jpg"}
+                        src={getOptimizedImage(oT?.topperImage?.url || "/assets/image/aboutImage.jpg", { width: 300, height: 400, fit: "crop" })}
                         alt={oT?.name || "Topper"}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -193,6 +197,8 @@ const ToppersResult = ({ initialData }: { initialData?: any }) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselNext className="hidden sm:flex -right-4 lg:-right-12 bg-white/80 hover:bg-white text-[#E74040] border-none shadow-md" />
+            <CarouselPrevious className="hidden sm:flex -left-4 lg:-left-12 bg-white/80 hover:bg-white text-[#E74040] border-none shadow-md" />
             <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex gap-3 lg:hidden">
                {/* Dot indicators or similar could go here if needed, but carousel handles it */}
             </div>

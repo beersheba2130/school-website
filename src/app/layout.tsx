@@ -9,6 +9,7 @@ import Marque from "@/components/marque";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import GoogleTM from "@/components/google-tm";
+// import StickyButtons from "@/components/sticky-buttons";
 
 
 export const dynamic = "force-dynamic";
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Header />
         <Marque />
         {children}
+        {/* <StickyButtons /> */}
         <Footer />
         <div className="p-5">
           <p className={`${poppins.className} text-center font-medium`}>

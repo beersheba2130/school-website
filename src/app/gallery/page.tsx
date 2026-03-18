@@ -3,6 +3,7 @@ import Heading3 from "@/components/heading3";
 import { server_query_function } from "@/lib/graphql";
 import Image from "next/image";
 import React from "react";
+import { getOptimizedImage } from "@/utils/image-optimization";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -59,14 +60,11 @@ const page = async () => {
 
             <div className="flex flex-wrap items-center gap-5 justify-center md:justify-evenly py-5 md:py-10">
               {images?.map((img: any, i: number) => (
-                <Image
-                  key={i}
-                  src={img.url}
+                <img
+                  src={getOptimizedImage(img.url, { width: 400, height: 600, fit: "crop" })}
                   alt="gallery"
-                  width={300}
-                  height={450}
                   className="w-80 h-96 object-cover rounded-2xl shadow-lg border border-gray-100"
-                  unoptimized
+                  loading="lazy"
                 />
               ))}
             </div>

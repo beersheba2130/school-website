@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Heading2 from "../heading2";
 import Link from "next/link";
+import { getOptimizedImage } from "@/utils/image-optimization";
 
 type EventsProps = {
   blogs: Blog[];
@@ -28,24 +29,23 @@ const Events = ({ blogs, events }: EventsProps) => {
             <Heading2 title="Latest News" className="!text-2xl lg:!text-3xl" />
         </div>
         
-        <div className="w-full max-w-[340px] sm:max-w-md lg:max-w-none relative group pb-14 lg:pb-12">
-          <Carousel opts={{ align: "start", loop: true }} className="w-full mb-10 lg:mb-0">
-            <CarouselContent>
+        <div className="w-full max-w-[340px] sm:max-w-md lg:max-w-none relative group h-full flex flex-col justify-between">
+          <Carousel opts={{ align: "start", loop: true }} className="w-full mb-4 lg:mb-0">
+            <CarouselContent className="h-full">
               {blogs.map((blog) => (
-                <CarouselItem className="basis-full" key={blog?.id}>
-                  <div className="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-purple-50 h-full group/card transition-all duration-300 hover:shadow-2xl hover:border-purple-200">
-                    <div className="relative aspect-[16/9] overflow-hidden">
+                <CarouselItem className="basis-full h-full" key={blog?.id}>
+                  <div className="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-purple-50 h-full group/card transition-all duration-300 hover:shadow-2xl hover:border-purple-200 flex flex-col">
+                    <div className="relative aspect-[16/9] overflow-hidden shrink-0">
                       <Image
-                        src={blog?.mainImage?.url}
+                        src={getOptimizedImage(blog?.mainImage?.url, { width: 1200, height: 800, fit: "max" })}
                         alt={blog?.title}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover/card:scale-110"
-                        unoptimized
+                        className="object-contain transition-transform duration-700 group-hover/card:scale-105 bg-gray-50"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity" />
                     </div>
 
-                    <div className="p-5 lg:p-6 space-y-2">
+                    <div className="p-5 lg:p-6 space-y-2 flex-1 flex flex-col justify-center">
                        <Link href={`/blog/${blog?.slug}`} className="inline-block">
                         <h3 className="text-[#3B2565] text-lg lg:text-xl font-extrabold tracking-tight leading-snug group-hover/card:text-[#E74040] transition-colors line-clamp-2">
                           {blog?.title}
@@ -59,7 +59,7 @@ const Events = ({ blogs, events }: EventsProps) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
+            <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                <CarouselPrevious className="static translate-x-0 translate-y-0 h-9 w-9 lg:h-10 lg:w-10 border-purple-100 text-[#3B2565] hover:bg-[#3B2565] hover:text-white transition-all shadow-sm" />
                <CarouselNext className="static translate-x-0 translate-y-0 h-9 w-9 lg:h-10 lg:w-10 border-purple-100 text-[#3B2565] hover:bg-[#3B2565] hover:text-white transition-all shadow-sm" />
             </div>
@@ -73,8 +73,8 @@ const Events = ({ blogs, events }: EventsProps) => {
             <Heading2 title="Upcoming Events" className="!text-2xl lg:!text-3xl" />
         </div>
 
-        <div className="w-full max-w-[340px] sm:max-w-md lg:max-w-none">
-          <div className="rounded-[2rem] bg-white/70 backdrop-blur-md h-[380px] lg:h-[400px] w-full overflow-y-auto shadow-xl border border-purple-50 p-4 lg:p-5 scrollbar-thin scrollbar-thumb-purple-200 scrollbar-track-transparent">
+        <div className="w-full max-w-[340px] sm:max-w-md lg:max-w-none h-full">
+          <div className="rounded-[2rem] bg-white/70 backdrop-blur-md h-[400px] lg:h-[420px] w-full overflow-y-auto shadow-xl border border-purple-50 p-4 lg:p-5 scrollbar-thin scrollbar-thumb-purple-200 scrollbar-track-transparent">
             {events?.length > 0 ? (
               events.map((event, index) => (
                 <div key={event?.id} className="group mb-4 last:mb-0">

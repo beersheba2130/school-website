@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { ListRestart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { getOptimizedImage } from "@/utils/image-optimization";
 
 interface ImageGallery {
   heading: string;
@@ -58,14 +59,14 @@ const GalleryClient = ({ initialImages }: GalleryClientProps) => {
         </Button>
       </div>
       <div className="container grid py-10 md:py-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
-        {filteredImages.reverse().map((item) => (
+        {[...filteredImages].reverse().map((item) => (
           <Link href={`/image-gallery/${item?.id}`} key={item?.id}>
             <div
               key={item.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
             >
               <Image
-                src={item?.banner.url}
+                src={getOptimizedImage(item?.banner?.url, { width: 500, height: 500, fit: "crop" })}
                 alt={item?.heading}
                 width={500}
                 height={500}

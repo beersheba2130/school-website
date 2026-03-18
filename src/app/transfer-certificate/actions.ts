@@ -13,7 +13,8 @@ interface TransferCertificate {
   studentClass: string;
   issueDate: string;
   dob: string;
-  verificationStatus: "Verified" | "Pending" | "Invalid";
+  verificationStatus: "Verified" | "Pending" | "Invalid" | "verified";
+  driveLink?: string;
 }
 
 interface TCResponse {
@@ -46,6 +47,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           issueDate
           dob
           verificationStatus
+          driveLink
         }
       }
     `;
@@ -62,6 +64,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           issueDate
           dob
           verificationStatus
+          driveLink
         }
       }
     `;
@@ -78,12 +81,13 @@ export async function verifyTransferCertificate(formData: FormData) {
           issueDate
           dob
           verificationStatus
+          driveLink
         }
       }
     `;
   } else if (searchBy === "dob") {
     query = gql`
-      query GetTC($value: String!) {
+      query GetTC($value: Date!) {
         transferCertificates(where: { dob: $value }) {
           id
           tcNumber
@@ -94,6 +98,27 @@ export async function verifyTransferCertificate(formData: FormData) {
           issueDate
           dob
           verificationStatus
+          driveLink
+        }
+      }
+    `;
+  } else if (searchBy === "studentNameDob") {
+    const dobValue = formData.get("dobValue") as string;
+    if (!dobValue) return { error: "Please provide both Student Name and Date of Birth." };
+    variables = { name: searchValue, dob: dobValue };
+    query = gql`
+      query GetTC($name: String!, $dob: Date!) {
+        transferCertificates(where: { AND: [{ studentName_contains: $name }, { dob: $dob }] }) {
+          id
+          tcNumber
+          studentName
+          admissionNumber
+          fatherName
+          studentClass
+          issueDate
+          dob
+          verificationStatus
+          driveLink
         }
       }
     `;
@@ -112,7 +137,8 @@ export async function verifyTransferCertificate(formData: FormData) {
     // Return the first match
     return { data: certificates[0] };
   } catch (err: any) {
-    console.error("TC Verification Error:", err);
-    return { error: "Could not connect to verification server. Please ensure you are connected to the internet or try again later." };
+    console.error("TC Verification Error Detail:", err.response?.errors || err);
+    const errorMessage = err.response?.errors?.[0]?.message || err.message || "General verification error";
+    return { error: `Server Error: ${errorMessage}. Please check your connection or try again.` };
   }
 }

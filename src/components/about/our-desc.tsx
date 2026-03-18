@@ -10,7 +10,7 @@ const OurDesc = async () => {
   const visionText = "At Beersheba School, we envision a dynamic learning environment where innovation and excellence converge. Founded on July 4, 1977, in the heart of Haldwani by the late Shri. and Smt. N.N.D. Bhatt, our vision is to empower students with the skills, knowledge, and values necessary to thrive in a global society.";
 
   return (
-    <section className="container mx-auto py-10 px-5 md:px-20">
+    <section className="container mx-auto py-10 px-5 md:px-20 my-12 lg:my-24">
       <Heading3 title="Milestones of Excellence" />
       <p className=" text-gray-600 mt-3 md:mt-5">
         At Beersheba School, we take pride in our rich legacy of excellence,

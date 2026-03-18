@@ -1,8 +1,8 @@
 import { server_query_function } from "@/lib/graphql";
 import { gql } from "graphql-request";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { getOptimizedImage } from "@/utils/image-optimization";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -41,13 +41,11 @@ const Page = async (props: { params: Promise<{ id: string }> }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg  overflow-hidden">
-        <Image
-          src={imageGallery?.banner?.url}
+        <img
+          src={getOptimizedImage(imageGallery?.banner?.url, { width: 1200, height: 600, fit: "max" })}
           alt={imageGallery?.heading}
-          width={1920}
-          height={1080}
           className="w-full h-96 object-contain"
-          unoptimized
+          loading="eager"
         />
         <div className="p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
@@ -56,21 +54,19 @@ const Page = async (props: { params: Promise<{ id: string }> }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageGallery?.images.map((image, index) => (
               <Link
-                key={index}
+                key={`${image.url}-${index}`}
                 href={image.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="relative group overflow-hidden rounded-lg">
-                  <Image
-                    src={image.url}
+                <div className="relative group overflow-hidden rounded-xl bg-gray-50 shadow-sm border border-gray-100">
+                  <img
+                    src={getOptimizedImage(image.url, { width: 500, height: 400, fit: "crop" })}
                     alt={`Gallery image ${index + 1}`}
-                    width={400}
-                    height={300}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                    unoptimized
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-transparent group-hover:bg-black/10 transition-colors duration-300"></div>
                 </div>
               </Link>
             ))}

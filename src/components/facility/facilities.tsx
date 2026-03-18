@@ -8,25 +8,25 @@ const FACILITIES = [
     id: "library",
     title: "Library & Resource Centre",
     description: "Our well-stocked library houses thousands of books, periodicals, and digital resources to encourage reading habits and independent research among students.",
-    image: "/assets/image/beershiba-2.jpeg",
+    image: "/assets/image/library-bg.jpg",
   },
   {
     id: "labs",
-    title: "Science Laboratories",
+    title: "Laboratory",
     description: "State-of-the-art science labs equipped with modern instruments and apparatus, allowing students to conduct experiments and develop practical skills in Physics, Chemistry, and Biology.",
-    image: "/assets/image/beershiba-6.jpeg",
+    image: "/assets/image/lab-bg.jpg",
   },
   {
     id: "sports",
     title: "Sports & Games",
     description: "Extensive sports facilities including a large playground, court sports, and indoor games. We encourage students to participate in physical activities to foster teamwork and leadership.",
-    image: "/assets/image/aboutImage.jpg",
+    image: "/assets/image/sports-bg.jpg",
   },
   {
     id: "computer",
     title: "Computer Lab",
     description: "A modern computer laboratory with high-speed internet provides students with hands-on experience in programming, digital literacy, and emerging technologies like AI and Coding.",
-    image: "/assets/image/beershiba-2.jpeg",
+    image: "/assets/image/computer-bg.jpg",
   },
 ];
 
@@ -51,9 +51,8 @@ const Facilities = () => {
             className="bg-white rounded-xl shadow-lg overflow-hidden mb-16 transition-transform hover:scale-[1.01]"
           >
             <div
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${
-                index % 2 === 0 ? "" : "lg:flex-row-reverse"
-              }`}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${index % 2 === 0 ? "" : "lg:flex-row-reverse"
+                }`}
             >
               <div className={`${index % 2 === 0 ? "order-1" : "lg:order-2"}`}>
                 <div className="relative h-[350px] overflow-hidden">
@@ -62,15 +61,13 @@ const Facilities = () => {
                     alt={facility.title}
                     width={700}
                     height={400}
-                    unoptimized={true}
                     className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                   />
                 </div>
               </div>
               <div
-                className={`flex justify-center flex-col p-6 lg:p-8 ${
-                  index % 2 === 0 ? "order-2" : "lg:order-1"
-                }`}
+                className={`flex justify-center flex-col p-6 lg:p-8 ${index % 2 === 0 ? "order-2" : "lg:order-1"
+                  }`}
               >
                 <div className="border-l-4 border-[#DB2F2F] pl-4 mb-4">
                   <Heading2 title={facility.title} />
