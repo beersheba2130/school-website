@@ -1,18 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "*.graphassets.com",
+        hostname: "**.graphassets.com",
       },
       {
         protocol: "https",
-        hostname: "*.hygraph.com",
+        hostname: "**.hygraph.com",
       },
       {
         protocol: "https",
         hostname: "ap-south-1.cdn.hygraph.com",
+      },
+      {
+        protocol: "https",
+        hostname: "media.graphassets.com",
+      },
+      {
+        protocol: "https",
+        hostname: "eu-central-1-shared-euc1-02.graphassets.com",
       },
     ],
   },
