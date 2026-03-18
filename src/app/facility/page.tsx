@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Facilities />
-      <Video source="/assets/image/Beersheba Senior Secondary School, Haldwani-(1080p) (1).mp4" />
+      <Video source="/assets/image/beersheba-video.mp4" />
       <AdmissionEnquiry />
     </>
   );

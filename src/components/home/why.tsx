@@ -7,42 +7,42 @@ const Why = () => {
     {
       title: "Best Teachers",
       desc: "Highly qualified educators dedicated to nurturing young minds with passion and expertise.",
-      icon: "/assets/image/teacher-pointing-at-blackboard-svgrepo-com 1.png",
+      icon: "/assets/image/teacher-1.png",
       bgColor: "bg-[#D6C9EF]/40",
       textColor: "text-[#3B2565]"
     },
     {
       title: "Our Achievers",
       desc: "Celebrating a legacy of students who consistently excel in academics and co-curricular fields.",
-      icon: "/assets/image/success-svgrepo-com (1) 1.png",
+      icon: "/assets/image/success-1.png",
       bgColor: "bg-white",
       textColor: "text-[#3B2565]"
     },
     {
       title: "Safe Campus",
       desc: "A secure, supportive environment with 24/7 monitoring for your child's complete safety.",
-      icon: "/assets/image/monitoring-svgrepo-com 1.png",
+      icon: "/assets/image/monitoring-1.png",
       bgColor: "bg-[#D6C9EF]/40",
       textColor: "text-[#3B2565]"
     },
     {
       title: "Modern Education",
       desc: "Advanced smart classes and digital resources preparing students for tomorrow's challenges.",
-      icon: "/assets/image/computer-tv-svgrepo-com 1.png",
+      icon: "/assets/image/computer-1.png",
       bgColor: "bg-[#3B2565]",
       textColor: "text-white"
     },
     {
       title: "Academic Excellence",
       desc: "Rigorous CBSE curriculum focused on critical thinking and deep conceptual understanding.",
-      icon: "/assets/image/student-reading-svgrepo-com 1.png",
+      icon: "/assets/image/reading-1.png",
       bgColor: "bg-white",
       textColor: "text-[#3B2565]"
     },
     {
       title: "Sports Facilities",
       desc: "State-of-the-art sports infrastructure promoting physical fitness and team spirit.",
-      icon: "/assets/image/success-svgrepo-com (1) 1.png",
+      icon: "/assets/image/success-1.png",
       bgColor: "bg-[#3B2565]",
       textColor: "text-white"
     }

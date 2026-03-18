@@ -4,7 +4,15 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ap-south-1.graphassets.com",
+        hostname: "*.graphassets.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.hygraph.com",
+      },
+      {
+        protocol: "https",
+        hostname: "ap-south-1.cdn.hygraph.com",
       },
     ],
   },

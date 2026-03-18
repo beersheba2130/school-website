@@ -21,7 +21,7 @@ const MissionAndValues = () => {
             <div className="flex gap-4 items-center">
               <div className="p-3 bg-white rounded-2xl shadow-sm shrink-0">
                 <Image
-                  src={"/assets/image/accountability (2) 1.png"}
+                  src={"/assets/image/accountability-2.png"}
                   alt="Core Values Icon"
                   width={32}
                   height={32}
@@ -51,7 +51,7 @@ const MissionAndValues = () => {
         {/* Vision Image */}
         <div className="relative group overflow-hidden rounded-3xl h-64 lg:h-full">
           <Image
-            src={"/assets/image/vision (1).jpg"}
+            src={"/assets/image/vision-1.jpg"}
             alt="School Vision"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -76,7 +76,7 @@ const MissionAndValues = () => {
         {/* Mission Image */}
         <div className="md:col-span-2 relative group overflow-hidden rounded-3xl h-64 lg:h-[300px]">
           <Image
-            src={"/assets/image/mission (1).jpg"}
+            src={"/assets/image/mission-1.jpg"}
             alt="School Mission"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"

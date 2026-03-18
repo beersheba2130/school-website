@@ -20,7 +20,7 @@ const About = ({
         
         <div className="relative group max-w-[450px] lg:max-w-none">
           <Image
-            src={"/assets/image/about (1).jpg"}
+            src={"/assets/image/about-1.jpg"}
             alt="Beersheba School Campus"
             width={500}
             height={400}
