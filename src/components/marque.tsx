@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Marque = () => {
-  const text = "Online Registration Open for 2024-25";
+  const text = "Online Registration Open for 2026-27";
 
   return (
     <div className="bg-[#3B2565] text-white py-2 text-xs md:text-sm font-bold uppercase tracking-widest overflow-hidden whitespace-nowrap">

@@ -9,7 +9,7 @@ import Marque from "@/components/marque";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import GoogleTM from "@/components/google-tm";
-import StickyButtons from "@/components/sticky-buttons";
+
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -46,7 +46,7 @@ export default function RootLayout({
           </p>
         </div>
         <GoogleTM />
-        <StickyButtons />
+
       </body>
     </html>
   );
