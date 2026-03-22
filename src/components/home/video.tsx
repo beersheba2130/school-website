@@ -21,105 +21,121 @@ type FeaturedItem = {
 
 const Video = ({ featured }: { featured: FeaturedItem[] }) => {
   return (
-    <section className="relative mt-12 mb-20 lg:mb-24">
-      {/* Background Layer with Purple Accent */}
-      <div className="absolute inset-x-0 top-0 bottom-16 lg:bottom-20 bg-[#DED4F2]/50 -z-10" />
+    <section className="relative mt-8 mb-12 lg:mb-16 overflow-hidden">
+      {/* Dynamic Mesh Background */}
+      <div className="absolute inset-x-0 top-0 bottom-0 -z-20 bg-[#FDFCFE]" />
+      <div className="absolute top-0 right-0 w-[50%] h-full bg-gradient-to-l from-[#3B2565]/5 to-transparent -z-10" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#DED4F2]/30 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-1/2 left-0 w-64 h-64 bg-[#E74040]/5 rounded-full blur-3xl -z-10" />
       
-      <div className="container mx-auto px-4 py-8 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Text Content */}
-          <div className="text-center lg:text-left">
-            <div className="space-y-4 lg:space-y-6">
-              <Heading2
-                title="Leading School in City Since 1977"
-                className="text-2xl sm:text-3xl lg:text-4xl"
-              />
-              <p className="text-gray-600 text-sm lg:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
+      {/* Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none -z-10" style={{ backgroundImage: 'radial-gradient(#3B2565 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+
+      <div className="container mx-auto px-4 py-8 lg:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          {/* Main Content Column */}
+          <div className="lg:col-span-7 text-center lg:text-left">
+            <div className="space-y-5 lg:space-y-7 max-w-2xl mx-auto lg:mx-0">
+              <div className="relative">
+                <Heading2
+                  title="Leading School in City Since 1977"
+                  className="text-2xl sm:text-3xl lg:text-5xl font-black text-[#3B2565] leading-[1.1]"
+                />
+              </div>
+
+              <p className="text-gray-500 text-sm lg:text-base leading-relaxed font-medium">
                 Empowering Minds, Inspiring Futures: Since 1977, Beersheba School in
                 Haldwani has been a beacon of educational excellence. With a rich
                 legacy spanning over four decades, we shape tomorrow&apos;s leaders
                 through academic rigor and holistic development.
               </p>
-              <Link href={"/news-event"} className="inline-block pt-2">
-                <Button size="lg" className="bg-[#3B2565] hover:bg-[#2A1a4a] text-white px-6 lg:px-8 h-12 rounded-xl transition-all shadow-lg text-sm lg:text-base">
-                  Explore Highlights
-                </Button>
-              </Link>
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                <Link href={"/news-event"}>
+                  <Button className="bg-[#3B2565] hover:bg-[#2A1a4a] text-white px-8 h-12 rounded-2xl transition-all shadow-xl shadow-[#3B2565]/20 text-sm font-bold active:scale-95">
+                    Explore Highlights
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
 
-          {/* Carousel Section */}
-          <div className="flex justify-center lg:justify-end mt-6 lg:mt-0 pb-12 lg:pb-6">
-            <Carousel className="w-full max-w-[280px] sm:max-w-[340px] relative mb-8 lg:mb-0">
-              <CarouselContent>
-                {featured.length > 0 ? featured.map((item) => (
-                  <CarouselItem key={item.id}>
-                    <Card className="border-none shadow-xl rounded-[2rem] overflow-hidden bg-white">
-                      <CardContent className="p-0">
-                        <div className="relative group">
-                           <Image
-                            src={item.newsImage.url}
-                            alt={`Featured news: ${item.newsHeading}`}
-                            width={400}
-                            height={400}
-                            unoptimized={true}
-                            className="w-full aspect-square object-cover"
-                          />
-                        </div>
-                        <div className="p-4 lg:p-5 text-center">
-                          <Link href={`/news-event/${item.id}`}>
-                            <p className="text-base lg:text-lg font-bold text-[#3B2565] line-clamp-2">
-                               {item.newsHeading}
-                            </p>
-                            <span className="text-[8px] font-black uppercase tracking-[0.2em] text-[#E74040] mt-1.5 block">
-                               👉 View Details
-                            </span>
-                          </Link>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                )) : (
-                  <CarouselItem>
-                    <Card className="border-none shadow-xl rounded-[2rem] overflow-hidden bg-white p-12 lg:p-20 text-center">
-                       <p className="text-gray-400 font-medium italic">Discover our highlights</p>
-                    </Card>
-                  </CarouselItem>
-                )}
-              </CarouselContent>
-              <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
-                 <CarouselPrevious className="static translate-x-0 translate-y-0 h-9 w-9 lg:h-10 lg:w-10 border-[#3B2565]/20 hover:border-[#3B2565] hover:bg-[#3B2565] hover:text-white transition-all shadow-sm" />
-                 <CarouselNext className="static translate-x-0 translate-y-0 h-9 w-9 lg:h-10 lg:w-10 border-[#3B2565]/20 hover:border-[#3B2565] hover:bg-[#3B2565] hover:text-white transition-all shadow-sm" />
-              </div>
-            </Carousel>
+          {/* Carousel Column */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative z-10">
+              <Carousel className="w-full max-w-[300px] sm:max-w-[340px] mx-auto lg:mr-0 group">
+                <div className="absolute -inset-4 bg-[#3B2565]/5 rounded-[3rem] -z-10 blur-xl group-hover:bg-[#3B2565]/10 transition-colors duration-500" />
+                <CarouselContent>
+                  {featured.length > 0 ? featured.map((item) => (
+                    <CarouselItem key={item.id}>
+                      <Card className="border-none shadow-2xl rounded-[2.5rem] overflow-hidden bg-white cursor-pointer ring-1 ring-black/5">
+                        <CardContent className="p-0">
+                          <div className="relative h-64 sm:h-72 overflow-hidden bg-gray-50">
+                             <Image
+                              src={item.newsImage.url}
+                              alt={`Featured news: ${item.newsHeading}`}
+                              fill
+                              unoptimized={true}
+                              className="object-contain p-4 transition-transform duration-700 hover:scale-105"
+                            />
+                          </div>
+                          <div className="p-5 text-center bg-white">
+                            <Link href={`/news-event/${item.id}`}>
+                              <p className="text-base font-bold text-[#3B2565] line-clamp-2 hover:text-[#E74040] transition-colors leading-tight mb-2">
+                                 {item.newsHeading}
+                              </p>
+                              <span className="inline-block text-[9px] font-black uppercase tracking-[0.15em] text-[#E74040] px-3 py-1 bg-[#E74040]/5 rounded-lg group-hover/btn:bg-[#E74040] group-hover/btn:text-white transition-all">
+                                👉 More Details
+                              </span>
+                            </Link>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  )) : (
+                    <CarouselItem>
+                      <Card className="border-none shadow-xl rounded-[2.5rem] overflow-hidden bg-white p-20 text-center">
+                         <p className="text-gray-400 font-medium italic">Discover our highlights</p>
+                      </Card>
+                    </CarouselItem>
+                  )}
+                </CarouselContent>
+                
+                {/* Refined Navigation */}
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:left-auto lg:right-0 lg:translate-x-0 flex gap-4">
+                   <CarouselPrevious className="static translate-x-0 translate-y-0 h-10 w-10 border-[#3B2565]/10 bg-white/80 backdrop-blur-md hover:border-[#3B2565] hover:bg-[#3B2565] hover:text-white transition-all shadow-lg" />
+                   <CarouselNext className="static translate-x-0 translate-y-0 h-10 w-10 border-[#3B2565]/10 bg-white/80 backdrop-blur-md hover:border-[#3B2565] hover:bg-[#3B2565] hover:text-white transition-all shadow-lg" />
+                </div>
+              </Carousel>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Feature Cards overlap */}
-      <div className="container mx-auto px-4 mt-8 lg:-mt-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+      {/* Feature Cards Grid */}
+      <div className="container mx-auto px-4 mt-16 mb-8 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <VideoCard
-            title="Campus"
-            desc="State-of-the-art facilities and vibrant learning spaces."
+            title="Modern Campus"
+            desc="Innovative learning spaces designed for academic growth."
             source="/assets/image/icon cool-icon-l19.svg"
             link="/image-gallery/cm5mnfbsx02mx07o1cneh7g2p"
           />
           <VideoCard
-            title="Teacher"
-            desc="Dedicated educators shaping bright futures with passion."
+            title="Expert Faculty"
+            desc="Passionate educators committed to student success."
             source="/assets/image/icon cool-icon-l22.svg"
             link="/image-gallery/cm5mnegp902d807o727z5rmcy"
           />
           <VideoCard
-            title="Library"
-            desc="Vast collection of books and digital resources."
+            title="Rich Library"
+            desc="Extensive resources and digital learning tools."
             source="/assets/image/icon cool-icon-l25.svg"
             link="/image-gallery/cm5moi6bh037107o75b1f654h"
           />
           <VideoCard
-            title="Smart School"
-            desc="Cutting-edge technology enhancing learning."
+            title="Smart Learning"
+            desc="Next-gen technology integrated into every classroom."
             source="/assets/image/icon cool-icon-l28.svg"
             link="/image-gallery/cm5moitf803ei07o1bwivnwd7"
           />

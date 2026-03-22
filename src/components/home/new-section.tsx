@@ -14,7 +14,7 @@ const NewSection = () => {
             width={500}
             height={400}
             unoptimized={true}
-            className="object-cover z-10 rounded-[2rem] shadow-xl w-full h-auto"
+            className="object-contain z-10 rounded-[2rem] shadow-xl w-full h-auto"
           />
           {/* Decorative Border */}
           <div className="absolute -top-4 -left-4 border-2 border-dashed border-[#3B2565]/30 rounded-[2.5rem] w-full h-full -z-10 bg-[#3B2565]/5"></div>

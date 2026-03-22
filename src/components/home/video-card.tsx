@@ -13,16 +13,25 @@ type VideoCardProps = {
 const VideoCard = ({ source, title, desc, link }: VideoCardProps) => {
   return (
     <Link href={`${link}`} className="block group h-full">
-      <div className="h-full bg-white rounded-2xl p-5 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-12px_rgba(59,37,101,0.15)] flex flex-col items-center text-center gap-3 transition-all duration-300 group-hover:-translate-y-2 border border-white hover:border-[#3B2565]/10">
-        <div className="p-3 bg-gray-50 rounded-2xl group-hover:bg-[#3B2565]/5 transition-colors duration-300">
-           <Image src={source} width={48} height={48} alt={title} unoptimized={true} className="w-10 h-10 lg:w-12 lg:h-12 object-contain" />
+      <div className="h-full bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(59,37,101,0.12)] flex flex-col items-center text-center gap-3 transition-all duration-500 group-hover:-translate-y-3 border border-white/60 hover:border-[#3B2565]/20 relative overflow-hidden">
+        {/* Hover Highlight Gradient */}
+        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-[#3B2565]/5 rounded-full blur-3xl group-hover:bg-[#3B2565]/10 transition-colors duration-500" />
+        
+        <div className="p-3 bg-gradient-to-br from-gray-50 to-white rounded-2xl group-hover:from-[#3B2565]/5 group-hover:to-white transition-all duration-500 shadow-inner">
+           <Image src={source} width={44} height={44} alt={title} unoptimized={true} className="w-10 h-10 lg:w-11 lg:h-11 object-contain transition-transform duration-500 group-hover:scale-110" />
         </div>
-        <h5
-          className={`${poppins.className} text-lg lg:text-xl font-bold text-[#3B2565] relative pb-2.5 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-1 after:bg-[#E74040] after:rounded-full`}
-        >
-          {title}
-        </h5>
-        <p className="text-gray-400 text-xs lg:text-sm font-medium leading-relaxed">{desc}</p>
+        
+        <div className="space-y-2 relative z-10">
+          <h5
+            className={`${poppins.className} text-base lg:text-lg font-bold text-[#3B2565] transition-colors duration-300 group-hover:text-[#2A1a4a]`}
+          >
+            {title}
+          </h5>
+          <div className="w-8 h-1 bg-[#E74040]/30 rounded-full mx-auto group-hover:w-12 group-hover:bg-[#E74040] transition-all duration-500" />
+          <p className="text-gray-500 text-[11px] lg:text-xs font-medium leading-relaxed px-2">
+            {desc}
+          </p>
+        </div>
       </div>
     </Link>
   );

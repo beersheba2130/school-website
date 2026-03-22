@@ -53,7 +53,7 @@ const page = async (
                 src={newsEvent.newsImage?.url || "/assets/image/placeholder.jpg"}
                 alt={newsEvent.newsHeading}
                 fill
-                className="object-cover"
+                className="object-contain bg-gray-50 transition-all duration-300"
                 unoptimized
               />
             </div>

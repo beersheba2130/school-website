@@ -55,7 +55,7 @@ const Page = async () => {
                       src={item?.newsImage?.url || "/assets/image/placeholder.jpg"}
                       alt={item?.newsHeading}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-contain bg-gray-50 transition-all duration-300 group-hover:bg-gray-100"
                       unoptimized
                     />
                   </div>
