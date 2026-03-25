@@ -66,7 +66,7 @@ const Video = ({ featured }: { featured: FeaturedItem[] }) => {
               <Carousel className="w-full max-w-[300px] sm:max-w-[340px] mx-auto lg:mr-0 group">
                 <div className="absolute -inset-4 bg-[#3B2565]/5 rounded-[3rem] -z-10 blur-xl group-hover:bg-[#3B2565]/10 transition-colors duration-500" />
                 <CarouselContent>
-                  {featured.length > 0 ? featured.map((item) => (
+                  {featured.length > 0 ? featured.map((item, index) => (
                     <CarouselItem key={item.id}>
                       <Card className="border-none shadow-2xl rounded-[2.5rem] overflow-hidden bg-white cursor-pointer ring-1 ring-black/5">
                         <CardContent className="p-0">
@@ -75,7 +75,7 @@ const Video = ({ featured }: { featured: FeaturedItem[] }) => {
                               src={item.newsImage.url}
                               alt={`Featured news: ${item.newsHeading}`}
                               fill
-                              unoptimized={true}
+                              priority={index === 0}
                               className="object-contain p-4 transition-transform duration-700 hover:scale-105"
                             />
                           </div>

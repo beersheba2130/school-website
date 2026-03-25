@@ -119,11 +119,10 @@ type TransferCertificate = {
   tcNumber: string;
   studentName: string;
   admissionNumber: string;
-  fatherName: string;
   studentClass: string;
-  issueDate: string;
   dob: string;
   verificationStatus: "Verified" | "Pending" | "Invalid";
+  driveLink?: string;
 };
 
 type TCResponse = {

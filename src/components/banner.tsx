@@ -18,7 +18,7 @@ const Banner = ({ source, title, description }: props) => {
         width={1200}
         height={600}
         alt="banner"
-        unoptimized={true}
+        priority
         className="w-full object-cover h-52 md:h-72"
       />
 

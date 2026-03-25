@@ -23,7 +23,11 @@ export async function server_query_function(query: any, variables?: any) {
     const response = await request(endpoint!, query, variables, headers);
     return response;
   } catch (error: any) {
-    console.error("❌ Hygraph Server Error:", error.message || error);
+    console.error("❌ Hygraph Query Error:", {
+      message: error.message,
+      status: error.response?.status,
+      errors: error.response?.errors,
+    });
     throw new Error(`Failed to fetch from Hygraph: ${error.message || "Unknown error"}`);
   }
 }

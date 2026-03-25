@@ -61,6 +61,7 @@ const Facilities = () => {
                     alt={facility.title}
                     width={700}
                     height={400}
+                    priority={index < 2}
                     className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                   />
                 </div>

@@ -9,9 +9,7 @@ interface TransferCertificate {
   tcNumber: string;
   studentName: string;
   admissionNumber: string;
-  fatherName: string;
   studentClass: string;
-  issueDate: string;
   dob: string;
   verificationStatus: "Verified" | "Pending" | "Invalid" | "verified";
   driveLink?: string;
@@ -42,9 +40,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           tcNumber
           studentName
           admissionNumber
-          fatherName
           studentClass
-          issueDate
           dob
           verificationStatus
           driveLink
@@ -59,9 +55,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           tcNumber
           studentName
           admissionNumber
-          fatherName
           studentClass
-          issueDate
           dob
           verificationStatus
           driveLink
@@ -76,9 +70,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           tcNumber
           studentName
           admissionNumber
-          fatherName
           studentClass
-          issueDate
           dob
           verificationStatus
           driveLink
@@ -93,9 +85,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           tcNumber
           studentName
           admissionNumber
-          fatherName
           studentClass
-          issueDate
           dob
           verificationStatus
           driveLink
@@ -113,9 +103,7 @@ export async function verifyTransferCertificate(formData: FormData) {
           tcNumber
           studentName
           admissionNumber
-          fatherName
           studentClass
-          issueDate
           dob
           verificationStatus
           driveLink

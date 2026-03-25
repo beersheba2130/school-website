@@ -184,10 +184,8 @@ const TCSearchForm = () => {
               {[
                 { icon: FileText, label: "TC Number", value: result.tcNumber },
                 { icon: Hash, label: "Admission No.", value: result.admissionNumber },
-                { icon: User, label: "Father's Name", value: result.fatherName },
                 { icon: GraduationCap, label: "Class", value: result.studentClass },
                 { icon: Calendar, label: "Date of Birth", value: new Date(result.dob).toLocaleDateString("en-IN") },
-                { icon: Calendar, label: "Issue Date", value: new Date(result.issueDate).toLocaleDateString("en-IN") },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
                   <div className="flex items-center gap-2 mb-2">
