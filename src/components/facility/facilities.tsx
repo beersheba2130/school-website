@@ -26,7 +26,7 @@ const FACILITIES = [
     id: "computer",
     title: "Computer Lab",
     description: "A modern computer laboratory with high-speed internet provides students with hands-on experience in programming, digital literacy, and emerging technologies like AI and Coding.",
-    image: "/assets/image/computer-bg.jpg",
+    image: "/assets/image/computer-lab.jpg",
   },
 ];
 
