@@ -5,6 +5,7 @@ import Pagination from "./pagination";
 import { Button } from "../ui/button";
 import { poppins } from "@/utils/font";
 import Link from "next/link";
+import Image from "next/image";
 
 const Slider = ({
   source,
@@ -64,9 +65,11 @@ const Slider = ({
                   className="w-full h-[300px] lg:h-[400px] object-cover"
                 />
               ) : (
-                <img
+                <Image
                   src={banner.url || "/assets/image/placeholder.jpg"}
                   alt={banner.title || "Banner"}
+                  width={1920}
+                  height={1080}
                   className="w-full h-[300px] lg:h-[400px] object-cover"
                 />
               )}

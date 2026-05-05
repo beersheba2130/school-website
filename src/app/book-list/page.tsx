@@ -29,7 +29,7 @@ const BookListPage = () => {
         </h1>
 
         <p className="text-gray-500 text-base lg:text-lg max-w-md mx-auto leading-relaxed mb-10">
-          We're preparing the official book list for the new academic session. It will be available here very soon. Stay tuned!
+          We&apos;re preparing the official book list for the new academic session. It will be available here very soon. Stay tuned!
         </p>
 
         {/* Feature Pills */}
@@ -52,7 +52,7 @@ const BookListPage = () => {
           <div>
             <p className="text-[#3B2565] font-extrabold text-sm">Stay Updated</p>
             <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">
-              Contact the school office or visit again soon to get the latest book list for your child's class.
+              Contact the school office or visit again soon to get the latest book list for your child&apos;s class.
             </p>
           </div>
         </div>
