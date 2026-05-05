@@ -8,13 +8,13 @@ export const revalidate = 0;
 
 const page = async () => {
   const query = `query MyQuery {
-  imageGalleries {
+  imageGalleries(orderBy: createdAt_DESC, first: 1) {
     id
     heading
     banner {
       url
     }
-    images {
+    images(orderBy: createdAt_DESC) {
       url
     }
   }

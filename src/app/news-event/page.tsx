@@ -10,7 +10,7 @@ export const revalidate = 0;
 
 const Page = async () => {
   const query = `query MyQuery {
-    newsEvents (orderBy: createdAt_DESC, first: 100) {
+    newsEvents (orderBy: updatedAt_DESC, first: 100) {
       id
       newsHeading
       newsImage {

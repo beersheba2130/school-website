@@ -9,7 +9,9 @@ import Marque from "@/components/marque";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import GoogleTM from "@/components/google-tm";
-// import StickyButtons from "@/components/sticky-buttons";
+import StickyButtons from "@/components/sticky-buttons";
+import { server_query_function } from "@/lib/graphql";
+import EventPopup from "@/components/event-popup";
 
 
 export const dynamic = "force-dynamic";
@@ -24,11 +26,26 @@ export const metadata: Metadata = {
     "School , private schools near me ,montessori ,schools near me , boarding school , classroom google , private school , private school , educate , new education policy , schooling , teacher and student , secondary, 9th class , cbse official website , middle , my favourite teacher",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const eventData = (await server_query_function(`
+    query {
+      newsEvents(orderBy: updatedAt_DESC, first: 1) {
+        id
+        newsHeading
+        newsImage {
+          url
+        }
+      }
+    }
+  `)) as any;
+
+  const latestEvent = eventData?.newsEvents?.[0] || null;
+  console.log("🔔 Latest Event for Popup:", latestEvent?.newsHeading || "No event found");
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${latto.className} bg-white overflow-x-hidden`} suppressHydrationWarning>
@@ -37,7 +54,8 @@ export default function RootLayout({
         <Header />
         <Marque />
         {children}
-        {/* <StickyButtons /> */}
+        <EventPopup event={latestEvent} />
+        <StickyButtons />
         <Footer />
         <div className="p-5">
           <p className={`${poppins.className} text-center font-medium`}>

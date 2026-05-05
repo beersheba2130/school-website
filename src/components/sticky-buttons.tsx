@@ -15,7 +15,7 @@ const StickyButtons = () => {
   const items = [
     {
       label: "Book List",
-      href: "/book-list",
+      href: "https://drive.google.com/file/d/1iPGNlCUcNL83Ue9eHU6GraYpaOI_tlAl/view?usp=drive_link",
       icon: <BookText className="w-5 h-5" />,
       color: "bg-[#3B2565]",
       textColor: "text-white",
@@ -23,19 +23,11 @@ const StickyButtons = () => {
     },
     {
       label: "Fee List",
-      href: "/fee-list",
+      href: "https://drive.google.com/file/d/1pdPfSwLwrXX1ygJ5lq8qNespe2srm_Pi/view?usp=drive_link",
       icon: <CircleDollarSign className="w-5 h-5" />,
       color: "bg-[#F8EF2E]",
       textColor: "text-primary",
       isForm: false,
-    },
-    {
-      label: "Enquiry",
-      href: "#",
-      icon: <ClipboardList className="w-5 h-5" />,
-      color: "bg-[#E74040]",
-      textColor: "text-white",
-      isForm: true,
     },
   ];
 
@@ -64,117 +56,6 @@ const StickyButtons = () => {
 
   return (
     <>
-      {/* Enquiry Modal */}
-      {showForm && (
-        <div className={cn(poppins.className, "fixed inset-0 z-[1000] flex items-end sm:items-center justify-center p-4 sm:p-0")}>
-          {/* Backdrop */}
-          <div
-            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
-            onClick={() => { setShowForm(false); setSubmitted(false); }}
-          />
-
-          {/* Form Card */}
-          <div className="relative z-10 bg-white rounded-3xl shadow-2xl w-full max-w-md p-6 sm:p-8 animate-in slide-in-from-bottom-10 duration-300">
-            {/* Close */}
-            <button
-              onClick={() => { setShowForm(false); setSubmitted(false); }}
-              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition"
-            >
-              <X size={16} />
-            </button>
-
-            {submitted ? (
-              <div className="text-center py-8">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle2 size={32} className="text-green-500" />
-                </div>
-                <h3 className="text-xl font-black text-[#3B2565] mb-2">Enquiry Submitted!</h3>
-                <p className="text-gray-500 text-sm">We'll get back to you shortly. Thank you for your interest in Beersheba School!</p>
-              </div>
-            ) : (
-              <>
-                {/* Header */}
-                <div className="mb-6">
-                  <div className="inline-flex items-center gap-2 bg-[#E74040]/10 text-[#E74040] text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3">
-                    <ClipboardList size={12} />
-                    Basic Enquiry
-                  </div>
-                  <h3 className="text-2xl font-black text-[#3B2565]">Get in Touch</h3>
-                  <p className="text-gray-500 text-sm mt-1">Fill in your details and we'll contact you soon.</p>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  {/* Name */}
-                  <div>
-                    <label className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1.5 block">Full Name *</label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Enter your name"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#3B2565]/30 focus:border-[#3B2565] text-sm transition"
-                    />
-                  </div>
-
-                  {/* Phone */}
-                  <div>
-                    <label className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1.5 block">Phone Number *</label>
-                    <input
-                      type="tel"
-                      required
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. 98765 43210"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#3B2565]/30 focus:border-[#3B2565] text-sm transition"
-                    />
-                  </div>
-
-                  {/* Class */}
-                  <div>
-                    <label className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1.5 block">Class Interested In</label>
-                    <select
-                      value={formData.classInterested}
-                      onChange={(e) => setFormData({ ...formData, classInterested: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#3B2565]/30 focus:border-[#3B2565] text-sm transition text-gray-600"
-                    >
-                      <option value="">Select a class</option>
-                      {["Nursery", "LKG", "UKG", ...Array.from({ length: 12 }, (_, i) => `Class ${i + 1}`)].map((c) => (
-                        <option key={c} value={c}>{c}</option>
-                      ))}
-                    </select>
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1.5 block">Message (Optional)</label>
-                    <textarea
-                      rows={3}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Any specific questions or information..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#3B2565]/30 focus:border-[#3B2565] text-sm transition resize-none"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="w-full bg-gradient-to-r from-[#3B2565] to-[#5A3B8F] hover:from-[#2A1a4a] hover:to-[#4a2d7a] text-white font-extrabold py-3.5 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 text-sm uppercase tracking-wider"
-                  >
-                    {loading ? (
-                      <><Loader2 size={16} className="animate-spin" /> Submitting...</>
-                    ) : (
-                      <><Send size={16} /> Submit Enquiry</>
-                    )}
-                  </button>
-                </form>
-              </>
-            )}
-          </div>
-        </div>
-      )}
-
       {/* Floating Buttons */}
       <div
         className={cn(poppins.className, "fixed right-6 bottom-10 z-[999] flex flex-col items-end gap-3")}
@@ -212,6 +93,8 @@ const StickyButtons = () => {
               <Link
                 key={index}
                 href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : "_self"}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className={cn(
                   "flex items-center gap-4 px-6 py-4 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-x-3 hover:shadow-2xl group/item relative overflow-hidden backdrop-blur-sm",
                   item.color,

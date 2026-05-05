@@ -19,7 +19,7 @@ export const revalidate = 0;
 const page = async () => {
   const newsDataResult = (await server_query_function(`
     query {
-      newsEvents(orderBy: createdAt_DESC, first: 20) {
+      newsEvents(orderBy: updatedAt_DESC, first: 20) {
         id
         newsHeading
         newsImage {
@@ -36,8 +36,9 @@ const page = async () => {
   imageGalleries(orderBy: createdAt_DESC, first: 12) {
     id
     heading
-    images {
+    images(orderBy: createdAt_DESC) {
       url
+      createdAt
     }
     banner {
       url
@@ -52,16 +53,18 @@ const page = async () => {
         url
       }
     }
-    haldwaniHomes(first: 1) {
+    haldwaniHomes(orderBy: updatedAt_DESC, first: 1) {
       homeVideoBanner {
         url
         mimeType
       }
       homeGallery {
+        __typename
         ... on Image {
           id
-          homeGalleryImage {
+          homeGalleryImage(first: 50, orderBy: createdAt_DESC) {
             url
+            createdAt
           }
         }
       }
@@ -104,16 +107,6 @@ const page = async () => {
     const featuredNews = newsData.map((news: any) => {
       let teaserImage = news.newsImage?.url || "/assets/image/placeholder.jpg";
       
-      if (news.newsDesc?.html) {
-        const matches = news.newsDesc.html.match(/<img[^>]+src="([^">]+)"/g);
-        if (matches && matches.length >= 1) {
-          const imgToPick = matches.length >= 2 ? matches[1] : matches[0];
-          const srcMatch = imgToPick.match(/src="([^">]+)"/);
-          if (srcMatch && srcMatch[1]) {
-            teaserImage = srcMatch[1];
-          }
-        }
-      }
 
       return {
         id: news.id,
@@ -122,27 +115,36 @@ const page = async () => {
       };
     });
 
-    featuredNews.sort((a: any, b: any) => {
-      if (a.newsHeading.includes("UDAY SAMMAN")) return -1;
-      if (b.newsHeading.includes("UDAY SAMMAN")) return 1;
-      return 0;
-    });
 
     let galleryImages = [];
-    if (Array.isArray(homeData?.homeGallery)) {
-      galleryImages = homeData.homeGallery
-        .flatMap((item: any) => item.homeGalleryImage || [])
-        .map((img: any) => ({ url: img.url }))
-        .filter((img: any) => img.url);
+    const rawGallery = homeData?.homeGallery;
+    
+    if (rawGallery) {
+      const galleryArray = Array.isArray(rawGallery) ? rawGallery : [rawGallery];
+      galleryImages = galleryArray
+        .flatMap((item: any) => {
+          if (item?.homeGalleryImage) {
+             return Array.isArray(item.homeGalleryImage) ? item.homeGalleryImage : [item.homeGalleryImage];
+          }
+          if (item?.url) return [item];
+          return [];
+        })
+        .map((img: any) => ({ url: img.url, createdAt: img.createdAt }))
+        .filter((img: any) => img && img.url);
     }
     
     if (galleryImages.length === 0 && imageGalleryData.length > 0) {
       galleryImages = imageGalleryData.flatMap((item: any) => 
-        item.images?.map((img: any) => ({ url: img.url })) || []
+        item.images?.map((img: any) => ({ url: img.url, createdAt: img.createdAt })) || []
       ).filter((img: any) => img.url);
     }
 
-    galleryImages = galleryImages.slice(0, 9);
+    // Ensure everything is sorted by latest createdAt
+    galleryImages.sort((a: any, b: any) => 
+      new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime()
+    );
+
+    galleryImages = galleryImages.slice(0, 12);
 
     // fallback to homeVideoBanner from Hygraph (includes mimeType for correct video detection)
     const bannerVideos = homeData?.homeVideoBanner?.length
