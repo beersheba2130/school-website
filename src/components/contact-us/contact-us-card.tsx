@@ -27,7 +27,7 @@ const ContactUsCard = () => {
             <div>
               <p>05946-223030 </p>
               <p>05946-222256</p>
-              <p>09634374446</p>
+              <p>08679774511</p>
             </div>
           </div>
           <div className="flex gap-5 my-3">

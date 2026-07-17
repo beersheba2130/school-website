@@ -14,7 +14,7 @@ const TopHeader = () => {
         </div>
         <div className="flex gap-2 items-center">
           <Image src="/assets/image/call.svg" alt="call" width={16} height={16} unoptimized={true} />
-          <p>05946-223030, 05946-222256, 9634374446</p>
+          <p>05946-223030, 05946-222256, 8679774511</p>
         </div>
       </div>
       <div className="lg:flex gap-5 hidden">

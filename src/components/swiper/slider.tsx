@@ -62,7 +62,7 @@ const Slider = ({
                   muted
                   loop
                   playsInline
-                  className="w-full h-[300px] lg:h-[400px] object-cover"
+                  className="w-full h-[400px] lg:h-[600px] object-cover"
                 />
               ) : (
                 <Image
@@ -70,10 +70,10 @@ const Slider = ({
                   alt={banner.title || "Banner"}
                   width={1920}
                   height={1080}
-                  className="w-full h-[300px] lg:h-[400px] object-cover"
+                  className="w-full h-[400px] lg:h-[600px] object-cover"
                 />
               )}
-              <div className="absolute inset-0 bg-[#3B2565]/60 p-5 text-white flex justify-center items-center flex-col gap-3 lg:gap-5 h-[300px] lg:h-[400px]">
+              <div className="absolute inset-0 bg-[#3B2565]/60 p-5 text-white flex justify-center items-center flex-col gap-3 lg:gap-5 h-[400px] lg:h-[600px]">
                 <div
                   className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
                 >
