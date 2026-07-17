@@ -86,7 +86,7 @@ const Footer = () => {
               height={40}
               unoptimized={true}
             />
-            <p>05946-223030, 05946-222256, +91 8679774511</p>
+            <p>05946-223030, 05946-222256, +91 8679774511 </p>
           </li>
           <li className="flex gap-5">
             <Image
