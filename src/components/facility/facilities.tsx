@@ -20,13 +20,13 @@ const FACILITIES = [
     id: "sports",
     title: "Sports & Games",
     description: "Extensive sports facilities including a large playground, court sports, and indoor games. We encourage students to participate in physical activities to foster teamwork and leadership.",
-    image: "/assets/image/sports-bg.jpg",
+    image: "/assets/image/sports-facility.jpg",
   },
   {
     id: "computer",
     title: "Computer Lab",
     description: "A modern computer laboratory with high-speed internet provides students with hands-on experience in programming, digital literacy, and emerging technologies like AI and Coding.",
-    image: "/assets/image/computer-lab.jpg",
+    image: "/assets/image/computer-lab-facility.jpg",
   },
 ];
 
