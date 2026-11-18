@@ -28,6 +28,12 @@ const FACILITIES = [
     description: "A modern computer laboratory with high-speed internet provides students with hands-on experience in programming, digital literacy, and emerging technologies like AI and Coding.",
     image: "/assets/image/computer-lab-facility.jpg",
   },
+  {
+    id: "robotics-stem",
+    title: "Robotics & STEM Education",
+    description: "Through our partnership with Qoder-Q, our school is nurturing young innovators through hands-on Robotics and STEM education. Students learn to design, build, code and experiment, transforming theoretical knowledge into practical skills.",
+    image: "/assets/image/robotics-stem.jpg",
+  },
 ];
 
 const Facilities = () => {
